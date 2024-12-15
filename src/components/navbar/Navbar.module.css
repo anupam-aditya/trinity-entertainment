@@ -1,0 +1,42 @@
+.navbarContainer {
+  display: flex;
+  padding-left: 3.25rem;
+  justify-content: space-between;
+  background-color: #000;
+  .navLinks {
+    display: flex;
+    gap: 2.25rem;
+    align-items: center;
+    .navLink {
+      text-decoration: none;
+      padding: 1.875rem 0;
+      color: white;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+    .logo {
+      max-width: 8.625rem;
+    }
+  }
+  .navButtons {
+    display: flex;
+    gap: 2.25rem;
+    background: #f12c49;
+    font-size: 2rem;
+    padding: 0 2.5rem;
+    .navbarButton {
+      font-family: "Roboto", sans-serif;
+      background-color: #f12c49;
+      text-transform: uppercase;
+      border: none;
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      letter-spacing: 2px;
+    }
+  }
+}

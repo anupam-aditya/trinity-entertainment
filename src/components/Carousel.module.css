@@ -1,0 +1,119 @@
+.carouselContainer {
+  padding: 2.5rem 0 4.0625rem 2.1875rem;
+  text-align: center;
+}
+
+.carouselHeading {
+  font-size: 3.5rem;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  p {
+    display: unset;
+    margin: 0;
+  }
+  .line {
+    width: 39rem;
+    height: 0;
+    border: 1px solid;
+  }
+}
+
+.highlight {
+  color: #c1111e;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.25rem;
+  position: relative;
+  margin: 2.1875rem 0 0;
+}
+
+.carouselWrapper {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 35px 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+.carouselItem {
+  flex: 0 0 auto;
+  width: 22.125rem;
+  height: 22.125rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 2.1875rem;
+}
+
+.carouselItem.selected {
+  border: 2px solid red;
+}
+
+.carouselImg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.carouselTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.carouselText {
+  font-size: 1.3rem;
+  color: white;
+  max-width: 80%;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carouselButton {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.carouselButton:hover {
+  background: black;
+  color: white;
+}
+
+.carouselButton:nth-child(2) {
+  background: black;
+  color: white;
+}
+
+.carouselButton:nth-child(2):hover {
+  background: white;
+  color: black;
+}
