@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Headlines.module.css";
 import breakingNews from "../../assets/breakingnews.png";
 import news from "../../assets/news.png";
+import background from "../../assets/breaking-news-background.svg";
 
 const Headlines = () => {
   const headlines = [];
@@ -22,7 +23,12 @@ const Headlines = () => {
               <span className={styles.breakingNewsInformationText}>
                 25k views
               </span>
-              <span className={styles.breakingNewsInformationText}>.</span>
+              <span
+                className={styles.breakingNewsInformationText}
+                style={{ transform: "translateY(-50%)", height: "10px" }}
+              >
+                .
+              </span>
               <span className={styles.breakingNewsInformationText}>
                 25m ago
               </span>
@@ -128,7 +134,7 @@ const Headlines = () => {
           </div>
         </div>
         <div className={styles.breakingNewsImageSection}>
-          <img src={breakingNews}></img>
+          <img src={breakingNews} alt="Breaking News" />
         </div>
       </div>
       <div className={`${styles.headingSection} ${styles.secondHeading}`}>
@@ -165,61 +171,14 @@ const Headlines = () => {
         </div>
       </div>
       <div className={styles.breakingNewsSlider}>
-        <div className={styles.breakingNewsCarousel}>
-          <div className={styles.background}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="428"
-              style={{ maxWidth: "100%" }}
-              height="193"
-              viewBox="0 0 428 193"
-              fill="none"
-            >
-              <g filter="url(#filter0_d_171_171)">
-                <path
-                  d="M4 31.4173C4 14.066 18.066 0 35.4173 0H392.583C409.934 0 424 14.066 424 31.4173V154.472C424 171.823 409.934 185.889 392.583 185.889H231.094C219.935 185.889 210.889 176.843 210.889 165.684V157.792C210.889 140.441 196.823 126.375 179.472 126.375H107.444H35.4174C18.066 126.375 4 112.309 4 94.9577V31.4173Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_171_171"
-                  x="0.692914"
-                  y="0"
-                  width="426.614"
-                  height="192.503"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="3.30709" />
-                  <feGaussianBlur stdDeviation="1.65354" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_171_171"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_171_171"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          </div>
+        <div
+          className={styles.breakingNewsCarousel}
+          style={{
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+          }}
+        >
           <div className={styles.breakingNews}>
             <div className={styles.textSection}>
               <p className={styles.newsText}>
@@ -248,66 +207,19 @@ const Headlines = () => {
               </div>
             </div>
             <div className={styles.imageSection}>
-              <img src={news} />
+              <img src={news} alt="News Thumbnail" />
             </div>
           </div>
         </div>
         <div className={styles.breakingNewsCarousel}>
-          <div className={styles.background}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="428"
-              style={{ maxWidth: "100%" }}
-              height="193"
-              viewBox="0 0 428 193"
-              fill="none"
-            >
-              <g filter="url(#filter0_d_171_171)">
-                <path
-                  d="M4 31.4173C4 14.066 18.066 0 35.4173 0H392.583C409.934 0 424 14.066 424 31.4173V154.472C424 171.823 409.934 185.889 392.583 185.889H231.094C219.935 185.889 210.889 176.843 210.889 165.684V157.792C210.889 140.441 196.823 126.375 179.472 126.375H107.444H35.4174C18.066 126.375 4 112.309 4 94.9577V31.4173Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_171_171"
-                  x="0.692914"
-                  y="0"
-                  width="426.614"
-                  height="192.503"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="3.30709" />
-                  <feGaussianBlur stdDeviation="1.65354" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_171_171"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_171_171"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-          <div className={styles.breakingNews}>
+          <div
+            className={styles.breakingNews}
+            style={{
+              backgroundImage: `url(${background})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+            }}
+          >
             <div className={styles.textSection}>
               <p className={styles.newsText}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
@@ -335,66 +247,19 @@ const Headlines = () => {
               </div>
             </div>
             <div className={styles.imageSection}>
-              <img src={news} />
+              <img src={news} alt="News Thumbnail" />
             </div>
           </div>
         </div>
         <div className={styles.breakingNewsCarousel}>
-          <div className={styles.background}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="428"
-              style={{ maxWidth: "100%" }}
-              height="193"
-              viewBox="0 0 428 193"
-              fill="none"
-            >
-              <g filter="url(#filter0_d_171_171)">
-                <path
-                  d="M4 31.4173C4 14.066 18.066 0 35.4173 0H392.583C409.934 0 424 14.066 424 31.4173V154.472C424 171.823 409.934 185.889 392.583 185.889H231.094C219.935 185.889 210.889 176.843 210.889 165.684V157.792C210.889 140.441 196.823 126.375 179.472 126.375H107.444H35.4174C18.066 126.375 4 112.309 4 94.9577V31.4173Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_171_171"
-                  x="0.692914"
-                  y="0"
-                  width="426.614"
-                  height="192.503"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="3.30709" />
-                  <feGaussianBlur stdDeviation="1.65354" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_171_171"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_171_171"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-          <div className={styles.breakingNews}>
+          <div
+            className={styles.breakingNews}
+            style={{
+              backgroundImage: `url(${background})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+            }}
+          >
             <div className={styles.textSection}>
               <p className={styles.newsText}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
@@ -422,7 +287,7 @@ const Headlines = () => {
               </div>
             </div>
             <div className={styles.imageSection}>
-              <img src={news} />
+              <img src={news} alt="News Thumbnail" />
             </div>
           </div>
         </div>

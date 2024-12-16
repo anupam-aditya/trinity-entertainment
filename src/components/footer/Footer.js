@@ -83,7 +83,12 @@ const Footer = () => {
         <div className={styles.companySocialInfo}>
           <div className={styles.companySocialLinks}>
             {socialInfo.map((info) => (
-              <SvgWrapper svgSrc={info?.icon} />
+              <SvgWrapper
+                className={
+                  info?.icon === "instagram" ? styles.svgBackgroundFill : ""
+                }
+                svgSrc={info?.icon}
+              />
             ))}
           </div>
           {/* <div className={styles.companySocialLinks}></div> */}

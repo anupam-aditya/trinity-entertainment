@@ -47,6 +47,8 @@
           font-size: 1.125rem;
         }
         .breakingNewsMetrics {
+          display: flex;
+          gap: 0.5rem;
         }
       }
       .breakingNewsContent {
@@ -96,12 +98,12 @@
         .textSection {
           display: flex;
           flex-direction: column;
-          gap: 0.4rem;
-          justify-content: space-between;
+          gap: 16%;
+          justify-content: flex-start;
           align-items: center;
           .newsText {
             font-size: 1.125rem;
-            padding: 2rem 0 1rem 1rem;
+            padding: 8.5% 0 6% 8%;
             border-radius: 2rem 0 0 2rem;
           }
           .newscontrolButtonsSection {
@@ -130,6 +132,69 @@
         .imageSection {
           padding: 1.125rem 1.125rem 1.125rem 0.5rem;
           border-radius: 0 2rem 2rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1354px) {
+  .headlinesContainer {
+    .headingSection {
+      .sectionHeading {
+        .highlight {
+        }
+      }
+    }
+    .secondHeading {
+      .controlButtonsSection {
+        .controlButton {
+        }
+      }
+    }
+    .breakingNewsContainer {
+      .breakingNewsTextContainer {
+        .breakingNewsInformation {
+          .breakingNewsInformationText {
+          }
+          .breakingNewsMetrics {
+          }
+        }
+        .breakingNewsContent {
+          .breakingNewsText {
+            font-size: 1.5rem;
+          }
+        }
+        .readMoreSection {
+        }
+        .authorDetailsSection {
+          .authorText {
+          }
+        }
+      }
+      .breakingNewsImageSection {
+        .breakingNewsImage {
+        }
+      }
+    }
+    .breakingNewsSlider {
+      .breakingNewsCarousel {
+        .background {
+        }
+        .breakingNews {
+          .textSection {
+            gap: 5%;
+            .newsText {
+            }
+            .newscontrolButtonsSection {
+              .newscontrolButton {
+              }
+              .newscontroltextButton {
+              }
+            }
+          }
+          .imageSection {
+          }
         }
       }
     }
