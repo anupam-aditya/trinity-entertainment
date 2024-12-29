@@ -1,0 +1,73 @@
+@import "../common/variables.module.css";
+.ourServicesContainer {
+  padding: 4rem var(--left-right-spacing-lg) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.375rem;
+  .ourServicesHeading {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: var(--text-section-heading-lg);
+    font-weight: 700;
+    .highlight {
+      color: var(--pink);
+    }
+    .line {
+      height: 0;
+      width: 35%;
+      border: 1px solid #000;
+    }
+  }
+
+  .servicesSection {
+    display: flex;
+    gap: 0.875rem;
+    min-height: 56.25rem;
+
+    .branding {
+      width: 35%;
+    }
+    .rightSide {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+      flex: 1;
+      .first {
+        display: flex;
+        gap: 0.875rem;
+        .innerLeft {
+        }
+        .innerRight {
+          display: flex;
+          flex-direction: column;
+          gap: 0.875rem;
+        }
+      }
+    }
+    .subSection {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 2.375rem 1.25rem 2rem;
+      box-sizing: border-box;
+      text-align: right;
+      color: #fff;
+      justify-content: end;
+
+      .heading,
+      .number {
+        font-weight: 700;
+        margin: 0;
+      }
+      .heading {
+        font-size: 1.875rem;
+      }
+      .number {
+        font-size: 4.375rem;
+      }
+      .text {
+      }
+    }
+  }
+}

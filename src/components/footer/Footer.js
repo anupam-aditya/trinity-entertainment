@@ -91,10 +91,18 @@ const Footer = () => {
               />
             ))}
           </div>
+          <button className={styles.contactUsButton}>
+            Get in touch with us
+            <SvgWrapper svgSrc="arrow" />
+          </button>
           {/* <div className={styles.companySocialLinks}></div> */}
           {/* Social media links will go here */}
         </div>
       </div>
+      <p className={styles.rightsText}>
+        © 2024 Trinity Entertainment & Strategic Consultants LLP. All rights
+        reserved.
+      </p>
     </div>
   );
 };

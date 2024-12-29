@@ -1,0 +1,52 @@
+.workPageContainer {
+  .container {
+    gap: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    padding: 11.25rem 4rem;
+
+    .subContainer {
+      display: flex;
+      gap: 1.125rem;
+    }
+  }
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.item {
+  background: var(--pink);
+  height: 17.5rem;
+  width: 100%;
+  /* flex: 1; */
+}
+
+.itemSmall {
+  width: 40%;
+  flex: unset;
+}
+.itemLong {
+  height: 42.5rem;
+  flex: unset;
+}
+.itemLarge {
+  width: 60%;
+  flex: unset;
+}
+
+.item1 {
+  flex: unset;
+}
+
+.nestedContainer {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.nestedItemContainer {
+  display: flex;
+  gap: 0.5rem;
+}

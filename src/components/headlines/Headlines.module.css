@@ -83,6 +83,7 @@
     padding: 3rem 0rem 5.625rem 4rem;
     display: flex;
     gap: 1.75rem;
+    scrollbar-width: none;
 
     overflow: scroll;
     .breakingNewsCarousel {

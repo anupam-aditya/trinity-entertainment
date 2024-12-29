@@ -1,0 +1,103 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.headerBackground {
+  background-color: #f87171;
+  width: 100%;
+  padding: 6rem 0 0;
+  margin-bottom: 2rem;
+}
+
+.title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainDescription {
+  text-align: center;
+  color: #4b5563;
+  max-width: 48rem;
+  margin: 0 auto 2.25rem;
+  line-height: 1.6;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imageContainer {
+  background-color: #f87171;
+  width: 18rem;
+  height: 18rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.memberImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.memberName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.memberRole {
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.memberDescription {
+  color: #4b5563;
+  max-width: 20rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .headerBackground {
+    padding: 2rem 0;
+  }
+}
