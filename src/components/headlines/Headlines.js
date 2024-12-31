@@ -3,8 +3,10 @@ import styles from "./Headlines.module.css";
 import breakingNews from "../../assets/breakingnews.png";
 import news from "../../assets/news.png";
 import background from "../../assets/breaking-news-background.svg";
+import { useSnapCarousel } from "react-snap-carousel";
 
 const Headlines = () => {
+  const { scrollRef, prev, next, goTo, activePageIndex } = useSnapCarousel();
   const headlines = [];
   return (
     <div className={styles.headlinesContainer}>
@@ -140,7 +142,7 @@ const Headlines = () => {
       <div className={`${styles.headingSection} ${styles.secondHeading}`}>
         <p className={styles.sectionHeading}>Top Headlines.</p>
         <div className={styles.controlButtonsSection}>
-          <span className={styles.controlButton}>
+          <span className={styles.controlButton} onClick={() => prev()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -154,7 +156,7 @@ const Headlines = () => {
               />
             </svg>
           </span>
-          <span className={styles.controlButton}>
+          <span className={styles.controlButton} onClick={() => next()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -170,16 +172,56 @@ const Headlines = () => {
           </span>
         </div>
       </div>
-      <div className={styles.breakingNewsSlider}>
-        <div
-          className={styles.breakingNewsCarousel}
-          style={{
-            backgroundImage: `url(${background})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-          }}
-        >
-          <div className={styles.breakingNews}>
+      <div className={styles.breakingNewsSlider} ref={scrollRef}>
+        <div className={styles.breakingNewsCarousel}>
+          <div
+            className={styles.breakingNews}
+            style={{
+              backgroundImage: `url(${background})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+            }}
+          >
+            <div className={styles.textSection}>
+              <p className={styles.newsText}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
+              </p>
+              <div className={styles.newscontrolButtonsSection}>
+                <span
+                  className={`${styles.controltextButton} ${styles.newscontroltextButton}`}
+                >
+                  View More
+                </span>
+                <div className={styles.newscontrolButton}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.2591 1.2098C13.2591 0.753191 12.8889 0.383033 12.4323 0.383033L4.99134 0.383033C4.53473 0.383033 4.16457 0.753191 4.16457 1.2098C4.16457 1.66642 4.53473 2.03658 4.99134 2.03658H11.6055V8.65075C11.6055 9.10736 11.9757 9.47752 12.4323 9.47752C12.8889 9.47752 13.2591 9.10736 13.2591 8.65075L13.2591 1.2098ZM1.26382 13.5475L13.0169 1.79442L11.8477 0.625189L0.0945834 12.3783L1.26382 13.5475Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div className={styles.imageSection}>
+              <img src={news} alt="News Thumbnail" />
+            </div>
+          </div>
+        </div>
+        <div className={styles.breakingNewsCarousel}>
+          <div
+            className={styles.breakingNews}
+            style={{
+              backgroundImage: `url(${background})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+            }}
+          >
             <div className={styles.textSection}>
               <p className={styles.newsText}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
