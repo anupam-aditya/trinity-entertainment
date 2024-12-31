@@ -23,6 +23,7 @@
         background-color: #fff;
         border-radius: 50%;
         padding: 1rem;
+        cursor: pointer;
       }
     }
   }
@@ -99,7 +100,7 @@
         .textSection {
           display: flex;
           flex-direction: column;
-          gap: 16%;
+          gap: 3%;
           justify-content: flex-start;
           align-items: center;
           .newsText {
