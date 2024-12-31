@@ -1,4 +1,4 @@
-@import '../../components/common/variables.module.css';
+@import "../../components/common/variables.module.css";
 .aboutUsContainer {
   background: radial-gradient(
     107.57% 94.52% at 80.1% 10.4%,
@@ -6,7 +6,7 @@
     #000 76%
   );
   padding: 2rem 0 1.25rem;
-  height: 100vh;
+  height: max(max-content, 100vh);
 
   .container {
     max-width: 1440px;
