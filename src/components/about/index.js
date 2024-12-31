@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./About.module.css";
-import aboutf from "../../assets/about-1.png";
-import abouts from "../../assets/about-2.png";
+import React from 'react'
+import styles from './About.module.css'
+import aboutf from '../../assets/about-1.png'
+import abouts from '../../assets/about-2.png'
 
 function About() {
   return (
@@ -16,18 +16,18 @@ function About() {
         <div className={styles.textSide}>
           <img className={styles.image} src={abouts} />
           <p className={styles.regularText}>
-            Lorem ipsum dolor sit amet, consectetur{" "}
-            <span className={styles.highlight}>adipiscing elit. Integer</span>{" "}
-            nec odio. Praesent libero. Sed cursus ante dapibus{" "}
+            Lorem ipsum dolor sit amet, consectetur{' '}
+            <span className={styles.highlight}>adipiscing elit. Integer</span>{' '}
+            nec odio. Praesent libero. Sed cursus ante dapibus{' '}
             <span className={styles.highlight}>diam. Sed</span> nisi.
           </p>
           <a className={styles.redirectText} href="/about-us">
-            Learn More
+            Learn More →
           </a>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About

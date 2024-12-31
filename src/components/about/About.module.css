@@ -1,11 +1,12 @@
-@import "../../components/common/variables.module.css";
+@import '../../components/common/variables.module.css';
 .aboutUsContainer {
   background: radial-gradient(
     107.57% 94.52% at 80.1% 10.4%,
     #474747 0%,
     #000 76%
   );
-  padding: 7.5rem 0 3.25rem;
+  padding: 2rem 0 1.25rem;
+  height: 100vh;
 
   .container {
     max-width: 1440px;
@@ -15,14 +16,20 @@
     color: #fff;
     gap: 7.5rem;
     font-weight: 600;
+    justify-content: space-between;
 
     .headingSide {
       display: flex;
       flex-direction: column;
-      gap: 3.75rem;
+      gap: 1.75rem;
+      align-items: end;
+      img {
+        width: 25rem;
+      }
 
       .heading {
-        font-size: var(--text-section-heading-lg);
+        font-size: var(--text-section-heading);
+        width: max-content;
       }
     }
 
@@ -30,20 +37,29 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      width: 40%;
+      /* align-items: center; */
+      img {
+        width: 25rem;
+      }
 
       .regularText {
-        font-size: var(--text-lg);
+        font-size: var(--text-md);
         font-weight: 300;
         margin-left: auto;
         width: 95%;
       }
 
       .redirectText {
-        font-size: var(--text-lg);
+        font-size: var(--text-md);
         font-weight: 400;
         text-align: right;
         text-decoration: none;
         color: #fff;
+
+        &:hover {
+          color: var(--red);
+        }
       }
     }
   }

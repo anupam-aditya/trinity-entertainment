@@ -1,14 +1,16 @@
-@import "../common/variables.module.css";
+@import '../common/variables.module.css';
 .ourServicesContainer {
-  padding: 4rem var(--left-right-spacing-lg) 0;
+  padding: 2rem var(--left-right-spacing-lg) 2rem;
+  border-bottom: 1px solid #000;
   display: flex;
   flex-direction: column;
-  gap: 3.375rem;
+  gap: 1.375rem;
+  /* height: 100vh; */
   .ourServicesHeading {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    font-size: var(--text-section-heading-lg);
+    font-size: var(--text-7xl);
     font-weight: 700;
     .highlight {
       color: var(--pink);
@@ -23,7 +25,7 @@
   .servicesSection {
     display: flex;
     gap: 0.875rem;
-    min-height: 56.25rem;
+    /* min-height: 56.25rem; */
 
     .branding {
       width: 35%;
@@ -49,7 +51,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      padding: 2.375rem 1.25rem 2rem;
+      padding: 1.375rem 1.25rem 1rem;
       box-sizing: border-box;
       text-align: right;
       color: #fff;
@@ -64,7 +66,7 @@
         font-size: 1.875rem;
       }
       .number {
-        font-size: 4.375rem;
+        font-size: 2.375rem;
       }
       .text {
       }
