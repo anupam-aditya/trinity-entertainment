@@ -6,7 +6,8 @@
     #000 76%
   );
   padding: 2rem 0 1.25rem;
-  height: max(max-content, 100vh);
+  height: fit-content;
+  min-height: 100vh;
 
   .container {
     max-width: 1440px;
