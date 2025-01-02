@@ -1,17 +1,35 @@
 .servicesMainSection {
-  .headingContainer {
-    padding: 3rem 4rem;
-    max-height: max(100vh, max-height);
-    background: #000;
-    color: #f6f1f1;
+  margin: 0 auto;
+  padding: 0;
+  .container {
+    max-width: 1440px;
+    .headingContainer {
+      padding: 3rem 4rem;
+      min-height: 80vh;
+      height: fit-content;
+      background: #000;
+      color: #f6f1f1;
 
-    .servicesPageHeading {
-      font-size: 3rem;
-      font-weight: 700;
-      display: flex;
-      flex-direction: column;
+      .servicesPageHeading {
+        font-size: 3rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+      }
+      .servicesPageText {
+        width: 43%;
+        margin-top: 1.5rem;
+        font-size: 1.25rem;
+      }
+
+      .line {
+        border: 1px solid var(--red);
+        height: 0;
+        width: 20%;
+        margin-top: 2.5rem;
+      }
     }
-  }
-  .cardContainer {
+    .cardContainer {
+    }
   }
 }
