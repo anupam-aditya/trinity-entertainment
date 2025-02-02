@@ -1,4 +1,5 @@
 :root {
+  --max-width: 90rem;
   --pink: #ef3e58;
   --red: #c1111e;
   --text-very-sm: 1rem;
@@ -16,4 +17,5 @@
   --text-section-heading-lg: 6.75rem;
   --text-section-heading: 6rem;
   --left-right-spacing-lg: 7.5rem;
+  --left-right-spacing-d: 4rem;
 }

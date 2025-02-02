@@ -2,8 +2,8 @@
   margin: 0 auto;
   padding: 0;
   .container {
-    max-width: 1440px;
-    .headingContainer {
+    max-width: 90rem;
+    .headingSection {
       padding: 3rem 4rem;
       min-height: 80vh;
       height: fit-content;
@@ -29,7 +29,20 @@
         margin-top: 2.5rem;
       }
     }
-    .cardContainer {
+    .servicesHighlightSection {
+      padding: 0 4rem;
+    }
+    .rowNavSection {
+      padding: 0 4rem;
+    }
+    .cardSection {
+      padding: 2rem 4rem;
+
+      .cardHeading {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 0 0 2rem;
+      }
     }
   }
 }

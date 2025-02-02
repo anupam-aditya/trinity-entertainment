@@ -68,10 +68,14 @@
 }
 
 .recentAccomplismentItem {
+  max-width: 100%;
   .title {
     font-size: 1.75rem;
   }
   .description {
     font-size: 1rem;
+  }
+  img {
+    max-width: 100%;
   }
 }

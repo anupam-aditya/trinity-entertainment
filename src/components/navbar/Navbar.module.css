@@ -36,6 +36,10 @@
       padding: 0;
       cursor: pointer;
       letter-spacing: 2px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 }

@@ -1,0 +1,64 @@
+@import "../../components/common/variables.module.css";
+.container {
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  .sectionHeading {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .valuesSection {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+  .sliderSection {
+    padding: 2rem 0;
+  }
+  .sliderContainer {
+    padding: 2rem 0 0;
+  }
+  .carouselWrapperStyle {
+    gap: 2rem;
+  }
+  .sliderCard {
+    background: var(--pink);
+    border-radius: 0.625rem 3.125rem;
+    color: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  .headingStyle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 1rem;
+  }
+  .subHeadingStyle {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  .textStyle {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .formSection {
+    max-width: 90rem;
+    margin: 0 auto;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0;
+    .formComponent {
+      display: flex;
+      gap: 2rem;
+      .imageComponent {
+        .image {
+          max-width: 100%;
+        }
+        flex: 1;
+      }
+      .form {
+        flex: 1;
+      }
+    }
+  }
+}

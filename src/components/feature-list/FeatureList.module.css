@@ -1,0 +1,35 @@
+@import "../../components/common/variables.module.css";
+
+.container {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.2);
+  color: #ff4141;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

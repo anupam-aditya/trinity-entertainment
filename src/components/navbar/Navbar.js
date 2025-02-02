@@ -27,8 +27,12 @@ const Navbar = () => {
         })}
       </div>
       <div className={styles.navButtons}>
-        <button className={`${styles.navbarButton}`}>Careers</button>
-        <button className={`${styles.navbarButton}`}>Contact</button>
+        <button className={`${styles.navbarButton}`}>
+          <a href="/career">Careers</a>
+        </button>
+        <button className={`${styles.navbarButton}`}>
+          <a href="/contact">Contact</a>
+        </button>
       </div>
     </div>
   );

@@ -7,6 +7,9 @@ import "./App.css";
 import WorkPage from "./pages/work";
 import Footer from "./components/footer/Footer";
 import Services from "./pages/services";
+import WorkDetailPage from "./pages/services-detail";
+import Contact from "./pages/contact-us";
+import Career from "./pages/career";
 
 const App = () => {
   return (
@@ -18,9 +21,11 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/work" element={<WorkPage />} />
+            <Route path="/services/:slug" element={<WorkDetailPage />} />
             <Route path="/services" element={<Services />} />
-            {/* <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} /> */}
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/career" element={<Career />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </div>
 
