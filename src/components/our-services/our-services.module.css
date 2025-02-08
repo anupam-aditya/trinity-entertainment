@@ -1,11 +1,14 @@
-@import '../common/variables.module.css';
+@import "../common/variables.module.css";
 .ourServicesContainer {
-  padding: 2rem var(--left-right-spacing-lg) 2rem;
+  padding: 2rem 4rem 2rem;
   border-bottom: 1px solid #000;
   display: flex;
   flex-direction: column;
-  gap: 1.375rem;
-  /* height: 100vh; */
+  gap: 3.75rem;
+  min-height: 100vh;
+  max-width: 90rem;
+  box-sizing: border-box;
+  margin: 0 auto;
   .ourServicesHeading {
     display: flex;
     gap: 1.5rem;

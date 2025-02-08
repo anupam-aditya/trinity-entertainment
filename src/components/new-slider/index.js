@@ -1,20 +1,32 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSnapCarousel } from "react-snap-carousel";
 import styles from "./slider.module.css";
 
 export default function Slider({
-  title,
+  title = "",
   titleAlignment = "left",
   showNavigation = true,
   showButtons = false,
-  items,
-  subHeading,
-  text,
+  items = [],
+  subHeading = "",
+  text = "",
+  autoPlay = false,
+  autoPlayInterval = 3000,
 }) {
   const { scrollRef, pages, activePageIndex, prev, next, goTo } =
     useSnapCarousel();
+
+  useEffect(() => {
+    if (!autoPlay) return; // Do nothing if autoplay is not enabled.
+
+    const intervalId = setInterval(() => {
+      next();
+    }, autoPlayInterval);
+
+    return () => clearInterval(intervalId);
+  }, [autoPlay, autoPlayInterval, next]);
   const prevSlide = () => {
     prev();
   };
@@ -58,23 +70,25 @@ export default function Slider({
             {items.map((item) => (
               <div key={item.id} className={styles.card}>
                 <div className={styles.cardInner}>
-                  <div
-                    className={styles.imageContainer}
-                  >
+                  {item?.image && <div className={styles.imageContainer}>
                     <img
                       src={item.image}
                       alt={item.title}
                       className={styles.image}
                     />
-                  </div>
-                  <div className={styles.cardContent}>
-                    <h3 className={styles.cardTitle}>{item.title}</h3>
-                    {item.cta && (
-                      <a href={item.cta.href} className={styles.ctaButton}>
-                        {item.cta.label}
-                      </a>
-                    )}
-                  </div>
+                  </div>}
+                  {(item?.title || item?.cta) && (
+                    <div className={styles.cardContent}>
+                      {item?.title && (
+                        <h3 className={styles.cardTitle}>{item?.title}</h3>
+                      )}
+                      {item.cta && (
+                        <a href={item.cta.href} className={styles.ctaButton}>
+                          {item.cta.label}
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

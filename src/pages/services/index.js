@@ -71,45 +71,58 @@ const Services = () => {
   }, []);
 
   return (
-    <section className={styles.servicesMainSection}>
-      <div className={styles.container}>
-        <div className={styles.headingSection}>
-          <p className={styles.servicesPageHeading}>
-            Our <span>Services</span>
-          </p>
-          <p className={styles.servicesPageText}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-          </p>
-          <p className={styles.line}></p>
+    <div className={styles.servicesPage}>
+      <div className={styles.servicesHeroSection}>
+        <div className={styles.servicesHeroContainer}>
+          <div className={styles.headingSection}>
+            <p className={styles.servicesPageHeading}>
+              Our <span>Services</span>
+            </p>
+            <p className={styles.servicesPageText}>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet,
+            </p>
+            <p className={styles.line}></p>
+          </div>
         </div>
-        {highlightData && (
-          <div className={styles.servicesHighlightSection}>
-            <Highlight data={highlightData} />
-          </div>
-        )}
-        {navItems && (
-          <div className={styles.rowNavSection}>
-            <RowNavbar items={navItems} />
-          </div>
-        )}
-        {newHighlightData && (
-          <div className={styles.servicesHighlightSection}>
-            <Highlight data={newHighlightData} />
-          </div>
-        )}
-        {cardData && (
-          <div className={styles.cardSection}>
-            <p className={styles.cardHeading}>Trust Us Because</p>
-            <CardSection data={cardData} />
-          </div>
-        )}
-        {/* <div className={styles.cardContainer}></div> */}
       </div>
-    </section>
+      {highlightData && (
+        <div className={styles.servicesHighlightSection}>
+          <Highlight
+            containerClass={styles.highlightContainer}
+            data={highlightData}
+          />
+        </div>
+      )}
+      {navItems && (
+        <div className={styles.rowNavSection}>
+          <RowNavbar items={navItems} />
+        </div>
+      )}
+      {newHighlightData && (
+        <div className={styles.servicesHighlightSection}>
+          <Highlight
+            data={newHighlightData}
+            containerClass={styles.highlightContainer}
+          />
+        </div>
+      )}
+      {cardData && (
+        <div className={styles.cardSection}>
+          <CardSection
+            containerClass={styles.cardContainer}
+            title="Trust Us Because"
+            data={cardData}
+            gap="4rem"
+          />
+        </div>
+      )}
+      {/* <div className={styles.cardContainer}></div> */}
+    </div>
   );
 };
 

@@ -3,12 +3,13 @@ import styles from "./Highlight.module.css";
 
 const Highlight = ({
   data,
-  imagePosition = "right", // Options: 'left', 'right'
-  stackOnSmallScreens = true, // Stacks image and text on small screens by default
+  imagePosition = "right",
+  stackOnSmallScreens = true,
+  containerClass,
 }) => {
   return (
     <div
-      className={`${styles.container} ${
+      className={`${containerClass} ${styles.container} ${
         stackOnSmallScreens ? styles.stackOnSmall : ""
       } ${imagePosition === "left" ? styles.imageLeft : styles.imageRight}`}
     >

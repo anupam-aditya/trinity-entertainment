@@ -1,0 +1,179 @@
+/* Slider Style */
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  padding: 2rem 0;
+  background-color: #fff;
+}
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+.regularText {
+  font-size: 1.125rem;
+}
+.textSpacing {
+  padding-top: 1rem;
+}
+
+.headingText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.heading.left {
+  text-align: left;
+}
+
+.heading.center {
+  text-align: center;
+}
+
+.heading.right {
+  text-align: right;
+}
+
+.sliderContainer {
+  position: relative;
+  padding: 0 3rem;
+}
+
+.carouselWrapper {
+  overflow: hidden;
+  display: flex;
+}
+
+.carouselInner {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  margin: 0 -0.5rem;
+}
+
+.card {
+  flex: 0 0 100%;
+  max-width: 23.75rem;
+  padding: 0.5rem;
+  scroll-snap-align: start;
+}
+
+.dotsSection {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 4rem;
+  .dots {
+    border-radius: 50%;
+    height: 0.75rem;
+    width: 0.75rem;
+    background: #c1111e;
+  }
+  .activeDot {
+    background: #000;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textSection,
+  .sliderSection {
+    flex: 0 0 50%;
+  }
+}
+
+.cardInner {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: max-content;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 66.67%;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cardInner:hover .image {
+  transform: scale(1.1);
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.ctaButton:hover {
+  background-color: #2563eb;
+}
+
+.navigationButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.navigationButton:hover {
+  background: #f3f4f6;
+}
+
+.navigationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+/* Slider Style */

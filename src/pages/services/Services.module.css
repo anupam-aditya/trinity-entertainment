@@ -1,48 +1,68 @@
 .servicesMainSection {
   margin: 0 auto;
   padding: 0;
-  .container {
-    max-width: 90rem;
-    .headingSection {
-      padding: 3rem 4rem;
-      min-height: 80vh;
-      height: fit-content;
-      background: #000;
-      color: #f6f1f1;
+}
+.servicesHeroSection {
+  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
+}
 
-      .servicesPageHeading {
-        font-size: 3rem;
-        font-weight: 700;
-        display: flex;
-        flex-direction: column;
-      }
-      .servicesPageText {
-        width: 43%;
-        margin-top: 1.5rem;
-        font-size: 1.25rem;
-      }
+.servicesHeroContainer {
+  max-width: 90rem;
+  margin: 0 auto;
+  .headingSection {
+    padding: 3rem 4rem;
+    min-height: 80vh;
+    height: fit-content;
+    background: #000;
+    color: #f6f1f1;
 
-      .line {
-        border: 1px solid var(--red);
-        height: 0;
-        width: 20%;
-        margin-top: 2.5rem;
-      }
+    .servicesPageHeading {
+      font-size: 3rem;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
     }
-    .servicesHighlightSection {
-      padding: 0 4rem;
+    .servicesPageText {
+      width: 43%;
+      margin-top: 1.5rem;
+      font-size: 1.25rem;
     }
-    .rowNavSection {
-      padding: 0 4rem;
-    }
-    .cardSection {
-      padding: 2rem 4rem;
 
-      .cardHeading {
-        text-align: center;
-        font-size: 2.5rem;
-        padding: 0 0 2rem;
-      }
+    .line {
+      border: 1px solid var(--red);
+      height: 0;
+      width: 20%;
+      margin-top: 2.5rem;
     }
   }
+  .servicesHighlightSection {
+    padding: 0 4rem;
+  }
+  .rowNavSection {
+    padding: 0 4rem;
+  }
+  .cardSection {
+    padding: 2rem 4rem;
+
+    .cardHeading {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 0 0 2rem;
+    }
+  }
+}
+
+.cardSection,
+.rowNavSection,
+.servicesHighlightSection {
+  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
+}
+
+.highlightContainer {
+  background: #fff;
+  padding: 2rem 4rem !important;
+  box-sizing: border-box;
+}
+.cardContainer {
+  padding: 2rem 4rem !important;
 }

@@ -20,8 +20,8 @@ function OurServices() {
   ), url(${branding})`,
           }}
         >
-          <p className={styles.number}>05.</p>
-          <p className={styles.heading}> Automotive Marketing</p>
+          <p className={styles.number}>Experiential Solutions</p>
+          <p className={styles.heading}>Experiential Solutions</p>
           <p className={styles.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
@@ -55,17 +55,13 @@ function OurServices() {
   ), url(${branding})`,
                 }}
               >
-                <p className={styles.number}>03.</p>
-                <p className={styles.heading}>Creative Services</p>
+                <p className={styles.number}>Content Labs</p>
+                <p className={styles.heading}>Capture Your Dreams</p>
               </div>
               <div
                 className={`${styles.subSection}`}
                 style={{
-                  background: `linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.75) 62%,
-    rgba(0, 0, 0, 0.53) 100%
-  ), url(${branding})`,
+                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.75) 62%,rgba(0, 0, 0, 0.53) 100%), url(${branding})`,
                 }}
               >
                 <p className={styles.number}>05.</p>
