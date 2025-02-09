@@ -89,6 +89,8 @@
   border-radius: 50%;
   padding: 0.5rem;
   box-shadow: 0 8px 20px -4px #95abbb;
+  display: flex;
+  aspect-ratio: 1;
 }
 
 .noDisplay {
@@ -97,7 +99,6 @@
 
 .image {
   width: 100%;
-  object-fit: cover;
   transition: transform 0.3s ease;
   max-width: 100%;
 }
