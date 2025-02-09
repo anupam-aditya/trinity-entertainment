@@ -63,7 +63,7 @@ export default function SingleSlideCarousel({
 
       {showButtons && (
         <div className={styles.dotsSection}>
-          {pages.map((i, index) => {
+          {items?.map((i, index) => {
             return (
               <div
                 className={`${styles.dots} ${
