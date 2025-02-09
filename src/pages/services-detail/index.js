@@ -11,7 +11,7 @@ import Slider from "../../components/new-slider";
 const ServicesDetailPage = () => {
   const { slug } = useParams();
   const [content, setContent] = useState(null);
-  console.log("content is : ", content);
+  // console.log("content is : ", content);
 
   useEffect(() => {
     const fetchContent = async () => {

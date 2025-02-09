@@ -25,9 +25,6 @@ export default function SingleSlideCarousel({
     return () => clearInterval(intervalId);
   }, [activeIndex]);
 
-  console.log("pages.length : ", pages.length);
-  console.log("pages : ", pages);
-
   return (
     <div className={styles.container}>
       <div ref={scrollRef} className={styles.sliderComponent}>
