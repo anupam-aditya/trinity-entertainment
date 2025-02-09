@@ -9,6 +9,8 @@ const CardSection = ({
   containerClass,
   gap,
   title,
+  text = "",
+  link = "",
 }) => {
   return (
     <div
@@ -16,6 +18,8 @@ const CardSection = ({
       style={{ gap: gap }}
     >
       {title && <p className={styles.sectionHeading}>{title}</p>}
+      {text && <p className={styles.sectionRegularText}>{text}</p>}
+      {link && <a className={styles.navigationLinks}>Explore More</a>}
       <div
         className={styles.cardGrid}
         style={{

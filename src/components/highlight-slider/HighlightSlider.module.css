@@ -26,7 +26,11 @@
   font-weight: 700;
   margin-bottom: 2rem;
 }
-
+.subHeadingText {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
 .heading.left {
   text-align: left;
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSnapCarousel } from "react-snap-carousel";
 import styles from "./Carousel.module.css";
 
@@ -8,29 +8,22 @@ export default function Carousel({
   items = [],
   autoPlay = false,
   autoPlayInterval = 3000,
+  showButtons = false,
 }) {
-  const { scrollRef, next, goTo, activePageIndex } = useSnapCarousel();
+  const { scrollRef, pages, next, goTo, activePageIndex } = useSnapCarousel();
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     if (!autoPlay) return;
-
+    if (!items?.length) return;
+    const itemsLength = items?.length;
     const intervalId = setInterval(() => {
-      goTo((activePageIndex + 1) % items.length);
+      setActiveIndex((activeIndex + 1) % itemsLength);
+      goTo((activeIndex + 1) % itemsLength);
     }, autoPlayInterval);
 
     return () => clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    if (!autoPlay) return;
-
-    const intervalId = setInterval(() => {
-      if (activePageIndex !== items.length - 1) goTo(activePageIndex + 1);
-      else goTo(0);
-    }, autoPlayInterval);
-
-    return () => clearInterval(intervalId);
-  }, [activePageIndex]);
+  }, [activeIndex]);
 
   return (
     <div className={styles.container}>
@@ -39,7 +32,7 @@ export default function Carousel({
           <div
             key={item.id}
             className={`${styles.card} ${
-              activePageIndex !== index ? styles.noDisplay : ""
+              activeIndex !== index ? styles.noDisplay : ""
             }`}
           >
             {item?.image && (
@@ -53,6 +46,20 @@ export default function Carousel({
             )}
           </div>
         ))}
+        {showButtons && (
+          <div className={styles.dotsSection}>
+            {pages.map((i, index) => {
+              return (
+                <div
+                  className={`${styles.dots} ${
+                    activePageIndex === index ? styles.activeDot : ""
+                  }`}
+                  onClick={() => goTo(index)}
+                />
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
