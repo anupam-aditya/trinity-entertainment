@@ -28,3 +28,7 @@
   gap: 2rem;
   flex-direction: column;
 }
+
+.partnershipSection {
+  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
+}

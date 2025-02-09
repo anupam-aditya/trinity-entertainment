@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useSnapCarousel } from "react-snap-carousel";
 import styles from "./slider.module.css";
 
-export default function Slider({
+export default function NewSlider({
   title = "",
   titleAlignment = "left",
   showNavigation = true,
@@ -70,13 +70,15 @@ export default function Slider({
             {items.map((item) => (
               <div key={item.id} className={styles.card}>
                 <div className={styles.cardInner}>
-                  {item?.image && <div className={styles.imageContainer}>
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className={styles.image}
-                    />
-                  </div>}
+                  {item?.image && (
+                    <div className={styles.imageContainer}>
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className={styles.image}
+                      />
+                    </div>
+                  )}
                   {(item?.title || item?.cta) && (
                     <div className={styles.cardContent}>
                       {item?.title && (

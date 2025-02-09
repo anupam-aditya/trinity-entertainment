@@ -6,12 +6,18 @@
 
 .heading {
   margin-bottom: 2rem;
+  padding: 0 4rem;
+  font-size: 2.5rem;
 }
 
 .heading.left {
   text-align: left;
 }
-
+.heading.left {
+  h2 {
+    margin-top: 0;
+  }
+}
 .heading.center {
   text-align: center;
 }
@@ -22,12 +28,16 @@
 
 .sliderContainer {
   position: relative;
-  padding: 0 3rem;
+  padding: 0 4rem 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .carouselWrapper {
   overflow: hidden;
   display: flex;
+  flex: 1;
 }
 
 .carouselInner {
@@ -105,15 +115,13 @@
 
 .cardTitle {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 1rem;
 }
 
 .ctaButton {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #3b82f6;
-  color: white;
+  padding: 0.5rem 0;
   border-radius: 0.25rem;
   text-decoration: none;
   transition: background-color 0.2s;
@@ -124,9 +132,6 @@
 }
 
 .navigationButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;

@@ -18,6 +18,15 @@ import bookmyshow from "../../assets/bookmyshow.png";
 import tinder from "../../assets/tinder.png";
 import porsche from "../../assets/porsche.png";
 import puma from "../../assets/puma.jpg";
+import marriot from "../../assets/marriot.png";
+import bni from "../../assets/bni.png";
+import eema from "../../assets/eema.png";
+import para from "../../assets/para.png";
+import NewSlider from "../../components/new-slider";
+
+import news2 from "../../assets/news-2.jpg";
+import news3 from "../../assets/news-3.jpg";
+import news from "../../assets/news-1.jpg";
 
 function Home() {
   const imagesArray = [
@@ -25,6 +34,32 @@ function Home() {
     { id: 2, image: hsi2 },
     { id: 3, image: hsi3 },
     { id: 4, image: hsi4 },
+  ];
+  const newsArray = [
+    {
+      id: 1,
+      image: news,
+      title:
+        "Trinity Entertainment & Strategic Consultants to produce Piyush Mishra debut US tour Ballimaaraan",
+      cta: {
+        label: "Read More",
+        href: "",
+      },
+    },
+    { id: 2, image: news2 },
+    { id: 3, image: news3 },
+    { id: 2, image: news2 },
+    { id: 3, image: news3 },
+    {
+      id: 1,
+      image: news,
+      title:
+        "Trinity Entertainment & Strategic Consultants to produce Piyush Mishra debut US tour Ballimaaraan",
+      cta: {
+        label: "Read More",
+        href: "",
+      },
+    },
   ];
   const testimonialsArrays = [
     {
@@ -50,6 +85,72 @@ function Home() {
       image: puma,
       heading: "Deviena Shivasta",
       text: "Their deep understanding of brand values and ability to translate them into engaging experiences is remarkable. Kudos to the team!",
+    },
+  ];
+  const sliderItems = [
+    {
+      id: 1,
+      image: eema,
+    },
+    {
+      id: 2,
+      image: bni,
+    },
+    {
+      id: 3,
+      image: marriot,
+    },
+    {
+      id: 4,
+      image: para,
+    },
+    {
+      id: 5,
+      image: eema,
+    },
+    {
+      id: 6,
+      image: bni,
+    },
+    {
+      id: 7,
+      image: marriot,
+    },
+    {
+      id: 8,
+      image: para,
+    },
+    {
+      id: 9,
+      image: eema,
+    },
+    {
+      id: 10,
+      image: bni,
+    },
+    {
+      id: 11,
+      image: marriot,
+    },
+    {
+      id: 12,
+      image: para,
+    },
+    {
+      id: 13,
+      image: eema,
+    },
+    {
+      id: 14,
+      image: bni,
+    },
+    {
+      id: 15,
+      image: marriot,
+    },
+    {
+      id: 16,
+      image: para,
     },
   ];
   return (
@@ -84,9 +185,19 @@ function Home() {
           />
         </div>
       </div>
+      <div className={styles.partnershipSection}>
+        <Slider
+          title="Our Partnership"
+          autoPlay={true}
+          items={sliderItems}
+          showButtons={false}
+        />
+      </div>
+      <div className={styles.newsSection}>
+        <NewSlider title="In The News" items={newsArray} />
+      </div>
       <About />
       <Carousel />
-      <Slider />
       <RecentAccomplishment />
       <Headlines />
     </div>
