@@ -13,18 +13,17 @@ export default function SingleSlideCarousel({
   const { scrollRef, pages, next, goTo, activePageIndex } = useSnapCarousel();
   const [activeIndex, setActiveIndex] = useState(0);
 
-  //   useEffect(() => {
-  //     if (!autoPlay) return;
-  //     if (!items?.length) return;
-  //     const itemsLength = items?.length;
-  //     const intervalId = setInterval(() => {
-  //       setActiveIndex((activeIndex + 1) % itemsLength);
-  //       goTo((activeIndex + 1) % itemsLength);
-  //     }, autoPlayInterval);
+  useEffect(() => {
+    if (!autoPlay) return;
+    if (!items?.length) return;
+    const itemsLength = items?.length;
+    const intervalId = setInterval(() => {
+      setActiveIndex((activeIndex + 1) % itemsLength);
+      goTo((activeIndex + 1) % itemsLength);
+    }, autoPlayInterval);
 
-  //     return () => clearInterval(intervalId);
-  //   }, [activeIndex]);
-  console.log("items : ", items);
+    return () => clearInterval(intervalId);
+  }, [activeIndex]);
 
   return (
     <div className={styles.container}>
