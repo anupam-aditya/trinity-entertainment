@@ -3,7 +3,7 @@ import styles from "./our-services.module.css";
 import branding from "../../assets/branding.png";
 import CardSection from "../card-section";
 
-function OurServices() {
+function OurServices({ background = "#fff" }) {
   const cardData = [
     {
       subheading: "Experiential Solutions",
@@ -37,7 +37,10 @@ function OurServices() {
     },
   ];
   return (
-    <div className={styles.ourServicesContainer}>
+    <div
+      className={styles.ourServicesContainer}
+      style={{ background: background }}
+    >
       <p className={styles.ourServicesHeading}>
         Our <span className={styles.highlight}>Services</span>
         <span className={styles.line} />

@@ -29,6 +29,12 @@
   flex-direction: column;
 }
 
+.headlineSection,
+.joinUsSection,
+.recentAccomplishmentSection,
+.testimonialSection,
+.servicesSection,
+.highlightSection,
 .partnershipSection {
   background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
 }

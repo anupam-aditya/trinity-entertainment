@@ -1,42 +1,40 @@
 import React from "react";
 import { useSnapCarousel } from "react-snap-carousel";
 import styles from "./Carousel.module.css";
-import backgroundImage from "../assets/carousel-backgroundImage.png";
-import brandImage from "../assets/brandImage.png";
 
-const Carousel = () => {
+const Carousel = ({ items = [] }) => {
   const { scrollRef, goTo, activePageIndex } = useSnapCarousel();
 
-  const items = [
-    {
-      id: 1,
-      title: "Client 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      img: brandImage,
-      backgroundImg: backgroundImage,
-    },
-    {
-      id: 2,
-      title: "Client 2",
-      text: "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      img: brandImage,
-      backgroundImg: backgroundImage,
-    },
-    {
-      id: 3,
-      title: "Client 3",
-      text: "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.",
-      img: brandImage,
-      backgroundImg: backgroundImage,
-    },
-    {
-      id: 4,
-      title: "Client 4",
-      text: "Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit.",
-      img: brandImage,
-      backgroundImg: backgroundImage,
-    },
-  ];
+  // const items = [
+  //   {
+  //     id: 1,
+  //     title: "Client 1",
+  //     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //     img: brandImage,
+  //     backgroundImg: backgroundImage,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Client 2",
+  //     text: "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+  //     img: brandImage,
+  //     backgroundImg: backgroundImage,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Client 3",
+  //     text: "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.",
+  //     img: brandImage,
+  //     backgroundImg: backgroundImage,
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Client 4",
+  //     text: "Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit.",
+  //     img: brandImage,
+  //     backgroundImg: backgroundImage,
+  //   },
+  // ];
 
   return (
     <div className={styles.carouselContainer}>
@@ -54,7 +52,7 @@ const Carousel = () => {
               key={item.id}
               className={`${styles.carouselItem}`}
               style={{
-                backgroundImage: `linear-gradient(180deg, rgba(102, 102, 102, 0.53) 0%, rgba(0, 0, 0, 0.53) 100%), url(${item.backgroundImg})`,
+                backgroundImage: `linear-gradient(180deg, rgba(102, 102, 102, 1) 0%, rgba(0, 0, 0, 0.85) 100%), url(${item.backgroundImg})`,
               }}
             >
               <img
@@ -63,7 +61,7 @@ const Carousel = () => {
                 className={styles.carouselImg}
               />
               <h3 className={styles.carouselTitle}>{item.title}</h3>
-              <p className={styles.carouselText}>{item.text}</p>
+              <p className={styles.carouselText}>"{item.text}"</p>
             </div>
           ))}
         </div>

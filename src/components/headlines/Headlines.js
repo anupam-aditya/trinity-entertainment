@@ -339,4 +339,3 @@ const Headlines = () => {
 };
 
 export default Headlines;
-// fill: #EF3E58

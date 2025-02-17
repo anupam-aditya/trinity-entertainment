@@ -1,6 +1,8 @@
 .headlinesContainer {
   background: #d9d9d9;
   padding: 3.25rem 0 0 0;
+  max-width: 90rem;
+  margin: 0 auto;
   .headingSection {
     padding: 0 0 0 4rem;
     .sectionHeading {
@@ -100,8 +102,7 @@
         .textSection {
           display: flex;
           flex-direction: column;
-          gap: 3%;
-          justify-content: flex-start;
+          justify-content: space-between;
           align-items: center;
           .newsText {
             font-size: 1.125rem;
@@ -132,7 +133,7 @@
           }
         }
         .imageSection {
-          padding: 1.125rem 1.125rem 1.125rem 0.5rem;
+          padding: 0.7rem 0.825rem 0.725rem 0.5rem;
           border-radius: 0 2rem 2rem 2rem;
         }
       }

@@ -26,6 +26,8 @@
   max-width: 90rem;
   padding: 0;
   scroll-snap-align: start;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
 }
 
 .dotsSection {
@@ -44,9 +46,6 @@
   }
 }
 
-.card {
-  flex: 0 0 100%;
-}
 @media (min-width: 768px) {
   /* .card {
     flex: 0 0 50%;
@@ -76,6 +75,8 @@
 
 .noDisplay {
   display: none;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
 }
 
 .image {
