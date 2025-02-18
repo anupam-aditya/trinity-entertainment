@@ -95,7 +95,7 @@
 .cardDivider {
   width: 3rem;
   height: 2px;
-  background-color: #ff3366; /* Nykaa pink color */
+  background-color: var(--pink);
 }
 
 /* Tablet breakpoint */

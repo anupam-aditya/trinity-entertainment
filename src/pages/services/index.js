@@ -13,20 +13,23 @@ const Services = () => {
     {
       heading: "NYKAA",
       subheading: "IP Content",
-      description:
+      description: [
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+      ],
     },
     {
       heading: "NYKAA",
       subheading: "IP Content",
-      description:
+      description: [
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+      ],
     },
     {
       heading: "NYKAA",
       subheading: "IP Content",
-      description:
+      description: [
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+      ],
     },
   ];
   const highlightData = {

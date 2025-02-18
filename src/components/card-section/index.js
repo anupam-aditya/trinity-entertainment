@@ -11,11 +11,15 @@ const CardSection = ({
   title,
   text = "",
   link = "",
+  background = "#fff",
+  hasImage = true,
+  subheadingColor = "#000",
+  subHeadingSize = "1rem",
 }) => {
   return (
     <div
       className={`${styles.container} ${containerClass}`}
-      style={{ gap: gap }}
+      style={{ gap: gap, background: background }}
     >
       {title && <p className={styles.sectionHeading}>{title}</p>}
       {text && <p className={styles.sectionRegularText}>{text}</p>}
@@ -32,12 +36,27 @@ const CardSection = ({
           <div key={index} className={styles.card}>
             <div className={styles.cardImage}>
               {/* Placeholder for image */}
-              <div className={styles.placeholder}></div>
-              <span className={styles.brand}>{item.heading}</span>
+              {hasImage && <div className={styles.placeholder}></div>}
+              {item?.heading && (
+                <span
+                  className={styles.brand}
+                  style={{ position: hasImage ? "absolute" : "unset" }}
+                >
+                  {item.heading}
+                </span>
+              )}
             </div>
             <div className={styles.cardContent}>
-              <h3 className={styles.cardTitle}>{item.subheading}</h3>
-              <p className={styles.cardDescription}>{item.description}</p>
+              <h3
+                className={styles.cardTitle}
+                style={{ color: subheadingColor, fontSize: subHeadingSize }}
+              >
+                {item.subheading}
+              </h3>
+              {item?.description?.length > 0 &&
+                item?.description?.map((description) => (
+                  <p className={styles.cardDescription}>{description}</p>
+                ))}
             </div>
             <div className={styles.cardDivider}></div>
           </div>

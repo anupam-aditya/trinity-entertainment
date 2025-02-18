@@ -1,15 +1,24 @@
 .workPageContainer {
-  .container {
-    gap: 1.125rem;
-    display: flex;
-    flex-direction: column;
-    padding: 11.25rem 4rem;
+}
 
-    .subContainer {
-      display: flex;
-      gap: 1.125rem;
-    }
-  }
+.workDemoSection {
+  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
+}
+
+.container {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 11.25rem 4rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.subContainer {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .flexColumn {
@@ -17,10 +26,19 @@
 }
 
 .item {
-  background: var(--pink);
-  height: 17.5rem;
+  /* background: var(--pink); */
+  /* height: 17.5rem; */
+  height: max-content;
   width: 100%;
-  /* flex: 1; */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  img {
+    max-width: 100%;
+  }
+}
+
+.absolutePosition {
+  position: relative;
 }
 
 .itemSmall {
@@ -28,16 +46,18 @@
   flex: unset;
 }
 .itemLong {
-  height: 42.5rem;
+  /* height: 42.5rem; */
   flex: unset;
 }
 .itemLarge {
   width: 60%;
   flex: unset;
 }
-
+p {
+  margin-bottom: 1rem !important;
+}
 .item1 {
-  flex: unset;
+  flex: 0 0 33.33%;
 }
 
 .nestedContainer {
@@ -49,4 +69,33 @@
 .nestedItemContainer {
   display: flex;
   gap: 0.5rem;
+}
+
+/*Modal Styling*/
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.objective {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.missionQuestion,
+.whyUsQuestion,
+.highlightQuestion,
+.impactQuestion {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.125rem;
 }
