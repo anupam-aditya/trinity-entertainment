@@ -1,0 +1,60 @@
+@import "../../components/common/variables.module.css";
+
+.trinitySection {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.subsection {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.subsection ul {
+  list-style: none;
+  padding-left: 1.5rem; /* space for the tick */
+}
+
+.subsection ul li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.subsection ul li::before {
+  content: "\2714"; /* Unicode for tick */
+  position: absolute;
+  left: 0;
+}
+
+/* Specific styling for each subsection if needed */
+.ourApproach,
+.whoWeAre {
+  h2 {
+    text-align: center;
+  }
+  /* Customize styles for the Who We Are section */
+  background: var(--pink);
+  color: #fff; /* Adjust tick color as needed */
+  text-align: justify;
+}
+
+.byTheNumbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+
+/* Responsive: Stack columns on smaller screens */
+@media (max-width: 768px) {
+  .trinitySection {
+    flex-direction: column;
+  }
+}

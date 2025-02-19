@@ -8,6 +8,7 @@ import asi4 from "../../assets/asi-4.jpg";
 import fahad from "../../assets/fahad.jpg";
 import hemant from "../../assets/hemant.jpg";
 import vishmay from "../../assets/vishmay.jpg";
+import InfoSection from "../../components/info-section";
 
 const AboutUsPage = () => {
   const teamMembers = [
@@ -40,10 +41,19 @@ const AboutUsPage = () => {
     },
   ];
   const imagesArray = [
-    { id: 1, image: asi1 },
-    { id: 2, image: asi2 },
-    { id: 3, image: asi3 },
-    { id: 4, image: asi4 },
+    { id: 0, image: asi1 },
+    { id: 1, image: asi2 },
+    { id: 2, image: asi1 },
+    { id: 3, image: asi2 },
+  ];
+  const counterData = [
+    { number: 15, text: "years of collaborative experience" },
+    {
+      number: 1000,
+      text: "events successfully executed",
+    },
+    { text: "events delivered per year", number: 100 },
+    { number: 25, text: "industry awards won" },
   ];
 
   return (
@@ -133,6 +143,9 @@ const AboutUsPage = () => {
             )}
           </div>
         </div>
+      </div>
+      <div className={styles.infoSection}>
+        <InfoSection counterData={counterData} />
       </div>
     </div>
   );

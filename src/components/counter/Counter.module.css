@@ -1,0 +1,16 @@
+@import "../common/variables.module.css";
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.counterItem {
+  text-align: center;
+}
+
+.counterNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--pink);
+}

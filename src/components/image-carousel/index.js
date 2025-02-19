@@ -11,7 +11,7 @@ export default function Carousel({
   showButtons = false,
 }) {
   const { scrollRef, pages, next, goTo, activePageIndex } = useSnapCarousel();
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(2);
 
   useEffect(() => {
     if (!autoPlay) return;
@@ -24,7 +24,7 @@ export default function Carousel({
 
     return () => clearInterval(intervalId);
   }, [activeIndex]);
-
+  console.log("activeIndex : ", activeIndex);
   return (
     <div className={styles.container}>
       <div ref={scrollRef} className={styles.sliderComponent}>
@@ -32,12 +32,13 @@ export default function Carousel({
           <div
             key={item.id}
             className={`${styles.card} ${
-              activeIndex !== index ? styles.noDisplay : ""
+              activeIndex !== item?.id ? styles.noDisplay : ""
             }`}
           >
             {item?.image && (
               <div className={`${styles.imageContainer}`}>
                 <img
+                  key={item?.id}
                   src={item.image}
                   alt={item?.title || ""}
                   className={styles.image}
