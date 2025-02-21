@@ -1,0 +1,88 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  gap: 2.25rem;
+  background: linear-gradient(to bottom, #566e87, #ff3366);
+  padding: 2rem 4rem;
+  color: #333;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .imageWrapper {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .mission,
+  .vision {
+    grid-column: 1;
+  }
+}
+
+.mission,
+.vision {
+  /* padding: 20px; */
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.bulletItem:hover .icon {
+  transform: scale(1.2);
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

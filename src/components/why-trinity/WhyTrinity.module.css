@@ -1,0 +1,97 @@
+.trinitySection {
+  background-color: var(--pink);
+  padding: 2rem 4rem;
+  text-align: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2.5rem;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+  color: var(--pink);
+  .checkmark {
+    color: var(--pink);
+  }
+}
+
+.checkmark {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.cardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.cardDesc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .trinitySection {
+    padding: 30px 10px;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .cardsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .cardDesc {
+    font-size: 14px;
+  }
+}

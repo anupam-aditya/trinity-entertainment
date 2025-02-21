@@ -19,7 +19,6 @@ import puma from "../../assets/puma.jpg";
 import marriot from "../../assets/marriot.png";
 import bni from "../../assets/bni.png";
 import eema from "../../assets/eema.png";
-import para from "../../assets/para.png";
 import NewSlider from "../../components/new-slider";
 import news2 from "../../assets/news-2.jpg";
 import news3 from "../../assets/news-3.jpg";
@@ -76,7 +75,7 @@ function Home() {
     },
     {
       id: 4,
-      image: para,
+      image: eema,
     },
     {
       id: 5,
@@ -92,7 +91,7 @@ function Home() {
     },
     {
       id: 8,
-      image: para,
+      image: eema,
     },
     {
       id: 9,
@@ -108,7 +107,7 @@ function Home() {
     },
     {
       id: 12,
-      image: para,
+      image: eema,
     },
     {
       id: 13,
@@ -124,7 +123,7 @@ function Home() {
     },
     {
       id: 16,
-      image: para,
+      image: eema,
     },
   ];
   const testimonialsArrays = [

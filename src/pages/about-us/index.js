@@ -9,6 +9,9 @@ import fahad from "../../assets/fahad.jpg";
 import hemant from "../../assets/hemant.jpg";
 import vishmay from "../../assets/vishmay.jpg";
 import InfoSection from "../../components/info-section";
+import MissionVisionSection from "../../components/mission-vision";
+import WhyChooseTrinity from "../../components/why-trinity";
+import OurClients from "../../components/our-clients";
 
 const AboutUsPage = () => {
   const teamMembers = [
@@ -70,6 +73,12 @@ const AboutUsPage = () => {
           autoPlayInterval={3000}
         />
       </div>
+      <div className={styles.infoSection}>
+        <InfoSection counterData={counterData} />
+      </div>
+      <div className={styles.missionVisionSection}>
+        <MissionVisionSection />
+      </div>
       <div className={styles.teamSection}>
         <div className={styles.container}>
           {/* Header Section */}
@@ -83,69 +92,33 @@ const AboutUsPage = () => {
 
           {/* Team Members Grid */}
           <div className={styles.teamGrid}>
-            {teamMembers.map(
-              (member, index) => (
-                // index !== 1 ?
-                <div key={index} className={styles.memberCard}>
-                  <a
-                    href={member.profileUrl}
-                    className={styles.imageContainer}
-                    style={{
-                      background: `url(${member.image})`,
-                      backgroundSize: "contain",
-                    }}
-                    target="_blank"
-                  />
+            {teamMembers.map((member, index) => (
+              // index !== 1 ?
+              <div key={index} className={styles.memberCard}>
+                <a
+                  href={member.profileUrl}
+                  className={styles.imageContainer}
+                  style={{
+                    background: `url(${member.image})`,
+                    backgroundSize: "contain",
+                  }}
+                  target="_blank"
+                />
 
-                  {/* Member Info */}
-                  <h3 className={styles.memberName}>{member.name}</h3>
-                  <p className={styles.memberRole}>{member.role}</p>
-                  <p className={styles.memberDescription}>
-                    {member.description}
-                  </p>
-                </div>
-              )
-              // :
-              // (
-              //   <div className={styles.middleMemberCard}>
-              //     <p className={styles.mainDescription}>
-              //       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              //       diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              //       aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              //       justo duo dolores et ea.
-              //     </p>
-              //     <p className={styles.mainDescription}>
-              //       Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-              //       ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-              //       sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              //       labore et dolore magna aliquyam erat, sed diam voluptua. At
-              //       vero eos et accusam et justo duo dolores et ea rebum. Stet
-              //       clita kasd gubergren, no sea takimata{" "}
-              //     </p>
-              //     <div key={index} className={styles.memberCard}>
-              //       <a
-              //         href={member.profileUrl}
-              //         className={styles.imageContainer}
-              //         style={{
-              //           background: `url(${member.image})`,
-              //           backgroundSize: "cover",
-              //         }}
-              //         target="_blank"
-              //       />
-              //       <h3 className={styles.memberName}>{member.name}</h3>
-              //       <p className={styles.memberRole}>{member.role}</p>
-              //       <p className={styles.memberDescription}>
-              //         {member.description}
-              //       </p>
-              //     </div>
-              //   </div>
-              // )
-            )}
+                {/* Member Info */}
+                <h3 className={styles.memberName}>{member.name}</h3>
+                <p className={styles.memberRole}>{member.role}</p>
+                <p className={styles.memberDescription}>{member.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <div className={styles.infoSection}>
-        <InfoSection counterData={counterData} />
+      <div className={styles.clientSection}>
+        <OurClients />
+      </div>
+      <div className={styles.whyTrinitySection}>
+        <WhyChooseTrinity />
       </div>
     </div>
   );

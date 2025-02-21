@@ -1,0 +1,81 @@
+.clientsSection {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ffffff; /* Adjust to match your website's theme */
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  margin-bottom: 2rem !important;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  gap: 2rem;
+}
+
+.carouselTrack {
+  display: flex;
+  animation: scroll 5s linear infinite;
+}
+
+.logo {
+  height: auto;
+  margin: 0 1rem;
+}
+
+.viewAllButton {
+  display: inline-block;
+  background-color: var(--pink); /* Green color, adjust as needed */
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+}
+
+.viewAllButton:hover {
+  background-color: #219653; /* Darker green on hover */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    width: 8rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 6rem;
+    margin: 0 0.25rem;
+  }
+}
