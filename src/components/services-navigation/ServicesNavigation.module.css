@@ -9,7 +9,7 @@
 
 .mainHeading {
   font-size: 2.5rem;
-  color: #ff3366;
+  color: #ef3e58;
   text-align: center;
   margin: 0 0 2rem;
   font-weight: 700;
@@ -37,7 +37,7 @@
 
 .serviceHeading {
   font-size: 1.5rem;
-  color: #ff3366;
+  color: #ef3e58;
   text-decoration: none;
   font-weight: 600;
   display: block;
@@ -49,7 +49,7 @@
 }
 
 .serviceHeading:focus {
-  outline: 2px solid #ff3366;
+  outline: 2px solid #ef3e58;
   outline-offset: 2px;
 }
 

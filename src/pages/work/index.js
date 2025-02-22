@@ -33,7 +33,7 @@ function WorkPage() {
         <Modal
           title={event?.client}
           onClose={closeHandler}
-          background="#ff3366"
+          background="#ef3e58"
           color="#fff"
         >
           <div className={styles.workDetails}>
@@ -76,7 +76,7 @@ function WorkPage() {
               <CardSection
                 data={event?.approach?.answer}
                 title={event?.approach?.title}
-                background="#ff3366"
+                background="#ef3e58"
                 hasImage={false}
                 subHeadingSize="1.25rem"
               />
@@ -145,7 +145,7 @@ function WorkPage() {
             <div className={`${styles.item} ${styles.absolutePosition}`}>
               <p
                 style={{
-                  color: "#ff3366",
+                  color: "#ef3e58",
                   fontSize: "6rem",
                   fontWeight: 600,
                   wordBreak: "break-word",

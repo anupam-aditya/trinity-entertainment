@@ -7,38 +7,43 @@ function OurServices({ background = "#fff" }) {
   const cardData = [
     {
       subheading: "Experiential Solutions",
-      heading: "A Memory Forever",
+      // heading: "A Memory Forever",
       description: [
-        "We specialise in creating unique, immersive experiences that deeply engage audiences and build brand loyalty. From live activations to interactive marketing campaigns, we ensure your message resonates and leaves a lasting impact",
+        "We create one-of-a-kind brand activations that immerse audiences in your brand story. From on-ground activations to multi-sensory experiences, we design moments that spark engagement and build emotional connections",
       ],
+      link: "/services/experential-solutions",
     },
     {
       heading: "IP Servicing",
-      subheading: "From Idea to Reality",
+      // subheading: "From Idea to Reality",
       description: [
-        "Have an idea? We bring it to life! Our in-house experts help you conceptualise, develop, execute, and manage intellectual properties (IPs), ensuring seamless execution and maximum audience engagement. Whether it’s event IPs, brand-led properties, or content-driven experiences, we make your vision a reality",
+        "Have a great idea? Let’s make it a reality. We specialise in IP (Intellectual Property) development, execution, and monetisation, helping brands launch and scale proprietary experiences that become industry benchmarks",
       ],
+      link: "/services/ip-servicing",
     },
     {
-      heading: "Content Labs",
-      subheading: "Capture Your Dreams",
+      subheading: "Content Labs",
+      // subheading: "Capture Your Dreams",
       description: [
-        "From storyboarding to execution, our full-fledged production house crafts compelling content that amplifies your brand’s storytelling. Whether it’s brand films, event coverage, or digital content, we deliver world-class visuals from script to screen",
+        "We don’t just create experiences—we capture them. With our in-house production team, we bring brand stories to life through high-quality video production, photography, digital storytelling, and branded content",
       ],
+      link: "/services/content-labs",
     },
     {
-      subheading: "Sports Operations, Management & Servicing",
-      heading: "Passion, Precision, Performance",
+      heading: "Sports Operations, Management & Servicing",
+      // heading: "Passion, Precision, Performance",
       description: [
-        "We offer end-to-end sports management solutions, from talent tracking to event execution and sponsorship integration. With a focus on India’s 1.5 billion-strong sporting landscape, we help unearth champions and enhance the sports ecosystem through strategic collaborations and impactful engagements",
+        "From sports event management to talent scouting and sponsorship activation, we offer end-to-end solutions that elevate the sports ecosystem and create unforgettable fan experiences",
       ],
+      link: "/services/sports-management",
     },
     {
       heading: "Bespoke Experiences",
-      subheading: "Beyond the Ordinary",
+      // subheading: "Beyond the Ordinary",
       description: [
-        "Tired of generic, cookie-cutter marketing ideas? Our tailor-made experiential solutions are crafted to capture attention, spark curiosity, and create a buzz. We design and execute custom campaigns that resonate with your brand ethos and audience, ensuring maximum impact",
+        "Looking for something truly unique? Our custom experiential marketing solutions are tailor-made to break the clutter, grab attention, and ignite curiosity. Let’s create something extraordinary together",
       ],
+      link: "/services/bespoke",
     },
   ];
   return (
@@ -55,6 +60,7 @@ function OurServices({ background = "#fff" }) {
         title="Turning Ideas into Experiences"
         data={cardData}
         containerClass={styles.cardContainerClass}
+        keepCardAsLinks={true}
       />
     </div>
   );

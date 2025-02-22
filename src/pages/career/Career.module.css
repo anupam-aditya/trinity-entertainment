@@ -1,24 +1,23 @@
 @import "../../components/common/variables.module.css";
 .container {
-  margin: 0 auto;
-  padding: 2rem 4rem;
   .sectionHeading {
     font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
   }
-  .valuesSection {
-    max-width: 90rem;
-    margin: 0 auto;
-  }
-  .sliderSection {
-    padding: 2rem 0;
-  }
-  .sliderContainer {
-    padding: 2rem 0 0;
+  .valuesSection,
+  .sliderSection,
+  .formSection,
+  .highlightContainer {
+    background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
   }
   .carouselWrapperStyle {
     gap: 2rem;
+  }
+
+  .sliderContainer {
+    padding: 2rem 0 0;
   }
   .sliderCard {
     background: var(--pink);
@@ -41,23 +40,28 @@
     text-align: center;
   }
   .formSection {
-    max-width: 90rem;
-    margin: 0 auto;
-    gap: 3rem;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0 0;
-    .formComponent {
+    .formContainer {
+      max-width: 90rem;
+      gap: 3rem;
       display: flex;
-      gap: 2rem;
-      .imageComponent {
-        .image {
-          max-width: 100%;
+      flex-direction: column;
+      padding: 2rem 0 0;
+      margin: 0 auto;
+      background: #fff;
+      .formComponent {
+        display: flex;
+        gap: 2rem;
+        .imageComponent {
+          max-height: max-content;
+          .image {
+            max-width: 100%;
+          }
+          flex: 1;
         }
-        flex: 1;
-      }
-      .form {
-        flex: 1;
+        .form {
+          flex: 1;
+          max-height: max-content;
+        }
       }
     }
   }

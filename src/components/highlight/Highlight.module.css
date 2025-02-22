@@ -4,7 +4,8 @@
   justify-content: space-between;
   max-width: 90rem;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
   gap: 2rem;
   background-color: #fff;
 }
@@ -23,7 +24,7 @@
 .separation {
   border: none;
   height: 4px;
-  background: linear-gradient(90deg, #566e87, #ff3366);
+  background: linear-gradient(90deg, #566e87, #ef3e58);
   margin: 1.5rem 0;
 }
 

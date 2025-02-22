@@ -8,6 +8,7 @@ import Highlight from "../../components/highlight";
 import servicesHighlight from "../../assets/services-highlight.jpeg";
 import ServicesNavigation from "../../components/services-navigation";
 import MarketingSymphony from "../../components/marketing-symphony";
+import OurServices from "../../components/our-services";
 
 const Services = () => {
   const [navItems, setNavItems] = useState(null);
@@ -106,14 +107,14 @@ const Services = () => {
             containerClass={styles.highlightContainer}
             data={highlightData}
             headingSize="2.4rem"
-            headingColor="#ff3366"
+            headingColor="#ef3e58"
             subHeadingColor="#566e78"
             showSeparation="true"
           />
         </div>
       )}
       <div className={styles.servicesNavigationSection}>
-        <ServicesNavigation />
+        <OurServices />
       </div>
       <div className={styles.marketingSection}>
         <MarketingSymphony />

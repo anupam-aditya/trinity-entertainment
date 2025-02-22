@@ -11,25 +11,25 @@ const RecentAccomplishment = ({ items }) => {
     {
       img: acc1,
       description: "Budweiser x FIFA World Cup Finals Screening",
-      title: "🏆 Excellence in Mall Activation",
+      title: "Excellence in Mall Activation",
       link: "https://vimeo.com/902876007?share=copy",
     },
     {
       img: acc2,
       description: "NEXA Road to Lollapalooza",
-      title: "🏆 Excellence in Road Show Activation",
+      title: "Excellence in Road Show Activation",
       link: "https://vimeo.com/902872430?share=copy",
     },
     {
       img: acc1,
       description: "Muthoot Finance Vishwas Ki Tijori at Maha Kumbh Mela",
-      title: "🏆 Best On-Ground Promotion",
+      title: "Best On-Ground Promotion",
       link: "https://vimeo.com/902874163?share=copy",
     },
     {
       img: acc2,
       description: "Muthoot Finance Vishwas Ki Tijori at Maha Kumbh Mela",
-      title: "🏆 Best Use of Experiential Events",
+      title: "Best Use of Experiential Events",
       link: "https://vimeo.com/349636627?share=copy",
     },
   ];

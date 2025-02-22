@@ -1,6 +1,5 @@
 .container {
   margin: 0 auto;
-  min-height: 100vh;
 }
 .mainComponent {
   display: flex;
@@ -61,7 +60,7 @@
   width: 100%;
   padding: 1.2rem;
   font-size: 1.2rem;
-  background-color: #3182ce;
+  background-color: var(--pink);
   color: white;
   border: none;
   border-radius: 0.4rem;
@@ -70,7 +69,7 @@
 }
 
 .submitButton:hover {
-  background-color: #2b6cb0;
+  background-color: #f2576d;
 }
 
 @media (max-width: 48rem) {

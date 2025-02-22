@@ -178,7 +178,6 @@ function Home() {
       </div>
       <div className={styles.servicesSection}>
         <OurServicesHome />
-        {/* <OurServices /> */}
       </div>
       <div className={styles.testimonialSection}>
         <Carousel items={testimonialsArrays} />
@@ -189,12 +188,6 @@ function Home() {
           subHeading=""
           data={partnershipArray}
         />
-        {/* <Slider
-          title="Our Partnership"
-          autoPlay={true}
-          items={sliderItems}
-          showButtons={false}
-        /> */}
       </div>
       <div className={styles.recentAccomplishmentSection}>
         <RecentAccomplishment />

@@ -40,7 +40,6 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(var(--mobile-cards, 1), 1fr);
-  /* padding: 4rem; */
 }
 
 .card {
@@ -52,10 +51,15 @@
   flex-direction: column;
   gap: 1rem;
 }
+
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: transform 0.3s ease;
   border: 1px solid var(--pink);
+}
+
+.link {
+  text-decoration: none;
 }
 
 .cardImage {
@@ -73,7 +77,7 @@
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  color: #ff3366; /* Nykaa pink color */
+  color: #ef3e58; /* Nykaa pink color */
   font-weight: 500;
 }
 

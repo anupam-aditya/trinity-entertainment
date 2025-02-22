@@ -15,6 +15,7 @@ const CardSection = ({
   hasImage = true,
   subheadingColor = "#000",
   subHeadingSize = "1rem",
+  keepCardAsLinks = false,
 }) => {
   return (
     <div
@@ -32,35 +33,48 @@ const CardSection = ({
           "--mobile-cards": mobileCards,
         }}
       >
-        {data.map((item, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.cardImage}>
-              {/* Placeholder for image */}
-              {hasImage && <div className={styles.placeholder}></div>}
-              {item?.heading && (
-                <span
-                  className={styles.brand}
-                  style={{ position: hasImage ? "absolute" : "unset" }}
+        {data.map((item, index) => {
+          const CardComponent = keepCardAsLinks && item.link ? "a" : "div";
+          const cardProps =
+            keepCardAsLinks && item.link
+              ? {
+                  href: item.link,
+                  className: `${styles.card} ${styles.link}`,
+                  target: "_blank",
+                }
+              : { className: styles.card };
+
+          return (
+            <CardComponent key={index} {...cardProps}>
+              <div className={styles.cardImage}>
+                {hasImage && <div className={styles.placeholder}></div>}
+                {item?.heading && (
+                  <span
+                    className={styles.brand}
+                    style={{ position: hasImage ? "absolute" : "unset" }}
+                  >
+                    {item.heading}
+                  </span>
+                )}
+              </div>
+              <div className={styles.cardContent}>
+                <h3
+                  className={styles.cardTitle}
+                  style={{ color: subheadingColor, fontSize: subHeadingSize }}
                 >
-                  {item.heading}
-                </span>
-              )}
-            </div>
-            <div className={styles.cardContent}>
-              <h3
-                className={styles.cardTitle}
-                style={{ color: subheadingColor, fontSize: subHeadingSize }}
-              >
-                {item.subheading}
-              </h3>
-              {item?.description?.length > 0 &&
-                item?.description?.map((description) => (
-                  <p className={styles.cardDescription}>{description}</p>
-                ))}
-            </div>
-            <div className={styles.cardDivider}></div>
-          </div>
-        ))}
+                  {item.subheading}
+                </h3>
+                {item?.description?.length > 0 &&
+                  item?.description?.map((description, descIndex) => (
+                    <p key={descIndex} className={styles.cardDescription}>
+                      {description}
+                    </p>
+                  ))}
+              </div>
+              <div className={styles.cardDivider}></div>
+            </CardComponent>
+          );
+        })}
       </div>
     </div>
   );

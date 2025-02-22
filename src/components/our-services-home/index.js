@@ -16,7 +16,6 @@ function OurServicesHome({}) {
         Explore our wide range of event and marketing solutions designed to
         create authentic connections and lasting impressions
       </p>
-      {/* <p className={styles.ourServicesLink}>Explore More</p> */}
       <div className={styles.servicesSection}>
         <a
           className={`${styles.second} ${styles.subSection} ${styles.branding}`}

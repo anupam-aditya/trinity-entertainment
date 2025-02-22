@@ -1,0 +1,92 @@
+@import "../common/variables.module.css";
+
+.component-container {
+  background: #fff;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-column {
+}
+
+.image-column {
+}
+
+.workplace-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heading-h1 {
+  font-size: 3.5rem;
+  color: var(--pink);
+  margin: 0 0 0.625rem;
+}
+
+.heading-h2 {
+  font-size: 2.5rem;
+  color: var(--blue);
+  margin: 0 0 0.625rem;
+}
+
+.subheading {
+  font-style: italic;
+  font-size: 1.875rem;
+  color: #666666;
+  margin: 0 0 0.625rem;
+}
+
+.body-text {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.5;
+  margin: 0 0 0.625rem;
+}
+
+.workplace-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.workplace-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.check-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  .text-column,
+  .image-column {
+    flex: 1 1 100%;
+  }
+  .heading-h1 {
+    font-size: 28px;
+  }
+  .heading-h2 {
+    font-size: 24px;
+  }
+  .body-text {
+    font-size: 14px;
+  }
+}

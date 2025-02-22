@@ -7,7 +7,7 @@
 .missionVisionSection,
 .whyTrinitySection,
 .clientSection {
-  /* background: radial-gradient(circle, #ef3e58 0%, #ff3366 60%, #566e87 100%); */
+  /* background: radial-gradient(circle, #ef3e58 0%, #ef3e58 60%, #566e87 100%); */
   background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
 }
 
