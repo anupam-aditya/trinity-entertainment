@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import Slider from "../new-slider";
 import styles from "./HighlightSlider.module.css";
 import Carousel from "../image-carousel";
 
@@ -9,6 +8,7 @@ function HighlightSlider({
   subHeading = "",
   text = [],
   autoPlayInterval = 3000,
+  link = {},
 }) {
   return (
     <div className={styles.container}>
@@ -36,6 +36,11 @@ function HighlightSlider({
                 </p>
               ))}
             </div>
+          )}
+          {link?.href && link?.text && (
+            <a className={styles.link} href={link?.href} target="_blank">
+              {link?.text}
+            </a>
           )}
         </div>
       )}

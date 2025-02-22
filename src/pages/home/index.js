@@ -26,13 +26,17 @@ import news from "../../assets/news-1.jpg";
 import lifeattrinity from "../../assets/lifeattrinity.jpeg";
 import backgroundImage from "../../assets/carousel-backgroundImage.png";
 import Highlight from "../../components/highlight";
+import OurClients from "../../components/our-clients";
+import OurServicesHome from "../../components/our-services-home";
 
 function Home() {
+  const partnershipArray = [eema, bni, marriot];
+
   const imagesArray = [
-    { id: 1, image: hsi },
-    { id: 2, image: hsi2 },
-    { id: 3, image: hsi3 },
-    { id: 4, image: hsi4 },
+    { id: 0, image: hsi },
+    { id: 1, image: hsi2 },
+    { id: 2, image: hsi3 },
+    { id: 3, image: hsi4 },
   ];
   const newsArray = [
     {
@@ -169,21 +173,28 @@ function Home() {
             "At Trinity Entertainment, we don’t just execute events—we bring brands to life. Our expertise lies in creating immersive, impactful experiences that forge lasting connections between brands and their audiences",
             "We collaborate closely with you to elevate your brand presence, ensuring every experience leaves a powerful and lasting impression. Our innovative approach and strategic execution transform ideas into meaningful brand interactions that captivate and inspire",
           ]}
+          link={{ href: "/about", text: "Explore More" }}
         />
       </div>
       <div className={styles.servicesSection}>
-        <OurServices />
+        <OurServicesHome />
+        {/* <OurServices /> */}
       </div>
       <div className={styles.testimonialSection}>
         <Carousel items={testimonialsArrays} />
       </div>
       <div className={styles.partnershipSection}>
-        <Slider
+        <OurClients
+          title="Our Partnership"
+          subHeading=""
+          data={partnershipArray}
+        />
+        {/* <Slider
           title="Our Partnership"
           autoPlay={true}
           items={sliderItems}
           showButtons={false}
-        />
+        /> */}
       </div>
       <div className={styles.recentAccomplishmentSection}>
         <RecentAccomplishment />

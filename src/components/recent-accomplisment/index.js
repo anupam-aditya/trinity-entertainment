@@ -10,14 +10,27 @@ const RecentAccomplishment = ({ items }) => {
   const accomplishments = [
     {
       img: acc1,
-      description:
-        "Budweiser x FIFA World Cup Mall Screening Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      title: "Here's  How We Excelled In The Mall Activation",
+      description: "Budweiser x FIFA World Cup Finals Screening",
+      title: "🏆 Excellence in Mall Activation",
+      link: "https://vimeo.com/902876007?share=copy",
     },
     {
       img: acc2,
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      title: "Here's  How We Excelled In The Mall Activation",
+      description: "NEXA Road to Lollapalooza",
+      title: "🏆 Excellence in Road Show Activation",
+      link: "https://vimeo.com/902872430?share=copy",
+    },
+    {
+      img: acc1,
+      description: "Muthoot Finance Vishwas Ki Tijori at Maha Kumbh Mela",
+      title: "🏆 Best On-Ground Promotion",
+      link: "https://vimeo.com/902874163?share=copy",
+    },
+    {
+      img: acc2,
+      description: "Muthoot Finance Vishwas Ki Tijori at Maha Kumbh Mela",
+      title: "🏆 Best Use of Experiential Events",
+      link: "https://vimeo.com/349636627?share=copy",
     },
   ];
   return (
@@ -25,13 +38,17 @@ const RecentAccomplishment = ({ items }) => {
       <div className={styles.recentAccomplismentSlider} ref={scrollRef}>
         {accomplishments.map((accomplishment) => {
           return (
-            <div className={styles.recentAccomplismentItem}>
+            <a
+              href={accomplishment?.link}
+              className={styles.recentAccomplismentItem}
+              target="_blank"
+            >
               <div>
                 <img src={accomplishment.img} alt="Accomplishment" />
               </div>
               <h1 className={styles.title}>{accomplishment.title}</h1>
               <p className={styles.description}>{accomplishment.description}</p>
-            </div>
+            </a>
           );
         })}
       </div>

@@ -12,6 +12,9 @@ import InfoSection from "../../components/info-section";
 import MissionVisionSection from "../../components/mission-vision";
 import WhyChooseTrinity from "../../components/why-trinity";
 import OurClients from "../../components/our-clients";
+import eema from "../../assets/eema.png";
+import bni from "../../assets/bni.png";
+import marriot from "../../assets/marriot.png";
 
 const AboutUsPage = () => {
   const teamMembers = [
@@ -58,6 +61,7 @@ const AboutUsPage = () => {
     { text: "events delivered per year", number: 100 },
     { number: 25, text: "industry awards won" },
   ];
+  const partnershipArray = [eema, bni, marriot];
 
   return (
     <div className={styles.aboutUsPage}>
@@ -75,9 +79,6 @@ const AboutUsPage = () => {
       </div>
       <div className={styles.infoSection}>
         <InfoSection counterData={counterData} />
-      </div>
-      <div className={styles.missionVisionSection}>
-        <MissionVisionSection />
       </div>
       <div className={styles.teamSection}>
         <div className={styles.container}>
@@ -114,8 +115,11 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
+      <div className={styles.missionVisionSection}>
+        <MissionVisionSection />
+      </div>
       <div className={styles.clientSection}>
-        <OurClients />
+        <OurClients data={partnershipArray} />
       </div>
       <div className={styles.whyTrinitySection}>
         <WhyChooseTrinity />

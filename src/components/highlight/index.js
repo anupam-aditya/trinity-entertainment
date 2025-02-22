@@ -6,6 +6,16 @@ const Highlight = ({
   imagePosition = "right",
   stackOnSmallScreens = true,
   containerClass,
+  headingSize = "2.5rem",
+  headingWeight = 700,
+  headingColor = "#000",
+  subHeadingSize = "1.875rem",
+  subHeadingWeight = 600,
+  subHeadingColor = "#000",
+  textSize = "1rem",
+  textWeight = 400,
+  textColor = "#555",
+  showSeparation = false,
 }) => {
   return (
     <div
@@ -14,22 +24,48 @@ const Highlight = ({
       } ${imagePosition === "left" ? styles.imageLeft : styles.imageRight}`}
     >
       <div className={styles.textContainer}>
-        {data?.heading && <h1 className={styles.heading}>{data?.heading}</h1>}
-        {data?.subHeading && (
-          <p className={styles.subHeading}>{data?.subHeading}</p>
+        {data?.heading && (
+          <h1
+            className={styles.heading}
+            style={{
+              fontSize: headingSize,
+              fontWeight: headingWeight,
+              color: headingColor,
+            }}
+          >
+            {data?.heading}
+          </h1>
         )}
+        {data?.subHeading && (
+          <p
+            className={styles.subHeading}
+            style={{
+              fontSize: subHeadingSize,
+              fontWeight: subHeadingWeight,
+              color: subHeadingColor,
+            }}
+          >
+            {data?.subHeading}
+          </p>
+        )}
+        {showSeparation && <hr className={styles.separation} />}
         {data?.text?.length > 0 &&
           data?.text?.map((text, index) => (
             <p
               className={`${styles.text} ${
                 index !== data?.text?.length - 1 ? "" : styles.noMargin
               }`}
+              style={{
+                fontSize: textSize,
+                fontWeight: textWeight,
+                color: textColor,
+              }}
             >
               {text}
             </p>
           ))}
         {data?.link?.href && data?.link?.text && (
-          <a className={styles.link} href={data?.link?.href}>
+          <a className={styles.link} href={data?.link?.href} target="_blank">
             {data?.link?.text}
           </a>
         )}

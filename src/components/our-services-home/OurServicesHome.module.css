@@ -1,0 +1,93 @@
+@import "../common/variables.module.css";
+.ourServicesContainer {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+  max-width: 90rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #fff;
+  .ourServicesHeading {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    .highlight {
+      color: var(--pink);
+    }
+    .line {
+      height: 0;
+      width: 35%;
+      border: 1px solid #000;
+    }
+  }
+  .ourServicesSubHeading {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .ourServicesText {
+    font-size: 1.125rem;
+  }
+  .ourServicesLink {
+  }
+
+  .servicesSection {
+    display: flex;
+    gap: 0.875rem;
+    /* min-height: 56.25rem; */
+
+    .branding {
+      width: 35%;
+    }
+    .rightSide {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+      flex: 1;
+      .first {
+        display: flex;
+        gap: 0.875rem;
+        .innerLeft {
+        }
+        .innerRight {
+          display: flex;
+          flex-direction: column;
+          gap: 0.875rem;
+        }
+      }
+    }
+    .subSection {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1.375rem 1.25rem 1rem;
+      box-sizing: border-box;
+      text-align: right;
+      color: #fff;
+      justify-content: end;
+      text-decoration: none;
+
+      .heading,
+      .number {
+        font-weight: 700;
+        margin: 0;
+      }
+      .heading {
+        font-size: var(--text-reg);
+      }
+      .number {
+        font-size: var(--text-2xl);
+      }
+      .text {
+        font-size: var(--text-very-sm);
+      }
+    }
+  }
+}
+.cardContainerClass {
+  padding: 0 !important;
+}

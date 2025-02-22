@@ -7,6 +7,7 @@
   padding: 2rem 0;
   background-color: #fff;
 }
+
 .textSection {
   display: flex;
   flex-direction: column;
@@ -14,9 +15,11 @@
   padding: 0 4rem;
   box-sizing: border-box;
 }
+
 .regularText {
   font-size: 1.125rem;
 }
+
 .textSpacing {
   padding-top: 1rem;
 }
@@ -26,11 +29,23 @@
   font-weight: 700;
   margin-bottom: 2rem;
 }
+
 .subHeadingText {
   font-size: 1.875rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
+
+.link {
+  font-size: 1.125rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  &:hover {
+    transform: translateX(5%);
+    transition: 0.2s;
+  }
+}
+
 .heading.left {
   text-align: left;
 }
@@ -81,6 +96,7 @@
     background: #000;
   }
 }
+
 @media (min-width: 768px) {
   .card {
     flex: 0 0 50%;
@@ -180,4 +196,3 @@
 .nextButton {
   right: 0;
 }
-/* Slider Style */

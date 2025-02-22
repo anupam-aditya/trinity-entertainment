@@ -14,6 +14,9 @@
   margin: 0 auto;
   box-sizing: border-box;
   background: #fff;
+  p {
+    font-size: 1.125rem;
+  }
 }
 
 .subContainer {
@@ -26,8 +29,6 @@
 }
 
 .item {
-  /* background: var(--pink); */
-  /* height: 17.5rem; */
   height: max-content;
   width: 100%;
   background-size: cover !important;
@@ -45,17 +46,16 @@
   width: 40%;
   flex: unset;
 }
+
 .itemLong {
-  /* height: 42.5rem; */
   flex: unset;
 }
+
 .itemLarge {
   width: 60%;
   flex: unset;
 }
-p {
-  margin-bottom: 1rem !important;
-}
+
 .item1 {
   flex: 0 0 33.33%;
 }
@@ -70,8 +70,6 @@ p {
   display: flex;
   gap: 0.5rem;
 }
-
-/*Modal Styling*/
 
 .title {
   font-size: 2rem;
@@ -94,8 +92,4 @@ p {
 .impactQuestion {
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-p {
-  font-size: 1.125rem;
 }

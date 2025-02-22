@@ -6,17 +6,19 @@ const MissionVisionSection = () => {
   return (
     <section className={styles.container}>
       <div className={styles.mission}>
-        <h2 className={styles.heading}>Mission</h2>
+        <h2 className={styles.heading}>Our Mission</h2>
+        <p className={styles.paragraph}>
+          At Trinity Entertainment, our mission is simple yet powerful:
+        </p>
         <p className={styles.intro}>
-          Our mission is to connect people with the promises of brands through
-          experiential marketing.
+          “To connect people with brands through authentic, immersive
+          experiences”
         </p>
         <p className={styles.paragraph}>
-          At Trinity, we thrive on the languages of values and branding. Our
-          purpose is to question and challenge conventional marketing norms,
-          ensuring inclusivity and authenticity. We meet people where they are,
-          honor our clients’ visions, and tell compelling stories through
-          creative, truthful, and intentional means.
+          We challenge conventional marketing norms to bring inclusivity,
+          authenticity, and creativity to every project. Our goal is to tell
+          compelling brand stories that resonate with audiences on an emotional
+          level
         </p>
         <ul className={styles.bulletList}>
           <li className={styles.bulletItem}>
@@ -41,10 +43,13 @@ const MissionVisionSection = () => {
         />
       </div>
       <div className={styles.vision}>
-        <h2 className={styles.heading}>Vision</h2>
+        <h2 className={styles.heading}>Our Vision</h2>
+        <p className={styles.intro}>
+          “To craft or catalyse an experience for every soul—at least once”
+        </p>
         <p className={styles.paragraph}>
           We believe in impact-driven marketing, ensuring that every brand
-          experience is memorable, meaningful, and measurable.
+          experience is memorable, meaningful, and measurable
         </p>
       </div>
     </section>

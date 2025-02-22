@@ -1,23 +1,19 @@
 import React from "react";
 import styles from "./OurClients.module.css";
-import eema from "../../assets/eema.png";
-import bni from "../../assets/bni.png";
-import marriot from "../../assets/marriot.png";
-import porsche from "../../assets/porsche.png";
 
-const logos = [eema, bni, marriot, porsche];
-
-const OurClients = () => {
+const OurClients = ({
+  title = "Our Clients",
+  subHeading = "Trusted by some of the biggest global brands",
+  data = [],
+}) => {
   // Duplicate logos for seamless infinite looping
-  const doubledLogos = [...logos, ...logos];
+  const doubledLogos = [...data, ...data, ...data];
 
   return (
     <section className={styles.clientsSection}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>Our Clients</h2>
-        <p className={styles.subheading}>
-          Trusted by some of the biggest global brands
-        </p>
+        <h2 className={styles.heading}>{title}</h2>
+        {subHeading && <p className={styles.subheading}>{subHeading}</p>}
         <div className={styles.carousel}>
           <div className={styles.carouselTrack}>
             {doubledLogos.map((logo, index) => (

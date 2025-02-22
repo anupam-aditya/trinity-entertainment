@@ -6,6 +6,8 @@ import sunset from "../../assets/sunset.svg";
 import sky from "../../assets/sky.svg";
 import Highlight from "../../components/highlight";
 import servicesHighlight from "../../assets/services-highlight.jpeg";
+import ServicesNavigation from "../../components/services-navigation";
+import MarketingSymphony from "../../components/marketing-symphony";
 
 const Services = () => {
   const [navItems, setNavItems] = useState(null);
@@ -34,10 +36,15 @@ const Services = () => {
   ];
   const highlightData = {
     heading:
-      "Clever ideas create memorable experiences, great ones make it unforgettable",
-    subHeading: "",
+      "Clever Ideas Create Memorable Experiences, Great Ones Make Them Unforgettable",
+    subHeading: "Crafting Experiences That Resonate",
     text: [
-      "At Trinity, we are driven by our commitment to projects that resonate with our core values. Our initial focus is on forging a deep connection with your brand, as we believe that aligning with your ethos is key to reaching the right audience. We begin each partnership by immersing ourselves in understanding your brand's goals and services. From crafting strategic campaigns to seamless execution and effective marketing, we offer a complete and integrated approach to ensure your success",
+      "At Trinity Entertainment, we don’t just create marketing campaigns—we craft immersive brand experiences that connect, engage, and leave a lasting impact",
+      "Our approach is simple yet powerful: We start with your brand, understand your goals, and build campaigns that seamlessly integrate strategy, creativity, and execution",
+      "We dive deep into your brand ethos to ensure alignment with your core values",
+      "We design strategic campaigns that connect with the right audience",
+      "We execute seamlessly, leveraging marketing, technology, and innovation",
+      "The result? Authentic brand interactions that drive engagement, loyalty, and success",
     ],
     imageUrl: servicesHighlight,
   };
@@ -98,23 +105,33 @@ const Services = () => {
           <Highlight
             containerClass={styles.highlightContainer}
             data={highlightData}
+            headingSize="2.4rem"
+            headingColor="#ff3366"
+            subHeadingColor="#566e78"
+            showSeparation="true"
           />
         </div>
       )}
-      {navItems && (
+      <div className={styles.servicesNavigationSection}>
+        <ServicesNavigation />
+      </div>
+      <div className={styles.marketingSection}>
+        <MarketingSymphony />
+      </div>
+      {/* {navItems && (
         <div className={styles.rowNavSection}>
           <RowNavbar items={navItems} />
         </div>
-      )}
-      {newHighlightData && (
+      )} */}
+      {/* {newHighlightData && (
         <div className={styles.servicesHighlightSection}>
           <Highlight
             data={newHighlightData}
             containerClass={styles.highlightContainer}
           />
         </div>
-      )}
-      {cardData && (
+      )} */}
+      {/* {cardData && (
         <div className={styles.cardSection}>
           <CardSection
             containerClass={styles.cardContainer}
@@ -123,7 +140,7 @@ const Services = () => {
             gap="4rem"
           />
         </div>
-      )}
+      )} */}
       {/* <div className={styles.cardContainer}></div> */}
     </div>
   );

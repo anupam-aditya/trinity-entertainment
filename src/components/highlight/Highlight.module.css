@@ -20,6 +20,13 @@
   margin: 0 0 1rem;
 }
 
+.separation {
+  border: none;
+  height: 4px;
+  background: linear-gradient(90deg, #566e87, #ff3366);
+  margin: 1.5rem 0;
+}
+
 .subHeading {
   font-size: 1.875rem;
   margin: 0 0 1rem;

@@ -26,11 +26,11 @@
   .navButtons {
     display: flex;
     gap: 2.25rem;
-    background: #f12c49;
+    background: var(--pink);
     padding: 0 2.5rem;
     .navbarButton {
       font-family: "Roboto", sans-serif;
-      background-color: #f12c49;
+      background: inherit;
       text-transform: uppercase;
       border: none;
       font-size: 1.25rem;
@@ -39,6 +39,7 @@
       padding: 0;
       cursor: pointer;
       letter-spacing: 2px;
+      color: #fff;
       a {
         text-decoration: none;
         color: inherit;
