@@ -29,17 +29,6 @@ const LifeAtTrinity = () => {
             <p className={styles["body-text"]}>
               Ever imagined a workplace where:
             </p>
-            <ul className={styles["workplace-list"]}>
-              {listItems.map((item, index) => (
-                <li key={index}>
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className={styles["check-icon"]}
-                  />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
             <p className={styles["body-text"]}>Sounds too good to be true?</p>
             <p
               className={styles["body-text"]}
@@ -59,12 +48,18 @@ const LifeAtTrinity = () => {
               PS: Snacking is our favorite hobby—join us at your own risk!
             </p>
           </div>
-          <div className={styles["image-column"]}>
-            <img
-              src={careerHighlightImage}
-              alt="Casual work environment at Trinity"
-              className={styles["workplace-image"]}
-            />
+          <div className={styles["points-column"]}>
+            <ul className={styles["workplace-list"]}>
+              {listItems.map((item, index) => (
+                <li key={index}>
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className={styles["check-icon"]}
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
