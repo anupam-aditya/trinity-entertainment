@@ -62,6 +62,24 @@ const AboutUsPage = () => {
     { number: 25, text: "industry awards won" },
   ];
   const partnershipArray = [eema, bni, marriot];
+  const features = [
+    {
+      title: "Global Expertise",
+      desc: "We create experiences that resonate worldwide, blending local insights with international trends",
+    },
+    {
+      title: "End-to-End Solutions",
+      desc: "From ideation to execution, we handle every aspect of your event, brand activation, or campaign",
+    },
+    {
+      title: "Creative & Data-Driven",
+      desc: "We merge innovation with analytics to ensure your brand experiences drive real engagement",
+    },
+    {
+      title: "Proven Track Record",
+      desc: "With 1000+ successful events and a portfolio of award-winning campaigns, we deliver nothing but the best",
+    },
+  ];
 
   return (
     <div className={styles.aboutUsPage}>
@@ -122,7 +140,10 @@ const AboutUsPage = () => {
         <OurClients data={partnershipArray} />
       </div>
       <div className={styles.whyTrinitySection}>
-        <WhyChooseTrinity />
+        <WhyChooseTrinity
+          features={features}
+          title="Why Choose Trinity Entertainment?"
+        />
       </div>
     </div>
   );

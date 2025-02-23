@@ -29,7 +29,10 @@ const FAQItem = ({
           isActive ? styles.faqAnswerOpen : ""
         }`}
       >
-        <p className={styles.faqAnswerContent}>{answer}</p>
+        {answer?.length > 0 &&
+          answer?.map((item) => (
+            <p className={styles.faqAnswerContent}>{item}</p>
+          ))}
       </div>
     </li>
   );

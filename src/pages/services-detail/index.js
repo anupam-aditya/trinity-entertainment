@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Highlight from "../../components/highlight";
-import FeatureList from "../../components/feature-list";
 import styles from "./ServicesDetail.module.css";
 import FAQ from "../../components/faq";
 import Slider from "../../components/new-slider";
+import ServicesSection from "../../components/services-section";
+import RelatedWork from "../../components/related-work";
+import WhyChooseTrinity from "../../components/why-trinity";
 // import data from "../../utils/sample-data/workDetails.json";
 // import { getWorkDetail } from "../../utils/dataLoader";
 
@@ -40,17 +42,38 @@ const ServicesDetailPage = () => {
   return (
     <div className={styles.workDetailContainer}>
       {content?.workDescription && (
-        <Highlight data={content?.workDescription} />
+        <div className={styles.workDescriptionSection}>
+          <Highlight data={content?.workDescription} />
+        </div>
       )}
-      {content?.keyPoints && <FeatureList titles={content?.keyPoints?.data} />}
+      {content?.ourRole && (
+        <div className={styles.ourRoleSection}>
+          <Highlight data={content?.ourRole} />
+        </div>
+      )}
+      {/* {content?.keyPoints && <FeatureList titles={content?.keyPoints?.data} />} */}
+      {content?.keyPoints && (
+        <div className={styles.servicesSection}>
+          <ServicesSection services={content?.keyPoints} />
+        </div>
+      )}
       {content?.workSpecifics && (
-        <Slider
-          slider={content?.workSpecifics?.title}
-          items={content?.workSpecifics?.data}
-        />
+        <div className={styles.workSpecificsSection}>
+          <RelatedWork projects={content?.workSpecifics} />
+        </div>
       )}
       {content?.faqs && (
-        <FAQ title={content?.faqs?.heading} faqs={content?.faqs?.data} />
+        <div className={styles.faqSection}>
+          <FAQ title={content?.faqs?.heading} faqs={content?.faqs?.data} />
+        </div>
+      )}
+      {content?.whyTrinity && (
+        <div className={styles.whyTrinitySection}>
+          <WhyChooseTrinity
+            features={content?.whyTrinity?.data}
+            title={content?.whyTrinity?.heading}
+          />
+        </div>
       )}
     </div>
   );

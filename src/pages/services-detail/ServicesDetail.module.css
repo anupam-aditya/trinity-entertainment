@@ -1,3 +1,11 @@
 .workDetailContainer {
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
+}
+.workDescriptionSection,
+.ourRoleSection,
+.servicesSection,
+.workSpecificsSection,
+.faqSection,
+.whyTrinitySection {
+  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
 }

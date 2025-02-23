@@ -1,0 +1,58 @@
+@import "../common/variables.module.css";
+
+.sportsEventServices {
+  box-sizing: border-box;
+  padding: 2rem 4rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.contentWrapper {
+}
+
+.mainHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--pink);
+  margin: 0;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1rem 0 0;
+}
+
+.serviceCard {
+  background-color: white;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+}
+
+.serviceName {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #566e78;
+  margin-bottom: 10px;
+}
+
+.serviceDesc {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: black;
+  margin: 1rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
