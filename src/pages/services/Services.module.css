@@ -68,3 +68,23 @@
 .cardContainer {
   padding: 2rem 4rem !important;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .stackOnSmall {
+    flex-direction: column; /* Stacks image and text vertically */
+  }
+
+  .image {
+    margin-bottom: 1rem;
+  }
+  .highlightContainer {
+    background: #fff;
+    padding: 1rem !important;
+    box-sizing: border-box;
+  }
+}

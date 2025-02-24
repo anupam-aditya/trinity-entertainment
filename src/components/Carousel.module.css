@@ -120,3 +120,40 @@
   background: white;
   color: black;
 }
+.headingContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+}
+
+@media (max-width: 768px) {
+  .carouselContainer {
+    padding: 1rem;
+  }
+  .carouselHeading {
+    font-size: 1.875rem;
+  }
+  .line {
+    display: none;
+  }
+  .carouselTitle {
+    margin: 1rem 0;
+  }
+  .carouselItem {
+    max-width: 100%;
+    min-width: unset;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+  }
+  .carouselWrapper {
+    padding: 0;
+  }
+  .carousel {
+    margin: 1rem 0 0;
+  }
+  .carouselText {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}

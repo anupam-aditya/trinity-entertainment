@@ -66,3 +66,73 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    .sectionHeading {
+      font-size: 1.75rem;
+      text-align: justify;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0 1rem;
+    }
+    .valuesSection,
+    .sliderSection,
+    .formSection,
+    .highlightContainer {
+      background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
+    }
+    .carouselWrapperStyle {
+      gap: 2rem;
+    }
+
+    .sliderContainer {
+      padding: 0;
+    }
+    .sliderCard {
+      background: var(--pink);
+      border-radius: 0.625rem 3.125rem;
+      color: #fff;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+    .headingStyle {
+      font-size: 1.75rem;
+      text-align: justify;
+      margin: 0 0 1rem;
+    }
+    .subHeadingStyle {
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+    .textStyle {
+      font-size: 1rem;
+      text-align: justify;
+    }
+    .formSection {
+      .formContainer {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: #fff;
+        .formComponent {
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          .imageComponent {
+            max-height: max-content;
+            .image {
+              max-width: 100%;
+            }
+            flex: 1;
+          }
+          .form {
+            flex: 1;
+            max-height: max-content;
+          }
+        }
+      }
+    }
+  }
+}

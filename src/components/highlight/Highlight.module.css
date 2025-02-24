@@ -19,6 +19,7 @@
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 0 0 1rem;
+  text-align: justify;
 }
 
 .separation {
@@ -77,17 +78,23 @@
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    padding: 1rem;
+    gap: 1rem;
   }
-
+  .heading {
+    font-size: 1.75rem;
+  }
+  .subHeading {
+    font-size: 1.5rem;
+  }
+  .separation {
+    margin: 0 0 1rem;
+  }
   .stackOnSmall {
     flex-direction: column; /* Stacks image and text vertically */
-  }
-
-  .image {
-    margin-bottom: 1rem;
   }
 }

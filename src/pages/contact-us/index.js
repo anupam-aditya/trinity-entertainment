@@ -25,14 +25,7 @@ const Contact = () => {
     <div className={styles.container}>
       <div className={styles.leftColumn}>
         <div className={styles.addressDetails}>
-          <div
-            style={{
-              width: "max-content",
-              border: "1px solid #c0c0c0",
-              borderRadius: "1rem",
-              padding: "1rem",
-            }}
-          >
+          <div className={styles.addressDetail}>
             <h2 className={styles.heading}>Registered Address</h2>
             <p className={styles.address}>
               C-702, Silver Dunes,
@@ -42,14 +35,7 @@ const Contact = () => {
               Prabhadevi, Mumbai 25
             </p>
           </div>
-          <div
-            style={{
-              width: "max-content",
-              border: "1px solid #c0c0c0",
-              borderRadius: "1rem",
-              padding: "1rem",
-            }}
-          >
+          <div className={styles.addressDetail}>
             <h2 className={styles.heading}>Office Address</h2>
             <p className={styles.address}>
               M001, Rajan House,

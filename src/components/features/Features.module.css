@@ -39,11 +39,19 @@
 }
 
 @media (max-width: 48rem) {
+  .container {
+    padding: 1rem;
+  }
+  .card {
+    padding: 1rem;
+  }
   .grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .heading {
     font-size: 1.75rem;
+    margin: 0 0 1rem;
   }
 }

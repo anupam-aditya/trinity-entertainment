@@ -38,13 +38,15 @@ const Carousel = ({ items = [] }) => {
 
   return (
     <div className={styles.carouselContainer}>
-      <h2 className={styles.carouselHeading}>What Our</h2>
-      <h2 className={styles.carouselHeading}>
-        <p>
-          <span className={styles.highlight}>Clients</span> Say About Us
-        </p>
-        <span className={styles.line}></span>
-      </h2>
+      <div className={styles.headingContainer}>
+        <h2 className={styles.carouselHeading}>What Our</h2>
+        <h2 className={styles.carouselHeading}>
+          <p>
+            <span className={styles.highlight}>Clients</span> Say About Us
+          </p>
+          <span className={styles.line}></span>
+        </h2>
+      </div>
       <div className={styles.carousel}>
         <div className={styles.carouselWrapper} ref={scrollRef}>
           {items.map((item, index) => (

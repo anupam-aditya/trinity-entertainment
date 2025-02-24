@@ -108,11 +108,16 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
+    padding: 0;
+  }
+  .title {
+    font-size: 1.75rem;
+  }
+  .memberDescription {
     padding: 1rem;
   }
-
   .headerBackground {
     padding: 2rem 0;
   }

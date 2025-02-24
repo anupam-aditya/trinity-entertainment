@@ -6,7 +6,9 @@ function OurServicesHome({}) {
   return (
     <div className={styles.ourServicesContainer}>
       <p className={styles.ourServicesHeading}>
-        Our <span className={styles.highlight}>Services</span>
+        <span>
+          Our <span className={styles.highlight}>Services</span>
+        </span>
         <span className={styles.line} />
       </p>
       <p className={styles.ourServicesSubHeading}>

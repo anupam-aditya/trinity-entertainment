@@ -22,16 +22,16 @@ const MissionVisionSection = () => {
         </p>
         <ul className={styles.bulletList}>
           <li className={styles.bulletItem}>
-            <span className={styles.icon}>📍</span> We meet consumers where they
-            are
+            <span className={styles.icon}>&#10003;</span> We meet consumers
+            where they are
           </li>
           <li className={styles.bulletItem}>
-            <span className={styles.icon}>💡</span> We honour our clients’
+            <span className={styles.icon}>&#10003;</span> We honour our clients’
             visions
           </li>
           <li className={styles.bulletItem}>
-            <span className={styles.icon}>🎨</span> We create with intention,
-            passion, and precision
+            <span className={styles.icon}>&#10003;</span> We create with
+            intention, passion, and precision
           </li>
         </ul>
       </div>

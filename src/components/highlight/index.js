@@ -28,8 +28,8 @@ const Highlight = ({
           <h1
             className={styles.heading}
             style={{
-              fontSize: headingSize,
-              fontWeight: headingWeight,
+              //   fontSize: headingSize,
+              //   fontWeight: headingWeight,
               color: headingColor,
             }}
           >
@@ -40,7 +40,7 @@ const Highlight = ({
           <p
             className={styles.subHeading}
             style={{
-              fontSize: subHeadingSize,
+              // fontSize: subHeadingSize,
               fontWeight: subHeadingWeight,
               color: subHeadingColor,
             }}

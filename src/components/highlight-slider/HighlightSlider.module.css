@@ -97,19 +97,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .card {
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .textSection,
-  .sliderSection {
-    flex: 0 0 50%;
-  }
-}
-
 .cardInner {
   background: #fff;
   border-radius: 0.5rem;
@@ -195,4 +182,38 @@
 
 .nextButton {
   right: 0;
+}
+@media (min-width: 768px) {
+  .card {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textSection,
+  .sliderSection {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0;
+  }
+  .textSection {
+    padding: 0 1rem;
+  }
+  .headingText {
+    font-size: 1.75rem;
+    margin: 0 0 1rem;
+  }
+  .regularText {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textSection,
+  .sliderSection {
+    flex: 0 0 50%;
+  }
 }

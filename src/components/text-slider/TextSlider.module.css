@@ -67,17 +67,6 @@
     background: #000;
   }
 }
-@media (min-width: 768px) {
-  .card {
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .card {
-    flex: 0 0 33.333%;
-  }
-}
 
 .cardInner {
   background: #fff;
@@ -164,4 +153,26 @@
 
 .nextButton {
   right: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    flex: 0 0 100%;
+  }
+  .heading {
+    text-align: left;
+  }
+  .dotsSection {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 0 33.333%;
+  }
 }
