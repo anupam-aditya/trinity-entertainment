@@ -6,7 +6,7 @@ const LandingSection = () => {
   return (
     <section className={styles.landingContainer}>
       <div className={styles.container}>
-        <VideoIframe videoPath="https://youtu.be/BW3gzn_BEEI" />
+        <VideoIframe videoId="/assets/LandingReel.mp4" />
         {/* <video className={styles.videoBackground} autoPlay muted loop playsInline>
         <source src="../../assets/landing.mp4" type="video/mp4" />
         Your browser does not support the video tag.
