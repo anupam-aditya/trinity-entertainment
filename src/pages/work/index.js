@@ -143,22 +143,7 @@ function WorkPage() {
               <img src={work5} />
             </div>
             <div className={`${styles.item} ${styles.absolutePosition}`}>
-              <p
-                style={{
-                  color: "#ef3e58",
-                  fontSize: "6rem",
-                  fontWeight: 600,
-                  wordBreak: "break-word",
-                  textAlign: "center",
-                  verticalAlign: "middle",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  lineHeight: 1,
-                }}
-              >
-                Our Work
-              </p>
+              <p className={styles.centralText}>Our Work</p>
             </div>
             <div className={`${styles.item}`} onClick={clickEventHandler}>
               <img src={work11} />

@@ -10,6 +10,7 @@ const Headlines = () => {
   const headlines = [];
   return (
     <div className={styles.headlinesContainer}>
+      <p className={styles.sectionHeading}>Top Headlines.</p>
       <div className={styles.headingSection}>
         <p className={styles.sectionHeading}>
           <span className={styles.highlight}>Piyush Mishra</span> Debut
@@ -140,7 +141,6 @@ const Headlines = () => {
         </div>
       </div>
       <div className={`${styles.headingSection} ${styles.secondHeading}`}>
-        <p className={styles.sectionHeading}>Top Headlines.</p>
         <div className={styles.controlButtonsSection}>
           <span className={styles.controlButton} onClick={() => prev()}>
             <svg

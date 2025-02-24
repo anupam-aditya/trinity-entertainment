@@ -31,9 +31,9 @@ const App = () => {
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </div>
-        {/* <div className={styles.footerContainer}>
+        <div className={styles.footerContainer}>
           <Footer />
-        </div> */}
+        </div>
       </div>
     </Router>
   );

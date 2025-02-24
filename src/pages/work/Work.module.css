@@ -17,8 +17,20 @@
   p {
     font-size: 1.125rem;
   }
-}
 
+  .centralText {
+    color: #ef3e58;
+    font-size: 6rem;
+    font-weight: 700;
+    word-break: break-word;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+  }
+}
 .subContainer {
   display: flex;
   gap: 0.5rem;
@@ -92,4 +104,19 @@
 .impactQuestion {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    gap: 0.25rem;
+    .centralText {
+      font-size: 2.5rem;
+    }
+  }
+  .nestedContainer,
+  .subContainer {
+    /* display: flex; */
+    gap: 0.25rem;
+  }
 }

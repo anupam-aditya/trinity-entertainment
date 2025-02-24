@@ -119,3 +119,123 @@
   margin: 0;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 90rem;
+    margin: 0 auto;
+    background: #fff;
+
+    .footerLinks {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      flex-direction: column;
+
+      .footerLogo {
+        max-width: 8.375rem;
+      }
+
+      .footerNavLinks {
+        align-items: start;
+
+        .navLink {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #000;
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    .companyInfoSection {
+      flex-direction: column;
+      margin: 0;
+      padding: 1rem;
+      gap: 1rem;
+      .companyContactSection {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 1rem;
+        .companyContactInfo {
+          display: flex;
+          gap: 1rem;
+
+          .addressIconSection {
+            flex-shrink: 0;
+          }
+        }
+
+        .companyContactInfo:last-child {
+          grid-column: 2;
+          grid-row: 1;
+        }
+      }
+
+      .companySocialInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: unset;
+        .companySocialLinks {
+          justify-content: start;
+          display: flex;
+          gap: 1rem;
+          .svgBackgroundFill {
+            background-color: #e1486d;
+            fill: white;
+            border-radius: 50%;
+            padding: 0.6rem;
+            height: 48px;
+            width: 48px;
+            box-sizing: border-box;
+          }
+        }
+        .contactUsButton {
+          background-color: #ef3e58;
+          border: none;
+          outline: none;
+          color: #fff;
+          font-size: 1.125rem;
+          padding: 1.125rem 1.5rem;
+          display: flex;
+          gap: 1rem;
+          width: max-content;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .rightsText {
+      font-size: 1rem;
+      padding: 1rem 0;
+      text-align: center;
+      color: #fff;
+      background: #ef3e58;
+      font-weight: 500;
+    }
+  }
+
+  .addressInformationSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .addressHeading {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .addressRegularText {
+    font-size: 0.925rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+}

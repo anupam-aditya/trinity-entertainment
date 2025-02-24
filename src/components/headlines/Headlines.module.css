@@ -3,10 +3,18 @@
   padding: 3.25rem 0 0 0;
   max-width: 90rem;
   margin: 0 auto;
+  .sectionHeading {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    .highlight {
+      color: #c1111e;
+    }
+  }
   .headingSection {
     padding: 0 0 0 4rem;
     .sectionHeading {
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-weight: 600;
       margin: 0;
       .highlight {
@@ -143,6 +151,9 @@
 
 @media only screen and (max-width: 1354px) {
   .headlinesContainer {
+    .sectionHeading {
+      font-size: 2rem;
+    }
     .headingSection {
       .sectionHeading {
         .highlight {
@@ -187,6 +198,98 @@
         .breakingNews {
           .textSection {
             gap: 5%;
+            .newsText {
+            }
+            .newscontrolButtonsSection {
+              .newscontrolButton {
+              }
+              .newscontroltextButton {
+              }
+            }
+          }
+          .imageSection {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headlinesContainer {
+    padding: 1rem;
+    .secondHeading {
+      font-size: 2rem;
+    }
+    .headingSection {
+      padding: 0;
+      .sectionHeading {
+        font-size: 1.75rem;
+        margin-top: 1rem;
+        .highlight {
+        }
+      }
+    }
+    .secondHeading {
+      .controlButtonsSection {
+        margin: 1rem 0 0;
+        .controlButton {
+          display: flex;
+          padding: 1rem;
+          align-items: center;
+        }
+      }
+    }
+    .breakingNewsContainer {
+      margin: 0;
+      flex-direction: column;
+      gap: 1rem;
+      .breakingNewsTextContainer {
+        padding: 0;
+        background: unset;
+        margin: 1rem 0 0;
+        gap: 1rem;
+        .breakingNewsInformation {
+          .breakingNewsInformationText {
+            font-size: 1rem;
+          }
+          .breakingNewsMetrics {
+          }
+        }
+        .breakingNewsContent {
+          .breakingNewsText {
+            font-size: 1.5rem;
+            text-align: justify;
+          }
+        }
+        .readMoreSection {
+          display: none;
+        }
+        .authorDetailsSection {
+          .authorText {
+            text-align: right;
+          }
+        }
+      }
+      .breakingNewsImageSection {
+        background: unset;
+        padding: 0;
+        img {
+          max-width: 100%;
+        }
+        .breakingNewsImage {
+          max-width: 100%;
+        }
+      }
+    }
+    .breakingNewsSlider {
+      padding: 1rem 0 0;
+      .breakingNewsCarousel {
+        .background {
+        }
+        .breakingNews {
+          .textSection {
+            gap: 0.1rem;
             .newsText {
             }
             .newscontrolButtonsSection {

@@ -192,7 +192,9 @@ function Home() {
       <div className={styles.recentAccomplishmentSection}>
         <RecentAccomplishment />
       </div>
-      <div className={styles.headlineSection}>{/* <Headlines /> */}</div>
+      <div className={styles.headlineSection}>
+        <Headlines />
+      </div>
       <div className={styles.joinUsSection}>
         <Highlight
           data={{

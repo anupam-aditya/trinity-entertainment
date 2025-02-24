@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./LandingSection.module.css";
+import VideoIframe from "../common/videoIFrame";
 
 const LandingSection = () => {
   return (
     <section className={styles.landingContainer}>
       <div className={styles.container}>
+        <VideoIframe videoPath="https://youtu.be/BW3gzn_BEEI" />
         {/* <video className={styles.videoBackground} autoPlay muted loop playsInline>
         <source src="../../assets/landing.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
 
-        <div className={styles.content}>
+        {/* <div className={styles.content}>
           <div className={styles.textBlock}>
             <p className={styles.text}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -21,7 +23,7 @@ const LandingSection = () => {
           </div>
 
           <h1 className={styles.heading}>LOREM</h1>
-        </div>
+        </div> */}
       </div>
     </section>
   );
