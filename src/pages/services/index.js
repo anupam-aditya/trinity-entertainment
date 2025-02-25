@@ -42,9 +42,9 @@ const Services = () => {
     text: [
       "At Trinity Entertainment, we don’t just create marketing campaigns—we craft immersive brand experiences that connect, engage, and leave a lasting impact",
       "Our approach is simple yet powerful: We start with your brand, understand your goals, and build campaigns that seamlessly integrate strategy, creativity, and execution",
-      "We dive deep into your brand ethos to ensure alignment with your core values",
-      "We design strategic campaigns that connect with the right audience",
-      "We execute seamlessly, leveraging marketing, technology, and innovation",
+      "✓ We dive deep into your brand ethos to ensure alignment with your core values",
+      "✓ We design strategic campaigns that connect with the right audience",
+      "✓ We execute seamlessly, leveraging marketing, technology, and innovation",
       "The result? Authentic brand interactions that drive engagement, loyalty, and success",
     ],
     imageUrl: servicesHighlight,

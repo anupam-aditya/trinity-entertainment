@@ -6,9 +6,7 @@ function OurServicesHome({}) {
   return (
     <div className={styles.ourServicesContainer}>
       <p className={styles.ourServicesHeading}>
-        <span>
-          Our <span className={styles.highlight}>Services</span>
-        </span>
+        Our <span className={styles.highlight}>Services</span>
         <span className={styles.line} />
       </p>
       <p className={styles.ourServicesSubHeading}>
@@ -27,13 +25,16 @@ function OurServicesHome({}) {
           href="/services/experential-solutions"
           target="_blank"
         >
-          <p className={styles.number}>Experiential Solutions</p>
-          <p className={styles.heading}>A Memory Forever</p>
+          <p className={styles.number}>
+            Sports Operations, Management & Servicing
+          </p>
+          <p className={styles.heading}>Passion, Precision, Performance</p>
           <p className={styles.text}>
-            We specialise in creating unique, immersive experiences that deeply
-            engage audiences and build brand loyalty. From live activations to
-            interactive marketing campaigns, we ensure your message resonates
-            and leaves a lasting impact
+            We offer end-to-end sports management solutions, from talent
+            tracking to event execution and sponsorship integration. With a
+            focus on India’s 1.5 billion-strong sporting landscape, we help
+            unearth champions and enhance the sports ecosystem through strategic
+            collaborations and impactful engagements
           </p>
         </a>
         <div className={styles.rightSide}>
@@ -84,18 +85,13 @@ function OurServicesHome({}) {
                 href="/services/sports-management"
                 target="_blank"
               >
-                <p className={styles.number}>
-                  Sports Operations, Management & Servicing
-                </p>
-                <p className={styles.heading}>
-                  Passion, Precision, Performance
-                </p>
+                <p className={styles.number}>Experiential Solutions</p>
+                <p className={styles.heading}>A Memory Forever</p>
                 <p className={styles.text}>
-                  We offer end-to-end sports management solutions, from talent
-                  tracking to event execution and sponsorship integration. With
-                  a focus on India’s 1.5 billion-strong sporting landscape, we
-                  help unearth champions and enhance the sports ecosystem
-                  through strategic collaborations and impactful engagements
+                  We specialise in creating unique, immersive experiences that
+                  deeply engage audiences and build brand loyalty. From live
+                  activations to interactive marketing campaigns, we ensure your
+                  message resonates and leaves a lasting impact
                 </p>
               </a>
             </div>

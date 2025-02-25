@@ -10,15 +10,10 @@
   margin: 0 auto;
   background: #fff;
   .ourServicesHeading {
-    display: flex;
-    gap: 1.5rem;
     align-items: center;
     font-size: var(--text-4xl);
     font-weight: 700;
-    span {
-      display: flex;
-      gap: 0.25rem;
-    }
+
     .highlight {
       color: var(--pink);
     }
@@ -26,10 +21,13 @@
       height: 0;
       width: 35%;
       border: 1px solid #000;
+      display: inline-flex;
+      transform: translateY(-8px);
+      margin-left: 5rem;
     }
   }
   .ourServicesSubHeading {
-    font-size: 2rem;
+    font-size: 1.875rem;
     text-align: left;
     font-weight: 600;
   }

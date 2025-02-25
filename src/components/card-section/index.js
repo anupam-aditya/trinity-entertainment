@@ -101,7 +101,7 @@ const CardSection = ({
       <div key={index} className={styles.gridCard}>
         <CardComponent {...cardProps} className={styles.cardContentWrapper}>
           <div className={styles.cardImage}>
-            {hasImage && <div className={styles.placeholder}></div>}
+            {hasImage && item?.image && <img src={item?.image} />}
             {item?.heading && (
               <span
                 className={styles.brand}

@@ -8,11 +8,10 @@
   max-width: 90rem;
   box-sizing: border-box;
   margin: 0 auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
   .ourServicesHeading {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    font-size: var(--text-7xl);
+    font-size: var(--text-5xl);
     font-weight: 700;
     .highlight {
       color: var(--pink);
@@ -21,6 +20,9 @@
       height: 0;
       width: 35%;
       border: 1px solid #000;
+      display: inline-flex;
+      transform: translateY(-8px);
+      margin-left: 5rem;
     }
   }
 

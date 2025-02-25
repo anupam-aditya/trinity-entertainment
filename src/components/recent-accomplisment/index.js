@@ -56,9 +56,7 @@ const RecentAccomplishment = ({ items }) => {
         <div className={styles.mainAccomplishment}>
           <div className={styles.mainAccomplishmentTitle}>
             <div className={styles.titleWrapper}>
-              <span className={styles.highlight}>Recent</span>
-              Accomplishments
-              <span className={styles.line}></span>
+              <span className={styles.highlight}>Recent</span> Accomplishments
             </div>
           </div>
           <img

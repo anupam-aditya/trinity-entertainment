@@ -8,6 +8,8 @@
   max-width: 90rem;
   box-sizing: border-box;
   margin: 0 auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .mainAccomplishmentContainer {
@@ -24,15 +26,14 @@
   flex-direction: column;
   .mainAccomplishmentTitle {
     .titleWrapper {
-      display: flex;
-      gap: 1rem;
       margin-bottom: 2rem;
       font-size: 2.5rem;
+      white-space: nowrap;
+      font-weight: 700;
     }
 
     .highlight {
       color: #ef3e58;
-      display: block;
     }
 
     .accomplishmentLine {
@@ -50,7 +51,7 @@
     }
   }
   .mainAccomplishmentImage {
-    width: 60%;
+    width: 100%;
   }
   .mainAccomplishmentDescription {
     font-size: var(--text-md);

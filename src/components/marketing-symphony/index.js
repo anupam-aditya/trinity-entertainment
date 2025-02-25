@@ -48,12 +48,14 @@ const MarketingSymphony = () => {
     <div className={styles["component-container"]}>
       <div className={styles["content-wrapper"]}>
         <h1 className={styles["heading"]}>
-          Marketing is Like a Symphony—And We Are the Conductors
+          Marketing is Like a Symphony—
+          <br />
+          And We Are the Conductors
         </h1>
         <p className={styles["intro-paragraph"]}>
           Crafting the perfect marketing campaign is like orchestrating a
           symphony. Each element plays a crucial role, coming together in
-          perfect harmony to create an unforgettable experience.
+          perfect harmony to create an unforgettable experience
         </p>
         <div className={styles["list-section"]}>
           {listItems.map((item) => (
@@ -68,7 +70,7 @@ const MarketingSymphony = () => {
         <p className={styles["concluding-paragraph"]}>
           A great campaign requires vision, precision, and a deep understanding
           of both the brand and its audience. When all elements work in sync,
-          the result is a breathtaking experience.
+          the result is a breathtaking experience
         </p>
       </div>
     </div>

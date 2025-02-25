@@ -28,7 +28,7 @@
 
 .headerBackground {
   /* background-color: #f87171; */
-  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #610101 100%);
+  background: radial-gradient(circle, #ef3e58 0%, #566e78 60%, #ef3e58 100%);
   width: 100%;
   padding: 2rem 0;
   margin-bottom: 2rem;

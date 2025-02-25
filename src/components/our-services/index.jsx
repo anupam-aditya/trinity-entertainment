@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./our-services.module.css";
 import branding from "../../assets/branding.png";
 import CardSection from "../card-section";
+import nykaaland from "../../assets/work-1.jpg";
 
 function OurServices({ background = "#fff" }) {
   const cardData = [
@@ -12,6 +13,7 @@ function OurServices({ background = "#fff" }) {
         "We create one-of-a-kind brand activations that immerse audiences in your brand story. From on-ground activations to multi-sensory experiences, we design moments that spark engagement and build emotional connections",
       ],
       link: "/services/experential-solutions",
+      image: nykaaland,
     },
     {
       heading: "IP Servicing",
@@ -20,6 +22,7 @@ function OurServices({ background = "#fff" }) {
         "Have a great idea? Let’s make it a reality. We specialise in IP (Intellectual Property) development, execution, and monetisation, helping brands launch and scale proprietary experiences that become industry benchmarks",
       ],
       link: "/services/ip-servicing",
+      image: nykaaland,
     },
     {
       subheading: "Content Labs",
@@ -28,6 +31,7 @@ function OurServices({ background = "#fff" }) {
         "We don’t just create experiences—we capture them. With our in-house production team, we bring brand stories to life through high-quality video production, photography, digital storytelling, and branded content",
       ],
       link: "/services/content-labs",
+      image: nykaaland,
     },
     {
       heading: "Sports Operations, Management & Servicing",
@@ -36,6 +40,7 @@ function OurServices({ background = "#fff" }) {
         "From sports event management to talent scouting and sponsorship activation, we offer end-to-end solutions that elevate the sports ecosystem and create unforgettable fan experiences",
       ],
       link: "/services/sports-management",
+      image: nykaaland,
     },
     {
       heading: "Bespoke Experiences",
@@ -44,6 +49,7 @@ function OurServices({ background = "#fff" }) {
         "Looking for something truly unique? Our custom experiential marketing solutions are tailor-made to break the clutter, grab attention, and ignite curiosity. Let’s create something extraordinary together",
       ],
       link: "/services/bespoke",
+      image: nykaaland,
     },
   ];
   return (

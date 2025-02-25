@@ -1,4 +1,5 @@
-/* Slider Style */
+@import "../common/variables.module.css";
+
 .container {
   max-width: 90rem;
   margin: 0 auto;
@@ -28,6 +29,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
+  color: var(--pink);
 }
 
 .subHeadingText {
@@ -40,9 +42,12 @@
   font-size: 1.125rem;
   padding-top: 1rem;
   text-decoration: none;
+  color: var(--pink);
+  font-weight: 500;
   &:hover {
     transform: translateX(5%);
     transition: 0.2s;
+    color: var(--hover-pink);
   }
 }
 

@@ -1,3 +1,4 @@
+@import "../components/common/variables.module.css";
 .carouselContainer {
   padding: 2rem 0 2rem 4rem;
   text-align: center;
@@ -11,22 +12,26 @@
   font-size: 2.5rem;
   margin: 0;
   text-align: left;
-  display: flex;
-  gap: 3rem;
+  /* display: flex;
+  gap: 3rem; */
   align-items: center;
   p {
-    display: unset;
+    /* display: flex;
+    gap: 0.5rem; */
     margin: 0;
   }
   .line {
-    width: 43.7%;
+    min-width: 7rem;
     height: 0;
     border: 1px solid;
+    display: inline-flex;
+    transform: translateY(-8px);
+    margin-left: 2rem;
   }
 }
 
 .highlight {
-  color: #c1111e;
+  color: var(--pink);
 }
 
 .carousel {
@@ -56,17 +61,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   color: white;
   border-radius: 2.1875rem;
   aspect-ratio: 1;
   max-width: 35%;
+  justify-content: start;
+  padding: 2rem 0;
+  box-sizing: border-box;
 }
 
 .carouselItem.selected {
@@ -74,7 +80,7 @@
 }
 
 .carouselImg {
-  width: 6.25rem;
+  height: 6.25rem;
 }
 
 .carouselTitle {
@@ -86,6 +92,7 @@
   font-size: 1.3rem;
   color: white;
   max-width: 80%;
+  text-align: justify;
 }
 
 .buttonsContainer {
@@ -125,6 +132,7 @@
   flex-wrap: wrap;
   align-items: start;
   justify-content: start;
+  gap: 0.5rem;
 }
 
 @media (max-width: 768px) {
