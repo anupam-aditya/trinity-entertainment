@@ -2,7 +2,7 @@
 }
 
 .workDemoSection {
-  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
+  background: radial-gradient(circle, #ef4158 0%, #c1111e 60%, #000 100%);
 }
 
 .container {
@@ -19,7 +19,7 @@
   }
 
   .centralText {
-    color: #ef3e58;
+    color: #ef4158;
     font-size: 6rem;
     font-weight: 700;
     word-break: break-word;

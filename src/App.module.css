@@ -2,6 +2,7 @@ p {
   margin: 0;
 }
 
-.navBarContainer,.footerContainer {
-  background: radial-gradient(circle, #ef3e58 0%, #c1111e 60%, #000 100%);
+.navBarContainer,
+.footerContainer {
+  background: radial-gradient(circle, #ef4158 0%, #c1111e 60%, #000 100%);
 }

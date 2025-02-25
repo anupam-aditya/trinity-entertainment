@@ -77,7 +77,7 @@
         }
       }
       .contactUsButton {
-        background-color: #ef3e58;
+        background-color: #ef4158;
         border: none;
         outline: none;
         color: #fff;
@@ -96,7 +96,7 @@
     padding: 1rem 0;
     text-align: center;
     color: #fff;
-    background: #ef3e58;
+    background: #ef4158;
     font-weight: 500;
   }
 }
@@ -196,7 +196,7 @@
           }
         }
         .contactUsButton {
-          background-color: #ef3e58;
+          background-color: #ef4158;
           border: none;
           outline: none;
           color: #fff;
@@ -215,7 +215,7 @@
       padding: 1rem 0;
       text-align: center;
       color: #fff;
-      background: #ef3e58;
+      background: #ef4158;
       font-weight: 500;
     }
   }

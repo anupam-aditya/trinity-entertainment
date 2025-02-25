@@ -33,7 +33,7 @@ function WorkPage() {
         <Modal
           title={event?.client}
           onClose={closeHandler}
-          background="#ef3e58"
+          background="#ef4158"
           color="#fff"
         >
           <div className={styles.workDetails}>
@@ -76,7 +76,7 @@ function WorkPage() {
               <CardSection
                 data={event?.approach?.answer}
                 title={event?.approach?.title}
-                background="#ef3e58"
+                background="#ef4158"
                 hasImage={false}
                 subHeadingSize="1.25rem"
               />

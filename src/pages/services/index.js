@@ -107,7 +107,7 @@ const Services = () => {
             containerClass={styles.highlightContainer}
             data={highlightData}
             headingSize="2.4rem"
-            headingColor="#ef3e58"
+            headingColor="#ef4158"
             subHeadingColor="#566e78"
             showSeparation="true"
           />

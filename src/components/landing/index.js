@@ -6,7 +6,10 @@ const LandingSection = () => {
   return (
     <section className={styles.landingContainer}>
       <div className={styles.container}>
-        <VideoIframe videoId="/assets/LandingReel.mp4" />
+        <VideoIframe
+          src="https://player.vimeo.com/video/1060078624?h=7af6533ee4&autoplay=1"
+          responsive={true}
+        />
         {/* <video className={styles.videoBackground} autoPlay muted loop playsInline>
         <source src="../../assets/landing.mp4" type="video/mp4" />
         Your browser does not support the video tag.

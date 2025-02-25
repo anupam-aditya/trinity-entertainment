@@ -32,7 +32,7 @@ const LifeAtTrinity = () => {
             <p className={styles["body-text"]}>Sounds too good to be true?</p>
             <p
               className={styles["body-text"]}
-              style={{ fontSize: "1.5rem", fontWeight: 500, color: "#ef3e58" }}
+              style={{ fontSize: "1.5rem", fontWeight: 500, color: "#ef4158" }}
             >
               Welcome to Trinity Entertainment
             </p>
@@ -43,7 +43,7 @@ const LifeAtTrinity = () => {
             </p>
             <p
               className={styles["body-text"]}
-              style={{ color: "#ef3e58", fontWeight: 500 }}
+              style={{ color: "#ef4158", fontWeight: 500 }}
             >
               PS: Snacking is our favorite hobby—join us at your own risk!
             </p>
