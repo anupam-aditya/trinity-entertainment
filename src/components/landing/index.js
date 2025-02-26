@@ -7,26 +7,9 @@ const LandingSection = () => {
     <section className={styles.landingContainer}>
       <div className={styles.container}>
         <VideoIframe
-          src="https://player.vimeo.com/video/1060078624?h=7af6533ee4&autoplay=1"
+          src="https://storage.cloud.google.com/storage-trinity-entertainment/LandingReel.mp4"
           responsive={true}
         />
-        {/* <video className={styles.videoBackground} autoPlay muted loop playsInline>
-        <source src="../../assets/landing.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
-
-        {/* <div className={styles.content}>
-          <div className={styles.textBlock}>
-            <p className={styles.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. ipsum dolor sit amet, consectetur
-              adipiscing elit. Integer nec odio. Praesent libero.
-            </p>
-            <button className={styles.startButton}>START</button>
-          </div>
-
-          <h1 className={styles.heading}>LOREM</h1>
-        </div> */}
       </div>
     </section>
   );

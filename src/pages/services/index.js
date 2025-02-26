@@ -83,24 +83,6 @@ const Services = () => {
 
   return (
     <div className={styles.servicesPage}>
-      <div className={styles.servicesHeroSection}>
-        <div className={styles.servicesHeroContainer}>
-          <div className={styles.headingSection}>
-            <p className={styles.servicesPageHeading}>
-              Our <span>Services</span>
-            </p>
-            <p className={styles.servicesPageText}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet,
-            </p>
-            <p className={styles.line}></p>
-          </div>
-        </div>
-      </div>
       {highlightData && (
         <div className={styles.servicesHighlightSection}>
           <Highlight
@@ -108,7 +90,6 @@ const Services = () => {
             data={highlightData}
             headingSize="2.4rem"
             headingColor="#ef4158"
-            subHeadingColor="#566e78"
             showSeparation="true"
           />
         </div>

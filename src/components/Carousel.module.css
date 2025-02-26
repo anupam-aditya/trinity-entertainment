@@ -89,10 +89,11 @@
 }
 
 .carouselText {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: white;
   max-width: 80%;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .buttonsContainer {

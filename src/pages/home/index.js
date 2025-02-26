@@ -162,7 +162,6 @@ function Home() {
   ];
   return (
     <div className={styles.container}>
-      <LandingSection />
       <div className={styles.highlightSection}>
         <HighlightSlider
           title="Create an Experience Like Never Before"

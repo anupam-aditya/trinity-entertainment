@@ -4,6 +4,7 @@ import { ReactComponent as Facebook } from "../assets/facebook-icon.svg";
 import { ReactComponent as Linkedin } from "../assets/linkedin-icon.svg";
 import { ReactComponent as Instagram } from "../assets/instagram-icon.svg";
 import { ReactComponent as Arrow } from "../assets/arrow.svg";
+import { ReactComponent as ArrowPink } from "../assets/arrow-pink.svg";
 export const SVG_COMPONENTS_MAPPINGS = {
   location: Location,
   mail: Mail,
@@ -11,6 +12,7 @@ export const SVG_COMPONENTS_MAPPINGS = {
   linkedin: Linkedin,
   instagram: Instagram,
   arrow: Arrow,
+  arrowPink: ArrowPink,
   // mail: Mail,
 };
 

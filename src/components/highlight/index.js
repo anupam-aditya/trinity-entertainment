@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Highlight.module.css";
+import SvgWrapper from "../common/svgWrapper/svgWrapper";
 
 const Highlight = ({
   data,
@@ -66,7 +67,7 @@ const Highlight = ({
           ))}
         {data?.link?.href && data?.link?.text && (
           <a className={styles.link} href={data?.link?.href} target="_blank">
-            {data?.link?.text}
+            {data?.link?.text} <SvgWrapper fill="#ef4158" svgSrc="arrowPink" />
           </a>
         )}
       </div>

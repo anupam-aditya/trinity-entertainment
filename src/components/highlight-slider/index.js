@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./HighlightSlider.module.css";
 import Carousel from "../image-carousel";
+import SvgWrapper from "../common/svgWrapper/svgWrapper";
 
 function HighlightSlider({
   imagesArray = [],
@@ -39,7 +40,7 @@ function HighlightSlider({
           )}
           {link?.href && link?.text && (
             <a className={styles.link} href={link?.href} target="_blank">
-              {link?.text}
+              {link?.text} <SvgWrapper fill="#ef4158" svgSrc="arrowPink" />
             </a>
           )}
         </div>

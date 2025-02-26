@@ -5,37 +5,6 @@ import styles from "./Carousel.module.css";
 const Carousel = ({ items = [] }) => {
   const { scrollRef, goTo, activePageIndex } = useSnapCarousel();
 
-  // const items = [
-  //   {
-  //     id: 1,
-  //     title: "Client 1",
-  //     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //     img: brandImage,
-  //     backgroundImg: backgroundImage,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Client 2",
-  //     text: "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-  //     img: brandImage,
-  //     backgroundImg: backgroundImage,
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Client 3",
-  //     text: "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.",
-  //     img: brandImage,
-  //     backgroundImg: backgroundImage,
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Client 4",
-  //     text: "Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit.",
-  //     img: brandImage,
-  //     backgroundImg: backgroundImage,
-  //   },
-  // ];
-
   return (
     <div className={styles.carouselContainer}>
       <div className={styles.headingContainer}>

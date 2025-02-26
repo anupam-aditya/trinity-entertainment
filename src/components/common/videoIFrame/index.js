@@ -8,22 +8,20 @@ function VideoIframe({ src, width = 560, height = 315, responsive = false }) {
         style={{
           position: "relative",
           width: "100%",
-          paddingBottom: `${aspectRatio * 100}%`,
+          margin: "0 0 -4px",
         }}
       >
-        <iframe
-          src={src}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-          }}
-          frameBorder="0"
-          allowFullScreen
-          title="Video Player"
-        ></iframe>
+        <video
+          controls
+          muted
+          autoPlay
+          loop
+          playsinline
+          style={{ maxWidth: "100%" }}
+        >
+          <source src={src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     );
   } else {

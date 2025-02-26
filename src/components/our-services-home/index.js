@@ -31,10 +31,7 @@ function OurServicesHome({}) {
           <p className={styles.heading}>Passion, Precision, Performance</p>
           <p className={styles.text}>
             We offer end-to-end sports management solutions, from talent
-            tracking to event execution and sponsorship integration. With a
-            focus on India’s 1.5 billion-strong sporting landscape, we help
-            unearth champions and enhance the sports ecosystem through strategic
-            collaborations and impactful engagements
+            tracking to event execution and sponsorship integration.
           </p>
         </a>
         <div className={styles.rightSide}>
@@ -53,9 +50,7 @@ function OurServicesHome({}) {
                 Have an idea? We bring it to life! Our in-house experts help you
                 conceptualise, develop, execute, and manage intellectual
                 properties (IPs), ensuring seamless execution and maximum
-                audience engagement. Whether it’s event IPs, brand-led
-                properties, or content-driven experiences, we make your vision a
-                reality
+                audience engagement.
               </p>
             </a>
             <div className={styles.innerRight}>
@@ -72,9 +67,7 @@ function OurServicesHome({}) {
                 <p className={styles.text}>
                   From storyboarding to execution, our full-fledged production
                   house crafts compelling content that amplifies your brand’s
-                  storytelling. Whether it’s brand films, event coverage, or
-                  digital content, we deliver world-class visuals from script to
-                  screen
+                  storytelling.
                 </p>
               </a>
               <a
@@ -89,9 +82,7 @@ function OurServicesHome({}) {
                 <p className={styles.heading}>A Memory Forever</p>
                 <p className={styles.text}>
                   We specialise in creating unique, immersive experiences that
-                  deeply engage audiences and build brand loyalty. From live
-                  activations to interactive marketing campaigns, we ensure your
-                  message resonates and leaves a lasting impact
+                  deeply engage audiences and build brand loyalty.
                 </p>
               </a>
             </div>
@@ -109,9 +100,7 @@ function OurServicesHome({}) {
             <p className={styles.text}>
               Tired of generic, cookie-cutter marketing ideas? Our tailor-made
               experiential solutions are crafted to capture attention, spark
-              curiosity, and create a buzz. We design and execute custom
-              campaigns that resonate with your brand ethos and audience,
-              ensuring maximum impact
+              curiosity, and create a buzz.
             </p>
           </a>
         </div>
