@@ -4,7 +4,8 @@ import styles from "./Career.module.css";
 import Features from "../../components/features";
 import careerFormImage from "../../assets/career-form.jpg";
 import TextSlider from "../../components/text-slider";
-import LifeAtTrinity from "../../components/life-at-trinity";
+import LifeAtTrinity from "../../assets/career-highlight.jpeg";
+import Highlight from "../../components/highlight";
 
 function Career() {
   const items = [
@@ -40,7 +41,22 @@ function Career() {
   return (
     <div className={styles.container}>
       <div className={styles.highlightContainer}>
-        <LifeAtTrinity />
+        <Highlight
+          data={{
+            heading: "A room of stress-busting individuals that work together",
+            subHeading: "We know it’s hard to believe but it is what it is",
+            text: [
+              " When you imagined a workplace where there is no room for micromanagement, everyone's voice is heard, laughter is a common sound, meetings are held in a circle of comfortable chairs, dress code is left up to your own discretion, and casual discussions are not mocked, it was probably us that sprang to mind",
+              "We believe that creativity may flourish when limitations are removed. Our method of operation is informal, yet the caliber of the work is just as impeccable. To learn more, come to our office",
+              "Ps- Snacking is our favorite hobby",
+            ],
+            imageUrl: LifeAtTrinity,
+            link: {
+              href: "/career",
+              text: "Try your shot!",
+            },
+          }}
+        />
       </div>
       <div className={styles.sliderSection}>
         <TextSlider

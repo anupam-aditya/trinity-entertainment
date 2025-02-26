@@ -11,11 +11,6 @@ const Headlines = () => {
   return (
     <div className={styles.headlinesContainer}>
       <p className={styles.sectionHeading}>Top Headlines.</p>
-      <div className={styles.headingSection}>
-        <p className={styles.sectionHeading}>
-          <span className={styles.highlight}>Piyush Mishra</span> Debut
-        </p>
-      </div>
       <div className={styles.breakingNewsContainer}>
         <div className={styles.breakingNewsTextContainer}>
           <div className={styles.breakingNewsInformation}>
@@ -137,7 +132,11 @@ const Headlines = () => {
           </div>
         </div>
         <div className={styles.breakingNewsImageSection}>
-          <img src={breakingNews} alt="Breaking News" />
+          <img
+            className={styles.breakingNewsImage}
+            src={breakingNews}
+            alt="Breaking News"
+          />
         </div>
       </div>
       <div className={`${styles.headingSection} ${styles.secondHeading}`}>

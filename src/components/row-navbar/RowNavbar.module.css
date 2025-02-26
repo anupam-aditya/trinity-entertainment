@@ -4,6 +4,7 @@
   position: relative;
 
   .rowNavbarItem {
+    padding: 1rem 0;
     font-size: 2.7rem;
     line-height: 1.4;
     text-align: center;
@@ -16,5 +17,30 @@
     color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
+    text-decoration: none;
+
+    .text {
+      display: block;
+      -webkit-text-stroke-color: unset;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 300;
+      margin-top: 0.5rem;
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+      width: 50%;
+      margin: auto;
+    }
+
+    &:hover {
+      .text {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        margin: 0.5rem auto 0;
+      }
+    }
   }
 }

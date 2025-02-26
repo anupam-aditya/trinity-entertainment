@@ -162,6 +162,7 @@ function Home() {
   ];
   return (
     <div className={styles.container}>
+      <LandingSection />
       <div className={styles.highlightSection}>
         <HighlightSlider
           title="Create an Experience Like Never Before"
@@ -183,14 +184,15 @@ function Home() {
       </div>
       <div className={styles.partnershipSection}>
         <OurClients
-          title="Our Partnership"
+          title="Our"
           subHeading=""
           data={partnershipArray}
+          titleHighlight="Partnership"
         />
       </div>
-      <div className={styles.recentAccomplishmentSection}>
+      {/* <div className={styles.recentAccomplishmentSection}>
         <RecentAccomplishment />
-      </div>
+      </div> */}
       <div className={styles.headlineSection}>
         <Headlines />
       </div>

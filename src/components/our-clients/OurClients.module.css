@@ -1,3 +1,5 @@
+@import "../common/variables.module.css";
+
 .clientsSection {
   max-width: 90rem;
   margin: 0 auto;
@@ -17,6 +19,11 @@
   font-weight: bold;
   margin: 0 0 2rem;
   text-align: left;
+}
+
+.highlight {
+  display: inline-flex;
+  color: var(--pink);
 }
 
 .subheading {

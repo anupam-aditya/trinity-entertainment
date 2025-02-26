@@ -46,7 +46,7 @@
 
 .carouselWrapper {
   display: flex;
-  gap: 40px;
+  gap: 2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 0 35px 0 0;
@@ -57,7 +57,6 @@
 
 .carouselItem {
   flex: 0 0 auto;
-  min-width: 22.125rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +68,7 @@
   color: white;
   border-radius: 2.1875rem;
   aspect-ratio: 1;
-  max-width: 35%;
+  max-width: 25%;
   justify-content: start;
   padding: 2rem 0;
   box-sizing: border-box;

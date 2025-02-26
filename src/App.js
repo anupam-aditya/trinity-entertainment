@@ -11,7 +11,6 @@ import WorkDetailPage from "./pages/services-detail";
 import Contact from "./pages/contact-us";
 import Career from "./pages/career";
 import styles from "./App.module.css";
-import LandingSection from "./components/landing";
 
 const App = () => {
   return (
@@ -19,9 +18,6 @@ const App = () => {
       <div>
         <div className={styles.navBarContainer}>
           <Navbar />
-        </div>
-        <div>
-          <LandingSection />
         </div>
         <div className={styles.container}>
           <Routes>

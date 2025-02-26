@@ -9,6 +9,11 @@ import servicesHighlight from "../../assets/services-highlight.jpeg";
 import ServicesNavigation from "../../components/services-navigation";
 import MarketingSymphony from "../../components/marketing-symphony";
 import OurServices from "../../components/our-services";
+import rowNavbar from "../../assets/rowNav.png";
+import rowNavbar2 from "../../assets/rowNav2.png";
+import rowNavbar3 from "../../assets/rowNav3.png";
+import rowNavbar4 from "../../assets/rowNav4.png";
+import rowNavbar5 from "../../assets/rowNav5.png";
 
 const Services = () => {
   const [navItems, setNavItems] = useState(null);
@@ -51,22 +56,40 @@ const Services = () => {
   };
   const navItemsData = [
     {
-      text: "Experential Solutions",
-      img: sunset,
-      href: "services/experential-solutions",
+      text: "Experiential Solutions",
+      href: "/services/experential-solutions",
+      description:
+        "We create one-of-a-kind brand activations that immerse audiences in your brand story. From on-ground activations to multi-sensory experiences, we design moments that spark engagement and build emotional connections",
+      img: rowNavbar,
     },
     {
-      text: "Ip Servicing and Management",
-      img: sky,
-      href: "services/ip-servicing-management",
+      text: "IP Servicing",
+      href: "/services/ip-servicing",
+      description:
+        "Have a great idea? Let’s make it a reality. We specialise in IP (Intellectual Property) development, execution, and monetisation, helping brands launch and scale proprietary experiences that become industry benchmarks",
+      img: rowNavbar2,
     },
-    { text: "Content Labs", img: sunset, href: "services/content-labs" },
     {
-      text: "Sport Operation, Management & Servicing",
-      img: sunset,
-      href: "services/sports-management",
+      text: "Content Labs",
+      href: "/services/content-labs",
+      description:
+        "We don’t just create experiences—we capture them. With our in-house production team, we bring brand stories to life through high-quality video production, photography, digital storytelling, and branded content",
+      img: rowNavbar3,
     },
-    { text: "Bespoke", img: sunset, href: "services/bespoke" },
+    {
+      text: "Sports Operations, Management & Servicing",
+      href: "/services/sports-management",
+      description:
+        "From sports event management to talent scouting and sponsorship activation, we offer end-to-end solutions that elevate the sports ecosystem and create unforgettable fan experiences",
+      img: rowNavbar4,
+    },
+    {
+      text: "Bespoke Experiences",
+      href: "/services/bespoke",
+      description:
+        "Looking for something truly unique? Our custom experiential marketing solutions are tailor-made to break the clutter, grab attention, and ignite curiosity. Let’s create something extraordinary together",
+      img: rowNavbar5,
+    },
   ];
   const newHighlightData = {
     heading:
@@ -95,7 +118,8 @@ const Services = () => {
         </div>
       )}
       <div className={styles.servicesNavigationSection}>
-        <OurServices />
+        <RowNavbar items={navItemsData} />
+        {/* <OurServices /> */}
       </div>
       <div className={styles.marketingSection}>
         <MarketingSymphony />
