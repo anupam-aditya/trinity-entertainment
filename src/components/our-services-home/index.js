@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./OurServicesHome.module.css";
 import branding from "../../assets/branding.png";
+import sports from "../../assets/sports.jpg";
+import ipServicing from "../../assets/ip-servicing.JPG";
+import contentLabs from "../../assets/content-labs.PNG";
 
 function OurServicesHome({}) {
   return (
@@ -20,7 +23,7 @@ function OurServicesHome({}) {
         <a
           className={`${styles.second} ${styles.subSection} ${styles.branding}`}
           style={{
-            background: `linear-gradient(180deg, rgba(0, 0, 0, 0.83) 0%, rgba(0, 0, 0, 0.83) 100%), url(${branding})`,
+            background: `linear-gradient(180deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%), url(${sports})`,
           }}
           href="/services/experential-solutions"
           target="_blank"
@@ -39,7 +42,7 @@ function OurServicesHome({}) {
             <a
               className={`${styles.innerLeft} ${styles.subSection}`}
               style={{
-                background: `linear-gradient(180deg,rgba(0, 0, 0, 0.83) 0%,rgba(0, 0, 0, 0.83) 100%), url(${branding})`,
+                background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${ipServicing})`,
               }}
               href="/services/ip-servicing"
               target="_blank"
@@ -57,7 +60,7 @@ function OurServicesHome({}) {
               <a
                 className={`${styles.subSection}`}
                 style={{
-                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.83) 0%,rgba(0, 0, 0, 0.83) 100%), url(${branding})`,
+                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${contentLabs})`,
                 }}
                 href="/services/content-labs"
                 target="_blank"
@@ -73,9 +76,9 @@ function OurServicesHome({}) {
               <a
                 className={`${styles.subSection}`}
                 style={{
-                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.83) 0%,rgba(0, 0, 0, 0.83) 100%), url(${branding})`,
+                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${branding})`,
                 }}
-                href="/services/sports-management"
+                href="/services/experiential-solutions"
                 target="_blank"
               >
                 <p className={styles.number}>Experiential Solutions</p>
@@ -90,7 +93,7 @@ function OurServicesHome({}) {
           <a
             className={`${styles.second} ${styles.subSection}`}
             style={{
-              background: `linear-gradient(180deg,rgba(0, 0, 0, 0.83) 0%,rgba(0, 0, 0, 0.83) 100%), url(${branding})`,
+              background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${branding})`,
             }}
             href="/services/bespoke"
             target="_blank"

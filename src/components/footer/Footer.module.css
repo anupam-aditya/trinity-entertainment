@@ -33,13 +33,13 @@
   .companyInfoSection {
     display: flex;
     justify-content: space-between;
-    margin: 2.5rem 0 4rem;
+    margin: 1.5rem 0;
     padding: 0 8.625rem 0 4rem;
 
     .companyContactSection {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2.5rem;
+      gap: 1.5rem;
       max-width: 75%;
 
       .companyContactInfo {

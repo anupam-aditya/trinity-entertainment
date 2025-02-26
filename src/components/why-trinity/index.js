@@ -5,7 +5,7 @@ const FeatureCard = ({ title, desc, style }) => {
   return (
     <div className={styles.card} style={style}>
       <span className={styles.checkmark}>✔</span>
-      <h2 className={styles.cardTitle}>{title}</h2>
+      {title && <h2 className={styles.cardTitle}>{title}</h2>}
       <p className={styles.cardDesc}>{desc}</p>
     </div>
   );
@@ -19,8 +19,8 @@ const WhyChooseTrinity = ({ features = [], title = "" }) => {
         {features.map((feature, index) => (
           <FeatureCard
             key={index}
-            title={feature.title}
-            desc={feature.desc}
+            title={feature?.title}
+            desc={feature?.desc}
             style={{ animationDelay: `${index * 0.2}s` }}
           />
         ))}

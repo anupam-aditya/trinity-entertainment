@@ -45,8 +45,12 @@
   width: 100%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  transition: 2s;
+  transform: rotateZ(360deg);
   img {
     max-width: 100%;
+    transform: rotate3d(1, 0, 1, 360deg);
+    transition: 1s;
   }
 }
 

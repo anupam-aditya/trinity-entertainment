@@ -204,97 +204,235 @@
     }
   },
   "content-labs": {
-    "heading": "Sport Operation, Management & Servicing",
+    "heading": "Content Labs",
     "workDescription": {
-      "heading": "Cricket, Kabaddi, Badminton, Football, Running or Cycling we do our bit to Make Sport Happen!",
+      "heading": "Create Content That Moves, Stories That Speak",
+      "subHeading": "Bringing Stories to Life, One Frame at a Time",
       "text": [
-        "In the vibrant world of sports, operations serve as the backstage orchestrator, meticulously weaving together the fabric of seamless execution and exhilarating experiences. From thunderous roar of crowd to precise choreography of athlete movements, every aspect is curated At its core, sport operations embody a nexus of strategic planning, thorough logistics, and unwavering dedication to excellence. Our contribution stands tall as the cornerstone, where the pulse of anticipation converges with the symphony of preparation. From grandiose tournaments to intimate matches, each experience is precisely sculpted to deliver unforgettable moments and uphold the spirit of competition In the intricate tapestry of sport operations, each thread weaves a story of passion, dedication, and unwavering commitment to excellence. As the curtain rises on each new chapter, the chord of anticipation resounds, heralding the dawn of a new era where dreams take flight and champions rise."
+        "At Trinity Content Labs, we do more than just create content—we craft visual experiences that inspire, engage, and drive action",
+        "From concept to release, we partner with brands, sports, and organisations to push boundaries and explore new ways of storytelling. Whether it’s cinematic brand films, engaging digital content, or high-impact live broadcasts, we are your creative powerhouse"
       ],
       "imageUrl": "",
       "imageAlt": ""
     },
-    "keyPoints": {
-      "heading": "",
-      "data": [
-        "Event Management",
-        "Venue Operations",
-        "Ticketing and Box Office",
-        "Team Operations",
-        "Event Promotion and Marketing",
-        "Merchandising and Retail Operations",
-        "Risk Management and Security",
-        "Travel and Accommodation Services",
-        "Tournament and League Operations",
-        "On Day Operations",
-        "Player / Talent Management"
+    "ourRole": {
+      "heading": "Who Are We?",
+      "text": [
+        "✔ We tell stories of pioneers, adventurers, and visionaries",
+        "✔ We champion the bold and daring—those who see opportunities ahead, not obstacles behind",
+        "✔ We experiment with cutting-edge filming techniques to stay ahead of the curve",
+        "Your story deserves to be told. Let’s make it unforgettable"
       ]
     },
-    "workSpecifics": {
-      "heading": "WORK",
+    "keyPoints": {
+      "heading": "Our Creative Production Services",
       "data": [
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Script Writing",
+          "desc": "Crafting compelling narratives that connect & captivate"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Creative Design & Direction",
+          "desc": "Building the visual identity & aesthetics of your content"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "name": "Storyboarding",
+          "desc": "Mapping out your story frame-by-frame for seamless execution"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Art Direction & Set Design",
+          "desc": "Creating immersive environments & detailed set designs"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Multi-Cam Shoots & Live Broadcasts",
+          "desc": "Capturing every angle with cinematic precision"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Post-Production (Offline & Online Editing)",
+          "desc": "Refining the raw footage into a polished masterpiece"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "name": "Color Correction & Grading",
+          "desc": "Enhancing visuals to match brand tonality & storytelling mood"
+        },
+        {
+          "name": "Audio Production",
+          "desc": "High-quality sound design, voiceovers & music composition"
+        },
+        {
+          "name": "VFX & Animation",
+          "desc": "Adding CGI, motion graphics & special effects to elevate storytelling"
+        }
+      ],
+      "tagline": "From script to screen, we handle it all"
+    },
+    "workSpecifics": {
+      "heading": "Our Work – Where Creativity Meets Impact",
+      "data": [
+        {
+          "title": "Netflix",
+          "shortDescription": "Bringing stories to global audiences through compelling content",
+          "fullDescription": "Detailed description of the project, including goals, outcomes, and impact.",
+          "media": {
+            "type": "image",
+            "url": ""
+          }
+        },
+        {
+          "title": "Amazon Prime",
+          "shortDescription": "Producing high-quality branded content & originals",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Spotify",
+          "shortDescription": "Creating visually engaging campaigns for the world’s biggest music streaming platform",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "King - Crown Music Video",
+          "shortDescription": "A dynamic blend of cinematic storytelling & musical expression",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Britannia Good Day",
+          "shortDescription": "Crafting feel-good brand stories through immersive visuals",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Two Cents by Cred Club",
+          "shortDescription": "Engaging storytelling for the financial sector",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Muthoot Finance - Vishwaas Ki Tijori",
+          "shortDescription": "Combining brand heritage & modern storytelling",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
         }
       ]
     },
     "faqs": {
-      "heading": "FAQ'S",
+      "heading": "FAQs – Everything You Need to Know About Content Creation",
       "data": [
         {
-          "question": "What strategies are used in sports marketing and promotion to attract fans and sponsors to events and organizations?",
-          "answer": "Sports marketing employs various strategies, including social media campaigns, sponsorships, advertising, and fan engagement initiatives to promote events and organizations."
+          "question": "How much does video and animation production cost?",
+          "answer": [
+            "The cost depends on various factors such as:",
+            "✔ Number of locations – Single-site filming vs. multiple locations",
+            "✔ Crew size & filming duration – Small-scale shoots vs. large productions",
+            "✔ Complexity of the edit – Simple cuts vs. extensive animation & visual effects",
+            "✔ Volume of content – A single video or a multi-video campaign",
+            "For animation projects, cost is influenced by:",
+            "✔ Animation style (2D vs. 3D)",
+            "✔ Pre-existing assets vs. custom-created elements",
+            "✔ Final duration & level of detail",
+            "We work with a range of budgets. Contact us to discuss your needs, and we’ll craft a solution that fits!"
+          ]
         },
         {
-          "question": "How are ticket sales managed for sports events?",
-          "answer": "Ticket sales for sports events can be managed through various channels, including online platforms, box offices, and third-party vendors. Pricing strategies and promotions are often used to maximize ticket sales."
+          "question": "What does the video production process involve?",
+          "answer": [
+            "Every project is unique, but generally, we follow a three-stage process:",
+            "Pre-Production – Planning & Conceptualisation",
+            "✔ Understanding your brand, target audience, and key messaging",
+            "✔ Developing concepts, scripts, and storyboards",
+            "✔ Confirming budgets & production timelines",
+            "Production – The Magic of Filming",
+            "✔ Capturing raw footage, interviews, product shots, or event coverage",
+            "✔ Using multi-camera setups, drones, or specialty gear for high-quality visuals",
+            "✔ On-location, in-studio, or remote shoots, depending on project requirements",
+            "Post-Production – Crafting the Final Masterpiece",
+            "✔ Editing, color grading & motion graphics",
+            "✔ Adding music, sound design & voiceovers",
+            "✔ Reviewing drafts, client feedback & finalising"
+          ]
         },
         {
-          "question": "What is the role of technology in sports operations?",
-          "answer": "Technology plays a significant role in sports operations, from data analytics and video analysis for performance improvement to ticketing systems and fan engagement through mobile apps and social media."
+          "question": "Who are the key professionals involved in the production process?",
+          "answer": [
+            "Our team includes:",
+            "Directors & Producers – Overseeing creative direction & execution",
+            "Cinematographers – Capturing high-quality visuals",
+            "Editors & Post-Production Experts – Refining and finalising content",
+            "Sound Engineers & Music Composers – Crafting the perfect audio experience",
+            "VFX Artists & Animators – Adding motion graphics & special effects"
+          ]
         },
         {
-          "question": "What strategies do you employ for fan engagement and creating memorable experiences?",
-          "answer": "We employ a mix of fan engagement strategies, such as interactive activities, fan zones, and multimedia experiences, to enhance the overall event atmosphere."
+          "question": "What is the estimated timeline for completing a project?",
+          "answer": [
+            "Timelines vary based on project scope:",
+            "✔ Short-form content (30s-1min videos) – Typically 2-4 weeks",
+            "✔ Full-scale productions (commercials, brand films) – Typically 4-8 weeks",
+            "✔ Animation projects – Timelines depend on complexity but range from 3-6 weeks",
+            "We provide estimated delivery timelines before project kick-off"
+          ]
         },
         {
-          "question": "How can our organization benefit from partnering with your sports event company?",
-          "answer": "Partnering with us ensures that your sports events run smoothly, attract larger audiences, and are financially successful, all while maintaining the highest standards of integrity."
+          "question": "How can partnering with your sports event company benefit our organisation?",
+          "answer": [
+            "Absolutely! We have experience across:",
+            "✔ Brand films & commercials",
+            "✔ Music videos & entertainment content",
+            "✔ Corporate storytelling & product demos",
+            "✔ Sports & event coverage",
+            "✔ Animation & motion graphics",
+            "Every project is tailored to match your brand identity, audience, and marketing objectives"
+          ]
+        }
+      ]
+    },
+    "whyTrinity": {
+      "heading": "Why Choose Trinity Content Labs?",
+      "data": [
+        {
+          "title": "End-to-End Content Creation",
+          "desc": "From concept development to post-production"
         },
         {
-          "question": "What is the future outlook for sports event operations, and how are you staying ahead of industry trends?",
-          "answer": "We are committed to staying at the forefront of the industry by embracing technology, sustainability, and inclusivity to meet the evolving demands of sports events."
+          "title": "Expert Team of Industry Professionals",
+          "desc": "Storytellers, creatives, and tech wizards"
+        },
+        {
+          "title": "Cutting-Edge Technology & Techniques",
+          "desc": "Staying ahead in filming, animation & editing"
+        },
+        {
+          "title": "Versatility Across Genres",
+          "desc": "From brand campaigns to sports, music, and entertainment"
+        },
+        {
+          "title": "Tailored Approach for Every Brand",
+          "desc": "No one-size-fits-all solutions—we craft content unique to you"
         }
       ]
     }
@@ -302,191 +440,389 @@
   "ip-servicing": {
     "heading": "Sport Operation, Management & Servicing",
     "workDescription": {
-      "heading": "Cricket, Kabaddi, Badminton, Football, Running or Cycling we do our bit to Make Sport Happen!",
+      "heading": "Cricket, Kabaddi, Badminton, Football, Running, or Cycling – We Do Our Bit to Make Sport Happen!",
+      "subHeading": "Orchestrating Unforgettable Sporting Experiences",
       "text": [
-        "In the vibrant world of sports, operations serve as the backstage orchestrator, meticulously weaving together the fabric of seamless execution and exhilarating experiences. From thunderous roar of crowd to precise choreography of athlete movements, every aspect is curated At its core, sport operations embody a nexus of strategic planning, thorough logistics, and unwavering dedication to excellence. Our contribution stands tall as the cornerstone, where the pulse of anticipation converges with the symphony of preparation. From grandiose tournaments to intimate matches, each experience is precisely sculpted to deliver unforgettable moments and uphold the spirit of competition In the intricate tapestry of sport operations, each thread weaves a story of passion, dedication, and unwavering commitment to excellence. As the curtain rises on each new chapter, the chord of anticipation resounds, heralding the dawn of a new era where dreams take flight and champions rise."
+        "In the high-energy world of sports, every event is a perfectly choreographed spectacle—from the electrifying roar of the crowd to the flawless precision of athlete movements. But behind the magic of every tournament, match, or league lies a meticulously planned and executed operation",
+        "At Trinity Entertainment, we are the backstage orchestrators, ensuring that every aspect of sports event operations runs seamlessly. From grand stadium tournaments to intimate, high-stakes competitions, we craft unforgettable experiences that elevate the spirit of competition"
       ],
       "imageUrl": "",
       "imageAlt": ""
     },
-    "keyPoints": {
-      "heading": "",
-      "data": [
-        "Event Management",
-        "Venue Operations",
-        "Ticketing and Box Office",
-        "Team Operations",
-        "Event Promotion and Marketing",
-        "Merchandising and Retail Operations",
-        "Risk Management and Security",
-        "Travel and Accommodation Services",
-        "Tournament and League Operations",
-        "On Day Operations",
-        "Player / Talent Management"
+    "ourRole": {
+      "heading": "Our role?",
+      "text": [
+        "✔ Strategic planning, logistics, and execution – ensuring flawless event management",
+        "✔ Bridging sports, entertainment, and fan engagement – making every match memorable",
+        "✔ Delivering operational excellence – so that players, teams, and audiences experience nothing but the best",
+        "Whether it’s managing a global sports league, handling ticketing, marketing a franchise, or executing an iconic tournament, our expertise ensures precision, efficiency, and impact"
       ]
     },
-    "workSpecifics": {
-      "heading": "WORK",
+    "keyPoints": {
+      "heading": "Our Sports Event Services",
       "data": [
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Event Management",
+          "desc": "Full-scale planning & execution of sports tournaments & leagues"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Venue Operations",
+          "desc": "Seamless coordination for stadium & arena events"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "name": "Ticketing & Box Office Management",
+          "desc": "Online & offline ticketing solutions for maximised attendance"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Team Operations",
+          "desc": "Handling team logistics, training schedules & match-day coordination"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Event Promotion & Marketing",
+          "desc": "Strategic marketing to boost fan engagement & brand sponsorships"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Merchandising & Retail Operations",
+          "desc": "Enhancing fan experience through exclusive brand merchandise"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "name": "Risk Management & Security",
+          "desc": "Ensuring safety, compliance & crisis management"
+        },
+        {
+          "name": "Travel & Accommodation Services",
+          "desc": "Hassle-free arrangements for players, officials & VIPs"
+        },
+        {
+          "name": "Tournament & League Operations",
+          "desc": "End-to-end league & tournament execution"
+        },
+        {
+          "name": "On-Day Operations",
+          "desc": "Managing broadcasting, logistics & event-day coordination"
+        },
+        {
+          "name": "Player & Talent Management",
+          "desc": "Overseeing contracting, training & media engagements"
+        }
+      ],
+      "tagline": "We handle every detail—so your focus stays on the game"
+    },
+    "workSpecifics": {
+      "heading": "Related Work – Where We’ve Left Our Mark",
+      "data": [
+        {
+          "title": "Franchise Management for Ahmedabad Smash Masters at PBL",
+          "shortDescription": "Driving operational success for Premier Badminton League",
+          "fullDescription": "Detailed description of the project, including goals, outcomes, and impact.",
+          "media": {
+            "type": "image",
+            "url": ""
+          }
+        },
+        {
+          "title": "India Open Up of Surfing",
+          "shortDescription": "Bringing a new wave of sports excitement to India",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Marketing & Content Management for Dabang Delhi at PKL",
+          "shortDescription": "Strengthening team branding & fan engagement",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Saksham Pedal Delhi",
+          "shortDescription": "Managing India’s largest mass cycling event",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Opening Ceremony for PBL",
+          "shortDescription": "Creating a grand stage for world-class badminton",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Australian Open Trophy Tour for Mastercard & ICICI Bank",
+          "shortDescription": "Elevating tennis fandom through brand collaborations",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
         }
       ]
     },
     "faqs": {
-      "heading": "FAQ'S",
+      "heading": "FAQs – Everything You Need to Know About Sports Event Management",
       "data": [
         {
-          "question": "What strategies are used in sports marketing and promotion to attract fans and sponsors to events and organizations?",
-          "answer": "Sports marketing employs various strategies, including social media campaigns, sponsorships, advertising, and fan engagement initiatives to promote events and organizations."
+          "question": "What strategies do you use for sports marketing and fan engagement?",
+          "answer": [
+            "We employ multi-channel marketing strategies—including social media campaigns, sponsorships, advertising, and fan engagement initiatives—to build hype and drive participation"
+          ]
         },
         {
           "question": "How are ticket sales managed for sports events?",
-          "answer": "Ticket sales for sports events can be managed through various channels, including online platforms, box offices, and third-party vendors. Pricing strategies and promotions are often used to maximize ticket sales."
+          "answer": [
+            "We use a combination of online ticketing platforms, physical box offices, and third-party vendors to optimise ticket sales. Dynamic pricing, exclusive pre-sales, and promotional offers are integrated to maximise attendance and revenue"
+          ]
         },
         {
-          "question": "What is the role of technology in sports operations?",
-          "answer": "Technology plays a significant role in sports operations, from data analytics and video analysis for performance improvement to ticketing systems and fan engagement through mobile apps and social media."
+          "question": "What role does technology play in sports operations?",
+          "answer": [
+            "Technology is at the heart of modern sports event management—from real-time data analytics and player performance tracking to seamless ticketing systems, digital fan engagement, and AI-driven event logistics"
+          ]
         },
         {
-          "question": "What strategies do you employ for fan engagement and creating memorable experiences?",
-          "answer": "We employ a mix of fan engagement strategies, such as interactive activities, fan zones, and multimedia experiences, to enhance the overall event atmosphere."
+          "question": "What fan engagement strategies do you implement to enhance event experiences?",
+          "answer": [
+            "We create interactive fan zones, immersive digital experiences, exclusive meet-and-greets, and AR/VR activations to take fan engagement to the next level"
+          ]
         },
         {
-          "question": "How can our organization benefit from partnering with your sports event company?",
-          "answer": "Partnering with us ensures that your sports events run smoothly, attract larger audiences, and are financially successful, all while maintaining the highest standards of integrity."
+          "question": "How can partnering with your sports event company benefit our organisation?",
+          "answer": [
+            "✔ Flawless event execution – Ensuring smooth operations and world-class experiences",
+            "✔ Higher audience engagement – Maximising fan interaction, attendance & brand loyalty",
+            "✔ Increased sponsorship value – Making events more marketable & revenue-generating",
+            "✔ Global exposure – Positioning your event on an international scale"
+          ]
         },
         {
-          "question": "What is the future outlook for sports event operations, and how are you staying ahead of industry trends?",
-          "answer": "We are committed to staying at the forefront of the industry by embracing technology, sustainability, and inclusivity to meet the evolving demands of sports events."
+          "question": "What does the future of sports event operations look like, and how do you stay ahead?",
+          "answer": [
+            "The future is about technology, sustainability, and inclusivity. We stay ahead by:",
+            "✔ Integrating AI & analytics for better decision-making",
+            "✔ Implementing eco-friendly event solutions to minimise carbon footprints",
+            "✔ Creating inclusive experiences to engage diverse fan bases"
+          ]
+        }
+      ]
+    },
+    "whyTrinity": {
+      "heading": "Why Choose Trinity for Sports Event Management?",
+      "data": [
+        {
+          "title": "Industry Expertise",
+          "desc": "We have managed top-tier leagues, international tournaments, and global sporting events"
+        },
+        {
+          "title": "Operational Precision",
+          "desc": "From logistics to execution, our attention to detail ensures flawless performance"
+        },
+        {
+          "title": "Innovative Approach",
+          "desc": "We blend technology, fan engagement, and marketing strategies to maximise impact"
+        },
+        {
+          "title": "Seamless Execution",
+          "desc": "Our end-to-end solutions cover everything from planning to post-event analysis"
         }
       ]
     }
   },
   "bespoke": {
-    "heading": "Sport Operation, Management & Servicing",
+    "heading": "BESPOKE ACTIVITIES",
     "workDescription": {
-      "heading": "Cricket, Kabaddi, Badminton, Football, Running or Cycling we do our bit to Make Sport Happen!",
+      "heading": "As Albert Einstein Said, “Creativity Is Intelligence Having Fun",
+      "subHeading": "Let’s Transform Your Vision into a Tailored Experience!",
       "text": [
-        "In the vibrant world of sports, operations serve as the backstage orchestrator, meticulously weaving together the fabric of seamless execution and exhilarating experiences. From thunderous roar of crowd to precise choreography of athlete movements, every aspect is curated At its core, sport operations embody a nexus of strategic planning, thorough logistics, and unwavering dedication to excellence. Our contribution stands tall as the cornerstone, where the pulse of anticipation converges with the symphony of preparation. From grandiose tournaments to intimate matches, each experience is precisely sculpted to deliver unforgettable moments and uphold the spirit of competition In the intricate tapestry of sport operations, each thread weaves a story of passion, dedication, and unwavering commitment to excellence. As the curtain rises on each new chapter, the chord of anticipation resounds, heralding the dawn of a new era where dreams take flight and champions rise."
+        "Are you tired of cookie-cutter marketing strategies that feel as bland as yesterday’s leftovers?",
+        "Welcome to our world, where marketing isn’t just science—it’s an art form",
+        "You’re not just another business in the crowd. You’re the protagonist of your own marketing saga, and every great protagonist deserves a campaign as unique and multifaceted as their character",
+        "At Trinity Entertainment, we don’t just throw spaghetti at the wall and hope it sticks. Instead, we fine-tune strategies that resonate, much like a perfectly pitched jazz note—a seamless blend of creativity, storytelling, and engagement"
       ],
       "imageUrl": "",
       "imageAlt": ""
     },
-    "keyPoints": {
-      "heading": "",
-      "data": [
-        "Event Management",
-        "Venue Operations",
-        "Ticketing and Box Office",
-        "Team Operations",
-        "Event Promotion and Marketing",
-        "Merchandising and Retail Operations",
-        "Risk Management and Security",
-        "Travel and Accommodation Services",
-        "Tournament and League Operations",
-        "On Day Operations",
-        "Player / Talent Management"
+    "ourRole": {
+      "heading": "Think of us as your marketing maestros",
+      "text": [
+        "We orchestrate a crescendo of brand visibility, awareness, and customer engagement through:",
+        "✔ Strategic campaigns that turn heads",
+        "✔ Design wizardry that sparks emotions",
+        "✔ Content alchemy that makes your brand unforgettable",
+        "But don’t worry—there are no stuffy tuxedos or stiff marketing jargon here. Just a team of passionate marketers ready to shake things up and redefine your brand’s presence",
+
+        "So, if you’re ready to ditch the mundane and embrace the extraordinary—let’s chat",
+        "Your marketing adventure awaits, and we’re here to make sure it’s nothing short of epic"
       ]
     },
-    "workSpecifics": {
-      "heading": "WORK",
+    "keyPoints": {
+      "heading": "Our Bespoke Services",
       "data": [
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Consumer Collection Campaigns",
+          "desc": "Engaging consumers through unique, data-driven activations"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Experience-Driven Concepts, Designs & Execution",
+          "desc": "Tailored experiences that create lasting brand memories"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "name": "Buzz-Generating Experiences (B2B & B2C)",
+          "desc": "High-impact activations that capture attention and engagement"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Unique Route-to-Market Strategies",
+          "desc": "Innovative approaches to reach new audiences in fresh, unexpected ways"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Brand Books, Guidelines & Toolkits",
+          "desc": "Cohesive brand storytelling across multiple touchpoints"
+        }
+      ],
+      "tagline": "Every experience we craft is designed to inspire, engage, and deliver measurable results"
+    },
+    "workSpecifics": {
+      "heading": "Related Work – Where We’ve Left Our Mark",
+      "data": [
+        {
+          "title": "Franchise Management for Ahmedabad Smash Masters at PBL",
+          "shortDescription": "Driving operational success for Premier Badminton League",
+          "fullDescription": "Detailed description of the project, including goals, outcomes, and impact.",
+          "media": {
+            "type": "image",
+            "url": ""
+          }
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "title": "India Open Up of Surfing",
+          "shortDescription": "Bringing a new wave of sports excitement to India",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "title": "Marketing & Content Management for Dabang Delhi at PKL",
+          "shortDescription": "Strengthening team branding & fan engagement",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Saksham Pedal Delhi",
+          "shortDescription": "Managing India’s largest mass cycling event",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Opening Ceremony for PBL",
+          "shortDescription": "Creating a grand stage for world-class badminton",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Australian Open Trophy Tour for Mastercard & ICICI Bank",
+          "shortDescription": "Elevating tennis fandom through brand collaborations",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
         }
       ]
     },
     "faqs": {
-      "heading": "FAQ'S",
+      "heading": "FAQs – Everything You Need to Know About Sports Event Management",
       "data": [
         {
-          "question": "What strategies are used in sports marketing and promotion to attract fans and sponsors to events and organizations?",
-          "answer": "Sports marketing employs various strategies, including social media campaigns, sponsorships, advertising, and fan engagement initiatives to promote events and organizations."
+          "question": "What strategies do you use for sports marketing and fan engagement?",
+          "answer": [
+            "We employ multi-channel marketing strategies—including social media campaigns, sponsorships, advertising, and fan engagement initiatives—to build hype and drive participation"
+          ]
         },
         {
           "question": "How are ticket sales managed for sports events?",
-          "answer": "Ticket sales for sports events can be managed through various channels, including online platforms, box offices, and third-party vendors. Pricing strategies and promotions are often used to maximize ticket sales."
+          "answer": [
+            "We use a combination of online ticketing platforms, physical box offices, and third-party vendors to optimise ticket sales. Dynamic pricing, exclusive pre-sales, and promotional offers are integrated to maximise attendance and revenue"
+          ]
         },
         {
-          "question": "What is the role of technology in sports operations?",
-          "answer": "Technology plays a significant role in sports operations, from data analytics and video analysis for performance improvement to ticketing systems and fan engagement through mobile apps and social media."
+          "question": "What role does technology play in sports operations?",
+          "answer": [
+            "Technology is at the heart of modern sports event management—from real-time data analytics and player performance tracking to seamless ticketing systems, digital fan engagement, and AI-driven event logistics"
+          ]
         },
         {
-          "question": "What strategies do you employ for fan engagement and creating memorable experiences?",
-          "answer": "We employ a mix of fan engagement strategies, such as interactive activities, fan zones, and multimedia experiences, to enhance the overall event atmosphere."
+          "question": "What fan engagement strategies do you implement to enhance event experiences?",
+          "answer": [
+            "We create interactive fan zones, immersive digital experiences, exclusive meet-and-greets, and AR/VR activations to take fan engagement to the next level"
+          ]
         },
         {
-          "question": "How can our organization benefit from partnering with your sports event company?",
-          "answer": "Partnering with us ensures that your sports events run smoothly, attract larger audiences, and are financially successful, all while maintaining the highest standards of integrity."
+          "question": "How can partnering with your sports event company benefit our organisation?",
+          "answer": [
+            "✔ Flawless event execution – Ensuring smooth operations and world-class experiences",
+            "✔ Higher audience engagement – Maximising fan interaction, attendance & brand loyalty",
+            "✔ Increased sponsorship value – Making events more marketable & revenue-generating",
+            "✔ Global exposure – Positioning your event on an international scale"
+          ]
         },
         {
-          "question": "What is the future outlook for sports event operations, and how are you staying ahead of industry trends?",
-          "answer": "We are committed to staying at the forefront of the industry by embracing technology, sustainability, and inclusivity to meet the evolving demands of sports events."
+          "question": "What does the future of sports event operations look like, and how do you stay ahead?",
+          "answer": [
+            "The future is about technology, sustainability, and inclusivity. We stay ahead by:",
+            "✔ Integrating AI & analytics for better decision-making",
+            "✔ Implementing eco-friendly event solutions to minimise carbon footprints",
+            "✔ Creating inclusive experiences to engage diverse fan bases"
+          ]
+        }
+      ]
+    },
+    "whyTrinity": {
+      "heading": "Why Choose Trinity for Sports Event Management?",
+      "data": [
+        {
+          "title": "Industry Expertise",
+          "desc": "We have managed top-tier leagues, international tournaments, and global sporting events"
+        },
+        {
+          "title": "Operational Precision",
+          "desc": "From logistics to execution, our attention to detail ensures flawless performance"
+        },
+        {
+          "title": "Innovative Approach",
+          "desc": "We blend technology, fan engagement, and marketing strategies to maximise impact"
+        },
+        {
+          "title": "Seamless Execution",
+          "desc": "Our end-to-end solutions cover everything from planning to post-event analysis"
         }
       ]
     }
@@ -494,95 +830,165 @@
   "experential-solutions": {
     "heading": "Sport Operation, Management & Servicing",
     "workDescription": {
-      "heading": "Cricket, Kabaddi, Badminton, Football, Running or Cycling we do our bit to Make Sport Happen!",
+      "heading": "Cricket, Kabaddi, Badminton, Football, Running, or Cycling – We Do Our Bit to Make Sport Happen!",
+      "subHeading": "Orchestrating Unforgettable Sporting Experiences",
       "text": [
-        "In the vibrant world of sports, operations serve as the backstage orchestrator, meticulously weaving together the fabric of seamless execution and exhilarating experiences. From thunderous roar of crowd to precise choreography of athlete movements, every aspect is curated At its core, sport operations embody a nexus of strategic planning, thorough logistics, and unwavering dedication to excellence. Our contribution stands tall as the cornerstone, where the pulse of anticipation converges with the symphony of preparation. From grandiose tournaments to intimate matches, each experience is precisely sculpted to deliver unforgettable moments and uphold the spirit of competition In the intricate tapestry of sport operations, each thread weaves a story of passion, dedication, and unwavering commitment to excellence. As the curtain rises on each new chapter, the chord of anticipation resounds, heralding the dawn of a new era where dreams take flight and champions rise."
+        "In the high-energy world of sports, every event is a perfectly choreographed spectacle—from the electrifying roar of the crowd to the flawless precision of athlete movements. But behind the magic of every tournament, match, or league lies a meticulously planned and executed operation",
+        "At Trinity Entertainment, we are the backstage orchestrators, ensuring that every aspect of sports event operations runs seamlessly. From grand stadium tournaments to intimate, high-stakes competitions, we craft unforgettable experiences that elevate the spirit of competition"
       ],
       "imageUrl": "",
       "imageAlt": ""
     },
-    "keyPoints": {
-      "heading": "",
-      "data": [
-        "Event Management",
-        "Venue Operations",
-        "Ticketing and Box Office",
-        "Team Operations",
-        "Event Promotion and Marketing",
-        "Merchandising and Retail Operations",
-        "Risk Management and Security",
-        "Travel and Accommodation Services",
-        "Tournament and League Operations",
-        "On Day Operations",
-        "Player / Talent Management"
+    "ourRole": {
+      "heading": "Our role?",
+      "text": [
+        "✔ Strategic planning, logistics, and execution – ensuring flawless event management",
+        "✔ Bridging sports, entertainment, and fan engagement – making every match memorable",
+        "✔ Delivering operational excellence – so that players, teams, and audiences experience nothing but the best",
+        "Whether it’s managing a global sports league, handling ticketing, marketing a franchise, or executing an iconic tournament, our expertise ensures precision, efficiency, and impact"
       ]
     },
-    "workSpecifics": {
-      "heading": "WORK",
+    "keyPoints": {
+      "heading": "Our Sports Event Services",
       "data": [
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Event Management",
+          "desc": "Full-scale planning & execution of sports tournaments & leagues"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Venue Operations",
+          "desc": "Seamless coordination for stadium & arena events"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "name": "Ticketing & Box Office Management",
+          "desc": "Online & offline ticketing solutions for maximised attendance"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Team Operations",
+          "desc": "Handling team logistics, training schedules & match-day coordination"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Event Promotion & Marketing",
+          "desc": "Strategic marketing to boost fan engagement & brand sponsorships"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": ""
+          "name": "Merchandising & Retail Operations",
+          "desc": "Enhancing fan experience through exclusive brand merchandise"
         },
         {
-          "imgUrl": "",
-          "heading": "",
-          "cta": { "href": "", "label": "" }
+          "name": "Risk Management & Security",
+          "desc": "Ensuring safety, compliance & crisis management"
+        },
+        {
+          "name": "Travel & Accommodation Services",
+          "desc": "Hassle-free arrangements for players, officials & VIPs"
+        },
+        {
+          "name": "Tournament & League Operations",
+          "desc": "End-to-end league & tournament execution"
+        },
+        {
+          "name": "On-Day Operations",
+          "desc": "Managing broadcasting, logistics & event-day coordination"
+        },
+        {
+          "name": "Player & Talent Management",
+          "desc": "Overseeing contracting, training & media engagements"
+        }
+      ],
+      "tagline": "We handle every detail—so your focus stays on the game"
+    },
+    "workSpecifics": {
+      "heading": "Related Work – Where We’ve Left Our Mark",
+      "data": [
+        {
+          "title": "Budweiser Beats Squad Program",
+          "shortDescription": "A dynamic activation blending music, culture, and brand engagement",
+          "fullDescription": "Detailed description of the project, including goals, outcomes, and impact.",
+          "media": {
+            "type": "image",
+            "url": ""
+          }
+        },
+        {
+          "title": "Volini Recovery Zone at Mass Participative Sports",
+          "shortDescription": "Seamlessly integrating brand experience with athlete recovery",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Tinder Queer Made Festival",
+          "shortDescription": "A celebration of inclusivity, diversity, and brand storytelling",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
+        },
+        {
+          "title": "Lollapalooza Influencer Outreach Kit Boxes",
+          "shortDescription": "Strategically crafted influencer engagement kits for maximum brand impact",
+          "fullDescription": "Detailed description of the surfing event and its significance.",
+          "media": {
+            "type": "video",
+            "url": "",
+            "embedUrl": "https://www.youtube.com/embed/video_id"
+          }
         }
       ]
     },
     "faqs": {
-      "heading": "FAQ'S",
+      "heading": "FAQs – Everything You Need to Know",
       "data": [
         {
-          "question": "What strategies are used in sports marketing and promotion to attract fans and sponsors to events and organizations?",
-          "answer": "Sports marketing employs various strategies, including social media campaigns, sponsorships, advertising, and fan engagement initiatives to promote events and organizations."
+          "question": "What makes bespoke activities different from standard event planning?",
+          "answer": [
+            "Bespoke activities are custom-crafted experiences tailored exclusively for your brand, ensuring a personalised, high-impact campaign that aligns perfectly with your goals"
+          ]
         },
         {
-          "question": "How are ticket sales managed for sports events?",
-          "answer": "Ticket sales for sports events can be managed through various channels, including online platforms, box offices, and third-party vendors. Pricing strategies and promotions are often used to maximize ticket sales."
+          "question": "How involved will our team be in the planning process?",
+          "answer": [
+            "Your input is invaluable! We collaborate with your team at every stage to ensure the experience aligns seamlessly with your vision and brand identity"
+          ]
         },
         {
-          "question": "What is the role of technology in sports operations?",
-          "answer": "Technology plays a significant role in sports operations, from data analytics and video analysis for performance improvement to ticketing systems and fan engagement through mobile apps and social media."
+          "question": "Can bespoke activities be adapted for different budgets?",
+          "answer": [
+            "Absolutely! We work within your budget to deliver a high-quality, impactful experience that meets your objectives without compromising creativity"
+          ]
         },
         {
-          "question": "What strategies do you employ for fan engagement and creating memorable experiences?",
-          "answer": "We employ a mix of fan engagement strategies, such as interactive activities, fan zones, and multimedia experiences, to enhance the overall event atmosphere."
+          "question": "How much lead time is required for planning bespoke activities?",
+          "answer": [
+            "Lead time depends on the complexity of the project. We recommend early collaboration to ensure meticulous planning, seamless execution, and an experience that exceeds expectations"
+          ]
+        }
+      ]
+    },
+    "whyTrinity": {
+      "heading": "Why Choose Trinity for Bespoke Activities?",
+      "data": [
+        {
+          "title": "",
+          "desc": "We don’t believe in one-size-fits-all marketing. Every strategy is custom designed to maximise your brand’s impact"
         },
         {
-          "question": "How can our organization benefit from partnering with your sports event company?",
-          "answer": "Partnering with us ensures that your sports events run smoothly, attract larger audiences, and are financially successful, all while maintaining the highest standards of integrity."
+          "title": "",
+          "desc": "We turn engagement into action. Our experiences don’t just impress—they drive meaningful brand interactions"
         },
         {
-          "question": "What is the future outlook for sports event operations, and how are you staying ahead of industry trends?",
-          "answer": "We are committed to staying at the forefront of the industry by embracing technology, sustainability, and inclusivity to meet the evolving demands of sports events."
+          "title": "",
+          "desc": "We connect emotions with brand storytelling. People remember experiences, not ads. We craft immersive moments that make your brand unforgettable"
+        },
+        {
+          "title": "",
+          "desc": "We bring strategy, creativity, and execution together. A great idea is nothing without a flawless execution. We handle it all"
         }
       ]
     }
