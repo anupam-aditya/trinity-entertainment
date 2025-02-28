@@ -4,6 +4,8 @@ import branding from "../../assets/branding.png";
 import sports from "../../assets/sports.jpg";
 import ipServicing from "../../assets/ip-servicing.JPG";
 import contentLabs from "../../assets/content-labs.PNG";
+import bespoke from "../../assets/bespoke.jpg";
+import experiential from "../../assets/experiential.png";
 
 function OurServicesHome({}) {
   return (
@@ -76,7 +78,7 @@ function OurServicesHome({}) {
               <a
                 className={`${styles.subSection}`}
                 style={{
-                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${branding})`,
+                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${experiential})`,
                 }}
                 href="/services/experiential-solutions"
                 target="_blank"
@@ -93,7 +95,7 @@ function OurServicesHome({}) {
           <a
             className={`${styles.second} ${styles.subSection}`}
             style={{
-              background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${branding})`,
+              background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${bespoke})`,
             }}
             href="/services/bespoke"
             target="_blank"

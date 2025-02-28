@@ -8,6 +8,7 @@
   position: relative;
   width: 100%;
   display: flex;
+  text-align: center;
 }
 
 .carouselWrapper {
@@ -44,18 +45,6 @@
   .activeDot {
     background: #000;
   }
-}
-
-@media (min-width: 768px) {
-  /* .card {
-    flex: 0 0 50%;
-  } */
-}
-
-@media (min-width: 1024px) {
-  /* .card {
-    flex: 0 0 33.333%;
-  } */
 }
 
 .cardInner {
@@ -98,4 +87,16 @@
 
 .cardContent {
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .image {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* .card {
+    flex: 0 0 33.333%;
+  } */
 }

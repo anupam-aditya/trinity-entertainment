@@ -1,6 +1,6 @@
 {
   "nykaaland": {
-    "image": "../assets/work1.jpg",
+    "image": "../assets/work-1.jpg",
     "heading": "Nykaaland – Redefining Beauty Festivals with Art, Innovation & Immersion",
     "client": "Client: Nykaa & BookMyShow Live",
     "event": "Event: Nykaaland – India’s Largest Beauty Festival",
@@ -19,11 +19,11 @@
       ]
     },
     "approach": {
-      "title": "Our Approach",
+      "title": "Our Approach: Crafting a Festival That Blended Art, Beauty & Emotion",
       "answer": [
         {
           "heading": "Concept Development – A Beauty Festival Like No Other",
-          "subheading": "Conceptualized “Beauty in Motion”, an abstract, fluid-art-inspired theme that translated into",
+          "subheading": "Conceptualized “Beauty in Motion”, an abstract, fluid-art-inspired theme that translated into:",
           "description": [
             "Vibrant, ever-changing visuals & color palettes",
             "Interactive installations that blended movement, texture & digital art",
@@ -32,7 +32,7 @@
         },
         {
           "heading": "Immersive Set Design & Festival Infrastructure",
-          "subheading": "Designed visually stunning pop-ups & experiential zones, featuring",
+          "subheading": "Designed visually stunning pop-ups & experiential zones, featuring:",
           "description": [
             "Live beauty artistry showcases & interactive makeup sessions",
             "360° abstract art installations & motion-based beauty exhibits",
@@ -41,7 +41,7 @@
         },
         {
           "heading": "Multi-Layered Experiential Journey",
-          "subheading": "Curated experiences across key festival zones, including",
+          "subheading": "Curated experiences across key festival zones, including:",
           "description": [
             "Live stage performances featuring avant-garde fashion, beauty storytelling & influencer interactions",
             "Hands-on creative workshops, from fluid makeup artistry to DIY fragrance blending",
@@ -50,7 +50,7 @@
         },
         {
           "heading": "Seamless Event Production & On-Ground Execution",
-          "subheading": "Managed end-to-end production & logistics, ensuring",
+          "subheading": "Managed end-to-end production & logistics, ensuring:",
           "description": [
             "Precise synchronization of all sensory experiences",
             "Strategic crowd flow management for an immersive, uninterrupted journey",
@@ -76,6 +76,740 @@
         "Strategic Brand Integration – Seamlessly merging beauty, art & cultural storytelling into a single event",
         "Flawless Production & Execution – Ensuring every detail aligned with the festival’s aesthetic & brand goals",
         "Social-First, Emotion-Driven Event Design – Maximizing digital engagement & long-term brand impact"
+      ]
+    }
+  },
+  "puma-black-friday": {
+    "image": "../assets/work-4.jpg",
+    "heading": "Puma’s “Mirror Image Stars” – A Disruptive Black Friday Activation",
+    "client": "Client: Puma",
+    "event": "Event: Black Friday Sale Activation",
+    "objective": "Objective: Drive footfall, boost sales, and amplify Puma’s brand engagement",
+    "impact": {
+      "title": "How Trinity Entertainment Created a High-Impact, Disruptive Retail Activation",
+      "answer": [
+        "In the highly competitive sportswear industry, Puma needed an innovative strategy to stand out during the Black Friday sale and drive traffic into its showrooms. Rather than relying on conventional discount-based promotions, the brand wanted an interactive, buzz-worthy activation that would generate curiosity, social media engagement, and impulse-driven purchases",
+        "Trinity Entertainment conceptualised and executed “Mirror Image Stars”—an experiential marketing activation that used celebrity doppelgängers, fake Puma pop-up stalls, and social media teasers to surprise, intrigue, and engage shoppers, ultimately driving them into Puma stores"
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To merge street marketing, influencer engagement, and retail strategy into a disruptive Black Friday campaign that maximised brand visibility and sales"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: A Street Marketing Disruption Strategy",
+      "answer": [
+        {
+          "heading": "Strategic City Selection & Location Planning",
+          "subheading": "Identified four major cities - Mumbai, Bangalore, Delhi and Chandigarh - known for high footfall and vibrant street engagement",
+          "description": [
+            "Selected prime locations near Puma stores to ensure seamless traffic flow from activation to purchase"
+          ]
+        },
+        {
+          "heading": "Doppelgänger Selection & Brand Integration",
+          "subheading": "Carefully scouted and selected professional lookalikes of Puma brand ambassadors",
+          "description": [
+            "Trained the doppelgängers to mimic the mannerisms, speech, and charisma of real Puma ambassadors"
+          ]
+        },
+        {
+          "heading": "Fake Puma Stall Setup & Product Display",
+          "subheading": "Designed and installed branded pop-up stalls that looked like authentic Puma showrooms, featuring:",
+          "description": [
+            "✔ High-impact Puma branding & retail aesthetics",
+            "✔ Exclusive merchandise displays to attract shoppers",
+            "✔ On-ground engagement zones to encourage interaction"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Social Media Teasers & Hype Building",
+          "description": [
+            "Released teaser campaigns and engaged influencers to build curiosity and FOMO"
+          ]
+        },
+        {
+          "heading": "Activation Day – The Big Disruption",
+          "subheading": "Doppelgängers engaged fans and redirected them into real Puma stores for exclusive deals",
+          "description": [
+            "Early visitors received vouchers & freebies, incentivising immediate purchases"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Real-Time Social Media & Influencer Amplification",
+          "description": [
+            "Captured live content and encouraged UGC through contests & hashtag challenges"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "Retail Meets Street Culture – A blend of guerrilla marketing, retail activation & social media hype",
+        "Celebrity Doppelgänger Surprise – Creating an authentic fan experience while driving store traffic",
+        "Multi-Channel Promotion Strategy – Leveraging social media, influencer marketing & in-store engagement",
+        "Seamless Brand-to-Retail Conversion – Ensuring a direct path from activation to purchase",
+        "Viral Social Media Content – Maximising organic reach & online discussions"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "Masters of Disruptive Retail Activations – Creating high-engagement, footfall-driving experiences",
+        "Seamless Brand & Consumer Engagement Strategy – Ensuring a natural transition from buzz to purchase",
+        "Multi-Channel Integration (Physical + Digital) – Amplifying campaigns across on-ground & online platforms",
+        "Innovative & Scalable Execution – Designing activations that drive both instant impact & long-term brand positioning"
+      ]
+    }
+  },
+  "youtube-fan-fest-india": {
+    "image": "../assets/",
+    "heading": "YouTube Fan Fest India – Uniting Creators & Fans Through an Electrifying Experience",
+    "client": "Client: YouTube India & BookMyShow Live",
+    "event": "Event: YouTube Fan Fest India",
+    "objective": "Objective: Elevate fan engagement, strengthen creator-fan relationships, and amplify YouTube’s brand presence in India",
+    "impact": {
+      "title": "How Trinity Entertainment Designed an Immersive YouTube Celebration",
+      "answer": [
+        "The YouTube Fan Fest India is one of the most anticipated digital creator events, bringing together top YouTubers and their biggest fans under one roof",
+        "The goal? To create an interactive and dynamic festival atmosphere that not only celebrated India’s most-loved content creators but also provided fans with exclusive experiences, meet-and-greets, and live performances",
+        "Trinity Entertainment designed and executed an immersive, high-energy event that transformed digital fandom into real-world excitement"
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To seamlessly merge YouTube’s vibrant digital culture with an on-ground festival that maximized engagement, interaction, and brand recall"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Creating a Festival Atmosphere for Digital Stars",
+      "answer": [
+        {
+          "heading": "Immersive Event Theme & Design Strategy",
+          "subheading": "Transformed the NESCO Grounds into a vibrant, YouTube-themed playground, featuring:",
+          "description": [
+            "✔ YouTube’s signature red, white & black aesthetic across all installations",
+            "✔ Bold, dynamic signage & creator-branded zones",
+            "✔ 360° fan engagement experiences, ensuring every attendee felt like part of the YouTube world"
+          ]
+        },
+        {
+          "heading": "Exclusive Creator & VIP Experience",
+          "subheading": "Designed a premium Creators’ Lounge, providing:",
+          "description": [
+            "✔ Comfortable, private spaces for influencer meet-and-greets",
+            "✔ Personalized branding elements for each top creator",
+            "Created an elevated VIP lounge with a premium view of the main stage"
+          ]
+        },
+        {
+          "heading": "High-Impact Interactive Installations & Fan Engagement Zones",
+          "subheading": "Developed interactive zones to boost fan engagement:",
+          "description": [
+            "• Meet-and-Greet Stations – Offering intimate moments with favorite YouTubers",
+            "• Photo Booths & AR Experiences – Enabling shareable, digital-first content",
+            "• Live Q&A Sessions & Creator Spotlights – Facilitating unscripted fan interactions"
+          ]
+        },
+        {
+          "heading": "Flawless Production & On-Ground Execution",
+          "subheading": "Managed comprehensive event logistics to ensure:",
+          "description": [
+            "✔ Seamless stage transitions & live performances",
+            "✔ Efficient crowd flow & security management",
+            "✔ Real-time coordination with YouTube & BookMyShow Live for online streaming"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "Largest Creator-Fan Gathering – Uniting top YouTubers with thousands of fans in a real-world festival setting",
+        "Social-First Design Approach – Built for high shareability & organic digital engagement",
+        "Live Creator Performances & Panels – Featuring stars from comedy, gaming, lifestyle & music",
+        "Seamless On-Ground & Digital Integration – Allowing remote fans to experience the fest online",
+        "A Benchmark for Creator Events in India – Setting the gold standard for influencer-led festivals"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "Leaders in Large-Scale Fan Engagement Events – Creating seamless, high-impact experiences",
+        "Strategic Digital & On-Ground Integration – Merging creator culture with live event execution",
+        "Flawless Production & Event Logistics – Ensuring every detail met brand objectives",
+        "Innovative Social Media & Experiential Activations – Amplifying engagement beyond the event space"
+      ]
+    }
+  },
+  "nexa-road-to-lollapalooza": {
+    "image": "../assets/",
+    "heading": "Amplifying Lollapalooza with NEXA – A High-Impact Festival Activation",
+    "client": "Client: Lollapalooza in partnership with NEXA",
+    "event": "Event: Road Show Flash Mob Activation",
+    "objective": "Objective: Drive ticket sales, enhance NEXA’s brand presence, and create festival buzz",
+    "impact": {
+      "title": "How Trinity Entertainment Delivered a Show-Stopping Festival Activation",
+      "answer": [
+        "When Lollapalooza partnered with NEXA, they needed a high-energy activation to generate excitement, boost brand visibility, and drive ticket sales. Trinity Entertainment conceptualized and executed a large-scale roadshow and flash mob activation that blended music, dance, and social engagement."
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To take the festival energy beyond the venue and onto the streets of Mumbai, Bangalore, Delhi, and Pune—creating a music-fueled movement that turned heads and drove engagement"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Crafting an Electrifying Multi-City Activation",
+      "answer": [
+        {
+          "heading": "",
+          "subheading": "Strategic City Selection & Route Planning",
+          "description": [
+            "Identified key cities and designed high-traffic, high-visibility routes for maximum impact"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Pre-Event Preparation & Branding",
+          "description": [
+            "Trained hip-hop squads and wrapped NEXA cars to align with the festival’s vibrant aesthetic"
+          ]
+        },
+        {
+          "heading": "High-Impact Kick-off Event",
+          "subheading": "Launched the activation in the first city with:",
+          "description": [
+            "✔ Live performances",
+            "✔ Influencer collaborations",
+            "✔ Live-streaming for online buzz"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Citywide Convoy Tour & Flash Mob Performances",
+          "description": [
+            "Conducted a tour with NEXA-branded cars and dance crews, with spontaneous flash mobs and giveaways"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Social Media Integration & Audience Engagement",
+          "description": [
+            "Encouraged attendees to share moments via event-specific hashtags and live stories"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "Brand-Driven Festival Integration – Seamlessly aligning NEXA’s premium identity with Lollapalooza’s culture",
+        "Unexpected, High-Energy Flash Mobs – Driving massive audience engagement",
+        "Multi-Platform Social Media Impact – Boosting buzz via UGC and influencer collaborations",
+        "Boosted Ticket Sales & FOMO – Creating urgency around festival attendance",
+        "Extensive Media Coverage – Garnering attention across entertainment, lifestyle, and automotive channels"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "Experts in Experiential Brand Activations – Bringing brands to life through high-energy, audience-driven experiences",
+        "Seamless Integration of Music, Movement & Marketing – Combining dance, music & storytelling for maximum impact",
+        "Multi-City Event Logistics & Execution – Flawlessly managing activations at scale",
+        "Strategic Social Media Engagement – Creating synergy between online and offline touchpoints"
+      ]
+    }
+  },
+  "leo-1": {
+    "image": "../assets/",
+    "heading": "Leo 1 – Transforming Brand Identity with a Powerful Launch Event",
+    "client": "Client: Leo 1",
+    "event": "Event: Brand Identity Transformation Event",
+    "objective": "Objective: Announce rebranding, establish Leo 1 as a leader in financial services, and create a memorable launch experience",
+    "impact": {
+      "title": "How Trinity Entertainment Brought Leo 1’s Brand Evolution to Life",
+      "answer": [
+        "A brand transformation is more than just a new name—it’s a statement of vision, growth, and leadership. When Finance Peer transitioned to Leo 1, they needed an event that reflected their evolution and cemented their leadership in financial services.",
+        "Trinity Entertainment designed and executed a powerful rebranding event that resonated with stakeholders, employees, and customers while generating significant industry buzz."
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To translate Leo 1’s new brand identity into a high-impact experience that symbolised strength, transformation, and leadership"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Designing a Brand-Defining Experience",
+      "answer": [
+        {
+          "heading": "Strategic Venue Selection & Thematic Décor",
+          "subheading": "Chose a prestigious venue and designed a visually striking setup with:",
+          "description": [
+            "✔ Lion-themed elements representing strength, courage, and leadership",
+            "✔ A deep blue, greenery, and gold color palette reflecting the brand identity",
+            "✔ Immersive lighting & digital installations to enhance the transformation theme"
+          ]
+        },
+        {
+          "heading": "Pre-Event Buzz & Invitations",
+          "subheading": "Created anticipation through:",
+          "description": [
+            "✔ Custom invitations designed to intrigue & reflect the transformation",
+            "✔ Social media teasers & email campaigns gradually revealing elements of the new brand"
+          ]
+        },
+        {
+          "heading": "Seamless Event Execution & Engagement Strategies",
+          "subheading": "Executed the event with:",
+          "description": [
+            "Grand Welcome & Branded Kits – Personalised merchandise & welcome experiences",
+            "CEO Keynote Address – Highlighting the brand’s evolution & future vision",
+            "The Brand Reveal Moment – A captivating unveiling through multimedia storytelling with Rohit Sharma",
+            "Brand Storytelling & Client Success Showcases – Testimonials and success stories",
+            "Interactive Tech Stations – Hands-on experiences with digital services",
+            "Employee Recognition & Celebration – Honouring team contributions",
+            "Networking & Themed Refreshments – Facilitating stakeholder interactions"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "A Visually Stunning Brand Reveal – Capturing transformation & future ambitions",
+        "High-Impact Keynote & Thought Leadership – Reinforcing trust & credibility",
+        "Immersive Brand Storytelling – Showcasing real customer success stories & growth",
+        "Interactive Digital Experience Zones – Demonstrating fintech innovations",
+        "Strong Stakeholder Engagement – Involving clients, partners, and employees"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "Experts in High-Impact Corporate Rebranding Events – From concept to execution",
+        "Seamless Event Production & Thematic Storytelling – Creating meaningful brand narratives",
+        "Stakeholder Engagement & Brand Visibility Strategies – Ensuring lasting impact",
+        "Flawless On-Ground Execution & Logistics – Delivering a premium experience"
+      ]
+    }
+  },
+  "camp-tinder": {
+    "image": "../assets/",
+    "heading": "Camp Tinder – Elevating Music Festivals with Interactive Brand Experiences",
+    "client": "Client: Tinder",
+    "event": "Event: Camp Tinder – Music Festival Activation",
+    "objective": "Objective: Creating a platform for local musical talent while enhancing festival engagement for attendees",
+    "impact": {
+      "title": "How Trinity Entertainment Transformed Music Festivals with Camp Tinder",
+      "answer": [
+        "Tinder wanted to move beyond digital interactions and create a real-world activation resonating with music lovers and festivalgoers.",
+        "Trinity Entertainment conceptualised and executed Camp Tinder—a music-driven activation blending talent scouting, live performances, and attendee engagement."
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To turn music festivals into discovery hubs for emerging artists, new friendships, and unforgettable moments"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Creating a Festival-Within-a-Festival",
+      "answer": [
+        {
+          "heading": "Pre-Event Talent Hunt & Promotions",
+          "subheading": "Launched a digital talent scouting campaign via social media & partnerships",
+          "description": [
+            "Shortlisted promising musicians for exclusive performances",
+            "Amplified excitement through influencer collaborations & pre-event teasers"
+          ]
+        },
+        {
+          "heading": "Designing the Camp Tinder Experience",
+          "subheading": "Created a festival-within-a-festival at NH7 Weekender featuring:",
+          "description": [
+            "✔ An intimate stage setup with seating areas & bonfire pits",
+            "✔ Interactive activity zones for social engagement",
+            "✔ Branded experiential touchpoints seamlessly integrated into the festival"
+          ]
+        },
+        {
+          "heading": "Live Talent Showcase & Headliner Collaborations",
+          "subheading": "Curated exclusive performances for emerging artists on the Camp Tinder stage",
+          "description": [
+            "Promoted artist lineups via festival schedules & social media",
+            "Arranged unique jam sessions between headliners and local talents"
+          ]
+        },
+        {
+          "heading": "Interactive Festival Experiences",
+          "subheading": "Designed engaging activations to enhance festival atmosphere and drive brand engagement:",
+          "description": [
+            "✔ Campfire sessions & storytelling zones for organic interactions",
+            "✔ Customised Tinder-themed merchandise giveaways",
+            "✔ Live engagement challenges & festival-exclusive features"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "Emerging Talent Discovery – Giving local artists a platform at mainstream festivals",
+        "Exclusive Collaborations with Headliners – Creating once-in-a-lifetime musical moments",
+        "Immersive Festival Experience – Blending music, interaction, and social discovery",
+        "High-Impact Social Media Strategy – Boosting both digital and offline brand presence",
+        "Scalable & Global Expansion Potential – Establishing Camp Tinder as a long-term activation model"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "Experts in Large-Scale Festival Activations – From stage design to crowd engagement",
+        "Seamless Brand Integration – Crafting organic, immersive experiences",
+        "Innovative Interactive Event Design – Maximising engagement & impact",
+        "Scalable Multi-City & Global Execution – Building activations for long-term expansion"
+      ]
+    }
+  },
+  "budweiser-fifa-world-cup-final-screening": {
+    "image": "../assets/",
+    "heading": "Bringing the FIFA World Cup Fever to Life for Budweiser",
+    "client": "Client: Budweiser",
+    "event": "Event: FIFA World Cup Final Screening & Fan Experience",
+    "objective": "Objective: Creating an electrifying football festival to boost brand engagement",
+    "impact": {
+      "title": "How Trinity Entertainment Delivered a Thrilling Football Carnival",
+      "answer": [
+        "When Budweiser, an official FIFA World Cup sponsor, sought to create an immersive fan experience for the final match, they turned to Trinity Entertainment to deliver a high-energy, multi-faceted celebration that would cement their reputation as a leader in sports engagement and fan experiences.",
+        "The result was an unforgettable football carnival that brought fans together, amplified Budweiser’s brand presence, and delivered a stadium-like atmosphere for the biggest match of the year."
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To create an immersive football carnival that unites fans and amplifies Budweiser’s brand presence"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Crafting the Ultimate FIFA Experience",
+      "answer": [
+        {
+          "heading": "Venue Transformation & Set Design",
+          "subheading": "Phoenix Mall was converted into a football-themed festival zone, featuring:",
+          "description": [
+            "✔ Open-air giant screens for an immersive match experience",
+            "✔ Football-inspired décor & branded zones for maximum impact",
+            "✔ VIP viewing areas & general access zones to accommodate all fans"
+          ]
+        },
+        {
+          "heading": "High-Energy Entertainment Lineup",
+          "subheading": "Curated a dynamic mix of live entertainment to keep the energy levels high:",
+          "description": [
+            "✔ Freestyle footballers showcasing jaw-dropping tricks",
+            "✔ Live rap & DJ performances to build hype before the match",
+            "✔ Emcee Clince Varghese keeping the crowd engaged throughout the event"
+          ]
+        },
+        {
+          "heading": "Ticketing & Promotions Strategy",
+          "subheading": "Adopted a multi-platform marketing approach, leveraging:",
+          "description": [
+            "✔ Social media campaigns",
+            "✔ Radio promotions & influencer collaborations",
+            "✔ Exclusive partnerships for ticket giveaways & contests"
+          ]
+        },
+        {
+          "heading": "Interactive Fan Engagement & Live Activities",
+          "subheading": "Designed multiple engagement touchpoints to create an immersive festival experience:",
+          "description": [
+            "✔ Face painting & tattoo artists offering custom football-themed designs",
+            "✔ T-shirt printing stations for personalised fan merchandise",
+            "✔ Live PS FIFA gaming zones for fans to test their virtual football skills",
+            "✔ Budweiser-branded merchandise booths for souvenirs & collectibles"
+          ]
+        },
+        {
+          "heading": "Seamless Event Production & Execution",
+          "subheading": "Managed all on-ground operations, ensuring:",
+          "description": [
+            "✔ Efficient crowd flow & security management",
+            "✔ Top-tier audio-visual production for a stadium-like atmosphere",
+            "✔ Coordinated performances, live screening, and brand activations seamlessly"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "Massive Football Turnout – Exceeded expected numbers, creating an unmatched fan atmosphere",
+        "Entertainment-Packed Experience – Engaged the audience with live music, freestyle football, and interactive games",
+        "Budweiser Brand Activation – Seamlessly integrated brand messaging into the experience",
+        "Social Media Impact – Fans shared branded content, generating significant online buzz",
+        "Inclusive Fan Engagement – Accommodated both ticketed and general attendees for widespread participation"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "Large-Scale Sports Fan Engagement Expertise – Successfully managing high-energy, high-attendance events",
+        "Seamless Brand Integration – Crafting authentic, engaging brand-led experiences",
+        "360° Event Management & Execution – Handling every detail from concept to production",
+        "Innovative Audience Engagement Strategies – Ensuring every fan feels connected to the experience"
+      ]
+    }
+  },
+  "audi-service-head-conference": {
+    "image": "../assets/",
+    "heading": "Crafting an Exclusive Learning & Networking Experience for Audi",
+    "client": "Client: Audi",
+    "event": "Event: National Dealership Conference on Cordelia Cruise",
+    "objective": "Objective: Strengthening Collaboration & Knowledge Exchange Among Dealership Leaders",
+    "impact": {
+      "title": "How Trinity Entertainment Delivered a Seamless & High-Impact Event",
+      "answer": [
+        "Trinity Entertainment transformed corporate events into immersive, high-value experiences. For Audi’s conference, we created a luxury cruise event that blended professional development, networking, and team building with a premium experience."
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To create a collaborative environment that fosters knowledge sharing and strengthens relationships across Audi’s dealership network"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Merging Business with Luxury",
+      "answer": [
+        {
+          "heading": "",
+          "subheading": "Pre-Event Planning & Invitations",
+          "description": [
+            "Designed meticulous invites and event materials with an advanced RSVP strategy"
+          ]
+        },
+        {
+          "heading": "Curating Conference & Workshop Sessions",
+          "subheading": "Organised expert-led panel discussions and interactive Q&A sessions covering key industry topics:",
+          "description": [
+            "✔ Technical advancements in automotive servicing",
+            "✔ Customer service excellence & dealership operations",
+            "✔ Unified brand vision & growth strategies"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Team Building & Networking Activities",
+          "description": [
+            "Implemented icebreakers, gamified challenges, and strategic seating arrangements to foster collaboration"
+          ]
+        },
+        {
+          "heading": "Leisure, Experience Design & Community Building",
+          "subheading": "Balanced luxury cruise hospitality with structured networking and recreational activities:",
+          "description": [
+            "Enhanced camaraderie through thoughtfully planned activities",
+            "Encouraged idea exchange via structured discussions and casual networking",
+            "Facilitated ongoing collaboration through Audi’s internal platforms"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "Expert-Led Conference – Featuring industry leaders & technical specialists",
+        "Hands-On Workshops & Knowledge Sharing – Elevating service excellence",
+        "Team-Building Activities – Strengthening inter-dealership connections",
+        "Luxury Cruise Experience – Merging business with world-class hospitality",
+        "Community Building – Reinforcing Audi’s core values and vision"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "End-to-End Corporate Event Management – From conceptualisation to flawless execution",
+        "Luxury Experience Curation – Blending business objectives with premium hospitality",
+        "Strategic Networking & Engagement – Fostering lasting professional relationships",
+        "Seamless Logistics & Production – Delivering a high-quality, stress-free experience"
+      ]
+    }
+  },
+  "ab-inbev-diwali-party": {
+    "image": "../assets/",
+    "heading": "Bringing Festive Magic to AB InBev’s Diwali Celebration",
+    "client": "Client: AB InBev",
+    "event": "Event: Diwali Party for Employees",
+    "objective": "Objective: Conceptualising & executing a seamless, high-energy corporate celebration",
+    "impact": {
+      "title": "How Trinity Entertainment Made It Happen",
+      "answer": [
+        "AB InBev wanted an immersive celebration that reflected company values and boosted morale. Trinity Entertainment transformed a corporate event into an unforgettable experience blending tradition, engagement, and recognition."
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To transform a corporate celebration into an immersive experience that reinforces brand culture while ensuring seamless execution"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Turning Vision into Reality",
+      "answer": [
+        {
+          "heading": "",
+          "subheading": "Concept & Event Theme Development",
+          "description": [
+            "Crafted a festive theme balancing Diwali traditions with modern corporate engagement"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Venue Planning & Setup",
+          "description": [
+            "Handled every aspect from ambient lighting and décor to staging and experiential zones"
+          ]
+        },
+        {
+          "heading": "Entertainment & Employee Engagement",
+          "subheading": "Curated a diverse lineup including:",
+          "description": [
+            "Live performances – Traditional and contemporary acts",
+            "Interactive games & activities – Custom-designed engagement zones",
+            "Music & DJ setup – A vibrant mix to keep the energy high"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Seamless Event Production & Technical Support",
+          "description": [
+            "Ensured flawless sound, lighting, and visuals for a dynamic atmosphere"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Recognition & Awards Integration",
+          "description": [
+            "Coordinated a structured awards segment to celebrate employee contributions"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Catering & Hospitality Coordination",
+          "description": [
+            "Managed culinary preferences and service efficiency for a gourmet experience"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "On-Ground Management & Execution",
+          "description": [
+            "Orchestrated every element with expert event managers and technical support"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Highlights",
+      "answer": [
+        "Multi-Zone Experience Design – Curated interactive spaces for employee engagement",
+        "Seamless Entertainment & Performance – Live acts and immersive storytelling",
+        "Branded Visual Aesthetics – Strategic and photogenic branding integrations",
+        "Awards & Recognition Program – Flawless execution of leadership speeches and accolades",
+        "End-to-End Technical Support – High-impact audio-visual and stage production"
+      ]
+    },
+    "whyUs": {
+      "title": "The Trinity Advantage: What Sets Us Apart",
+      "answer": [
+        "360° Event Management – From ideation to execution, we handle it all",
+        "Custom Theme & Experience Design – Aligning celebrations with company culture",
+        "Flawless On-Ground Execution – Ensuring every detail is perfect",
+        "Expertise in Corporate & Employee Engagement – Proven track record of immersive events"
+      ]
+    }
+  },
+  "wings-activation-zone-at-nh7-weekender": {
+    "image": "../assets/",
+    "heading": "Wings Headphones – Immersive Gaming & Music Activation at NH7 Weekender",
+    "client": "Client: Wings",
+    "event": "Event: NH7 Weekender Activation Zone",
+    "objective": "Objective: Engage gamers & festivalgoers, showcase Wings headphones, and create an interactive brand experience",
+    "impact": {
+      "title": "How Trinity Entertainment Designed an Unforgettable Festival Activation",
+      "answer": [
+        "Wings needed a standout activation at NH7 Weekender to engage festival-goers and drive brand awareness through interactive, hands-on product experiences."
+      ]
+    },
+    "mission": {
+      "title": "Our mission?",
+      "answer": [
+        "To transform passive product displays into high-energy, interactive engagements that leave a lasting impression"
+      ]
+    },
+    "approach": {
+      "title": "Our Approach: Creating a Multi-Sensory Brand Experience",
+      "answer": [
+        {
+          "heading": "Strategic Zone Placement & High-Impact Design",
+          "subheading": "Positioned the Activation Zone in a high-footfall area and designed a visually immersive space with:",
+          "description": [
+            "✔ Vibrant neon lighting to create an edgy, futuristic vibe",
+            "✔ A live graffiti wall encouraging creative interaction"
+          ]
+        },
+        {
+          "heading": "Innovative Product Display – The Claw Machine Attraction",
+          "subheading": "Reimagined the product showcase by integrating Wings headphones into a claw machine for a gamified experience",
+          "description": [
+            "Encouraged participation with exclusive giveaways & discounts for winners"
+          ]
+        },
+        {
+          "heading": "Gaming Section – Hands-On Product Experience",
+          "subheading": "Designed a gaming hub with PlayStation consoles to allow attendees to:",
+          "description": [
+            "✔ Test Wings headphones in real gaming scenarios",
+            "✔ Experience low-latency sound & noise cancellation",
+            "✔ Compete in quick gaming challenges for rewards"
+          ]
+        },
+        {
+          "heading": "Live DJ Set – Merging Music & Technology",
+          "subheading": "Curated a live DJ performance that blended with Wings’ brand identity",
+          "description": [
+            "Created a high-energy festival atmosphere reinforcing the music + gaming crossover appeal"
+          ]
+        }
+      ]
+    },
+    "highlight": {
+      "title": "Key Event Highlights",
+      "answer": [
+        "Gamified Engagement – Interactive experiences that naturally showcased Wings headphones",
+        "High-Impact Music Integration – Strengthening brand connection with the festival community",
+        "Visually Striking Activation Zone – Designed to stand out and attract festival traffic",
+        "Social Media Engagement – Amplifying reach through attendee-generated content",
+        "Seamless Brand-to-Consumer Connection – Driving product interest and interactions"
+      ]
+    },
+    "whyUs": {
+      "title": "Why Trinity Entertainment?",
+      "answer": [
+        "Experts in Experiential Marketing & Festival Activations – Crafting immersive brand experiences",
+        "Seamless Integration of Gaming, Music & Messaging – Ensuring authentic audience engagement",
+        "Innovative Product Showcases – Using gamification to boost brand recall",
+        "Multi-Channel Amplification – Driving impact both physically and digitally"
       ]
     }
   }

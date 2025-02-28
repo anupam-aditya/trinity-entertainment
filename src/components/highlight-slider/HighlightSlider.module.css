@@ -199,6 +199,8 @@
 @media (max-width: 768px) {
   .container {
     padding: 1rem 0;
+    flex-direction: column;
+    gap: 1rem;
   }
   .textSection {
     padding: 0 1rem;

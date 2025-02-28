@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./Work.module.css";
 import work1 from "../../assets/work-1.jpg";
 import work2 from "../../assets/work-2.jpg";
-import work3 from "../../assets/work-3.jpg";
 import work4 from "../../assets/work-4.jpg";
 import work5 from "../../assets/work-5.jpg";
 import work6 from "../../assets/work-6.jpg";
@@ -31,7 +30,7 @@ function WorkPage() {
     <section className={styles.workPageContainer}>
       {isOpen && (
         <Modal
-          title={event?.client}
+          title={event?.event}
           onClose={closeHandler}
           background="#ef4158"
           color="#fff"
@@ -44,7 +43,7 @@ function WorkPage() {
             )}
             {event?.heading && (
               <div className={styles.eventHeading}>
-                <p className={styles.heading}>{event?.event}</p>
+                <p className={styles.heading}>{event?.client}</p>
               </div>
             )}
             {event?.objective && (
@@ -68,7 +67,7 @@ function WorkPage() {
                 </p>
                 {event?.mission?.answer?.length > 0 &&
                   event?.mission?.answer?.map((item) => (
-                    <p className={styles.impactAnswer}>{item}</p>
+                    <p className={styles.missionAnswer}>{item}</p>
                   ))}
               </div>
             )}
@@ -120,111 +119,69 @@ function WorkPage() {
                 className={`${styles.item1} ${styles.item}`}
                 style={{ flex: "unset" }}
                 onClick={clickEventHandler}
+                data-client="wings-activation-zone-at-nh7-weekender"
               >
-                <img src={work2} />
+                <img src={work4} />
               </div>
               <div
                 className={`${styles.item1} ${styles.item}`}
                 style={{ flex: "unset" }}
                 onClick={clickEventHandler}
+                data-client="budweiser-fifa-world-cup-final-screening"
               >
-                <img src={work3} />
+                <img src={work10} />
               </div>
             </div>
             <div
               className={`${styles.item1} ${styles.item}`}
               onClick={clickEventHandler}
+              data-client="leo-1"
             >
-              <img src={work5} />
+              <img src={work11} />
             </div>
           </div>
           <div className={styles.subContainer}>
-            <div className={styles.item} onClick={clickEventHandler}>
+            <div
+              className={styles.item}
+              onClick={clickEventHandler}
+              data-client="puma-black-friday"
+            >
               <img src={work5} />
             </div>
             <div className={`${styles.item} ${styles.absolutePosition}`}>
               <p className={styles.centralText}>Our Work</p>
             </div>
-            <div className={`${styles.item}`} onClick={clickEventHandler}>
-              <img src={work11} />
+            <div
+              className={`${styles.item}`}
+              onClick={clickEventHandler}
+              data-client="ab-inbev-diwali-party"
+            >
+              <img src={work9} />
             </div>
           </div>
           <div className={styles.subContainer}>
             <div className={`${styles.nestedContainer} ${styles.flexColumn}`}>
-              <div className={styles.item} onClick={clickEventHandler}>
-                <img src={work5} />
-              </div>
-              <div className={styles.item} onClick={clickEventHandler}>
+              <div
+                className={styles.item}
+                onClick={clickEventHandler}
+                data-client="nexa-road-to-lollapalooza"
+              >
                 <img src={work6} />
               </div>
-              <div
-                className={`${styles.item} ${styles.itemLong}`}
-                onClick={clickEventHandler}
-              >
-                <img src={work8} />
-              </div>
             </div>
-            <div className={`${styles.nestedContainer} ${styles.flexColumn}`}>
-              <div className={styles.nestedItemContainer}>
-                <div className={styles.item} onClick={clickEventHandler}>
-                  <img src={work9} />
-                </div>
-                <div className={styles.item} onClick={clickEventHandler}>
-                  <img src={work10} />
-                </div>
-              </div>
-              <div
-                className={`${styles.item}`}
-                style={{ flex: 1 }}
-                onClick={clickEventHandler}
-              >
-                <img src={work1} />
-              </div>
-            </div>
-            <div className={`${styles.nestedContainer} ${styles.flexColumn}`}>
+            {/* <div className={`${styles.nestedContainer} ${styles.flexColumn}`}>
               <div className={styles.item} onClick={clickEventHandler}>
-                <img src={work11} />
+                <img src={work9} />
               </div>
-              <div className={styles.item} onClick={clickEventHandler}>
-                <img src={work1} />
-              </div>
+            </div> */}
+            {/* <div className={`${styles.nestedContainer} ${styles.flexColumn}`}>
               <div
                 className={`${styles.item} ${styles.itemLong}`}
                 onClick={clickEventHandler}
               >
                 <img src={work4} />
               </div>
-            </div>
-          </div>
-          <div className={styles.subContainer}>
-            <div className={styles.nestedContainer}>
-              <div
-                className={`${styles.item} ${styles.itemSmall}`}
-                onClick={clickEventHandler}
-              >
-                <img src={work1} />
-              </div>
-              <div
-                className={`${styles.item} ${styles.itemLarge}`}
-                onClick={clickEventHandler}
-              >
-                <img src={work1} />
-              </div>
-            </div>
-            <div className={styles.nestedContainer}>
-              <div
-                className={`${styles.item} ${styles.itemSmall}`}
-                onClick={clickEventHandler}
-              >
-                <img src={work1} />
-              </div>
-              <div
-                className={`${styles.item} ${styles.itemLarge}`}
-                onClick={clickEventHandler}
-              >
-                <img src={work1} />
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
