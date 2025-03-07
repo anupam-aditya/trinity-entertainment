@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Home.module.css";
 import LandingSection from "../../components/landing";
 import OurServices from "../../components/our-services";
@@ -31,6 +31,12 @@ import OurServicesHome from "../../components/our-services-home";
 
 function Home() {
   const partnershipArray = [eema, bni, marriot];
+  const sectionRef = useRef();
+  const servicesRef = useRef();
+  const testimonialRef = useRef();
+  const partnershipRef = useRef();
+  const headlineRef = useRef();
+  const joinUsRef = useRef();
 
   const imagesArray = [
     { id: 0, image: hsi },
@@ -160,10 +166,47 @@ function Home() {
       backgroundImg: backgroundImage,
     },
   ];
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles.animate);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    // Array of all refs to observe
+    const refs = [
+      sectionRef,
+      servicesRef,
+      testimonialRef,
+      partnershipRef,
+      headlineRef,
+      joinUsRef,
+    ];
+
+    // Observe each ref if it exists
+    refs.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    // Cleanup function
+    return () => {
+      refs.forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
+  }, []);
   return (
     <div className={styles.container}>
       <LandingSection />
-      <div className={styles.highlightSection}>
+      <div className={styles.highlightSection} ref={sectionRef}>
         <HighlightSlider
           title="Create an Experience Like Never Before"
           subHeading="Your Brand, Our Mission"
@@ -176,13 +219,13 @@ function Home() {
           link={{ href: "/about", text: "Explore More" }}
         />
       </div>
-      <div className={styles.servicesSection}>
+      <div className={styles.servicesSection} ref={servicesRef}>
         <OurServicesHome />
       </div>
-      <div className={styles.testimonialSection}>
+      <div className={styles.testimonialSection} ref={testimonialRef}>
         <Carousel items={testimonialsArrays} />
       </div>
-      <div className={styles.partnershipSection}>
+      <div className={styles.partnershipSection} ref={partnershipRef}>
         <OurClients
           title="Our"
           subHeading=""
@@ -193,10 +236,10 @@ function Home() {
       {/* <div className={styles.recentAccomplishmentSection}>
         <RecentAccomplishment />
       </div> */}
-      <div className={styles.headlineSection}>
+      <div className={styles.headlineSection} ref={headlineRef}>
         <Headlines />
       </div>
-      <div className={styles.joinUsSection}>
+      <div className={styles.joinUsSection} ref={joinUsRef}>
         <Highlight
           data={{
             heading: "Join Our Team – #LifeAtTrinity",
