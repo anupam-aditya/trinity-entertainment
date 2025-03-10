@@ -1,9 +1,55 @@
-import React from "react";
-import { useSnapCarousel } from "react-snap-carousel";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "./Carousel.module.css";
 
 const Carousel = ({ items = [] }) => {
-  const { scrollRef, goTo, activePageIndex } = useSnapCarousel();
+  const containerRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Handle scroll events to update the active index based on the container's center.
+  const handleScroll = () => {
+    if (!containerRef.current) return;
+    const container = containerRef.current;
+    const containerCenter = container.scrollLeft + container.clientWidth / 2;
+    let closestIndex = 0;
+    let minDiff = Infinity;
+    Array.from(container.children).forEach((child, index) => {
+      const childCenter = child.offsetLeft + child.offsetWidth / 2;
+      const diff = Math.abs(childCenter - containerCenter);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closestIndex = index;
+      }
+    });
+    setActiveIndex(closestIndex);
+  };
+
+  // Navigate to a specific index and center that item.
+  const goTo = (index) => {
+    if (!containerRef.current) return;
+    const container = containerRef.current;
+    const clampedIndex = Math.max(
+      0,
+      Math.min(index, container.children.length - 1)
+    );
+    const targetChild = container.children[clampedIndex];
+    const targetScrollLeft =
+      targetChild.offsetLeft +
+      targetChild.offsetWidth / 2 -
+      container.clientWidth / 2;
+    container.scrollTo({
+      left: targetScrollLeft,
+      behavior: "smooth",
+    });
+    setActiveIndex(clampedIndex);
+  };
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    container.addEventListener("scroll", handleScroll);
+    // Cleanup the event listener on unmount
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className={styles.carouselContainer}>
@@ -14,11 +60,13 @@ const Carousel = ({ items = [] }) => {
         </h2>
       </div>
       <div className={styles.carousel}>
-        <div className={styles.carouselWrapper} ref={scrollRef}>
+        <div className={styles.carouselWrapper} ref={containerRef}>
           {items.map((item, index) => (
             <div
               key={item.id}
-              className={`${styles.carouselItem}`}
+              className={`${styles.carouselItem} ${
+                activeIndex === index ? styles.selected : ""
+              }`}
               style={{
                 backgroundImage: `linear-gradient(180deg, rgba(102, 102, 102, 1) 0%, rgba(0, 0, 0, 0.85) 100%), url(${item.backgroundImg})`,
               }}
@@ -37,13 +85,13 @@ const Carousel = ({ items = [] }) => {
         <div className={styles.buttonsContainer}>
           <button
             className={styles.carouselButton}
-            onClick={() => goTo(activePageIndex - 1)}
+            onClick={() => goTo(activeIndex - 1)}
           >
             ←
           </button>
           <button
             className={styles.carouselButton}
-            onClick={() => goTo(activePageIndex + 1)}
+            onClick={() => goTo(activeIndex + 1)}
           >
             →
           </button>

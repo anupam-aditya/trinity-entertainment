@@ -11,7 +11,7 @@ const Footer = () => {
     { text: "Work", url: "/work" },
     { text: "Careers", url: "/careers" },
     { text: "Contact", url: "/contact" },
-    { text: "ETERNITYBYTRINITY.COM", url: "https://eternitybytrinity.com" },
+    { text: "ETERNITYBYTRINITY", url: "https://eternitybytrinity.com" },
   ];
 
   const contactInfo = [
@@ -84,9 +84,7 @@ const Footer = () => {
           <div className={styles.companySocialLinks}>
             {socialInfo.map((info) => (
               <SvgWrapper
-                className={
-                  info?.icon === "instagram" ? styles.svgBackgroundFill : ""
-                }
+                className={styles.svgBackgroundFill}
                 svgSrc={info?.icon}
               />
             ))}

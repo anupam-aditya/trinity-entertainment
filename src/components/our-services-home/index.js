@@ -6,6 +6,32 @@ import ipServicing from "../../assets/ip-servicing.JPG";
 import contentLabs from "../../assets/content-labs.PNG";
 import bespoke from "../../assets/bespoke.jpg";
 import experiential from "../../assets/experiential.png";
+import styled from "styled-components";
+
+const BackgroundLink = styled.a`
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.63) 0%,
+      rgba(0, 0, 0, 0.63) 100%
+    ),
+    url(${(props) => props.bg});
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url(${(props) => props.bg});
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.025);
+    transition: transform 1s ease;
+  }
+`;
 
 function OurServicesHome({}) {
   return (
@@ -22,11 +48,9 @@ function OurServicesHome({}) {
         create authentic connections and lasting impressions
       </p>
       <div className={styles.servicesSection}>
-        <a
+        <BackgroundLink
           className={`${styles.second} ${styles.subSection} ${styles.branding}`}
-          style={{
-            background: `linear-gradient(180deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%), url(${sports})`,
-          }}
+          bg={sports}
           href="/services/experential-solutions"
           target="_blank"
         >
@@ -38,14 +62,12 @@ function OurServicesHome({}) {
             We offer end-to-end sports management solutions, from talent
             tracking to event execution and sponsorship integration.
           </p>
-        </a>
+        </BackgroundLink>
         <div className={styles.rightSide}>
           <div className={styles.first}>
-            <a
+            <BackgroundLink
               className={`${styles.innerLeft} ${styles.subSection}`}
-              style={{
-                background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${ipServicing})`,
-              }}
+              bg={ipServicing}
               href="/services/ip-servicing"
               target="_blank"
             >
@@ -57,13 +79,11 @@ function OurServicesHome({}) {
                 properties (IPs), ensuring seamless execution and maximum
                 audience engagement.
               </p>
-            </a>
+            </BackgroundLink>
             <div className={styles.innerRight}>
-              <a
+              <BackgroundLink
                 className={`${styles.subSection}`}
-                style={{
-                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${contentLabs})`,
-                }}
+                bg={contentLabs}
                 href="/services/content-labs"
                 target="_blank"
               >
@@ -74,12 +94,10 @@ function OurServicesHome({}) {
                   house crafts compelling content that amplifies your brand’s
                   storytelling.
                 </p>
-              </a>
-              <a
+              </BackgroundLink>
+              <BackgroundLink
                 className={`${styles.subSection}`}
-                style={{
-                  background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${experiential})`,
-                }}
+                bg={experiential}
                 href="/services/experiential-solutions"
                 target="_blank"
               >
@@ -89,14 +107,12 @@ function OurServicesHome({}) {
                   We specialise in creating unique, immersive experiences that
                   deeply engage audiences and build brand loyalty.
                 </p>
-              </a>
+              </BackgroundLink>
             </div>
           </div>
-          <a
+          <BackgroundLink
             className={`${styles.second} ${styles.subSection}`}
-            style={{
-              background: `linear-gradient(180deg,rgba(0, 0, 0, 0.63) 0%,rgba(0, 0, 0, 0.63) 100%), url(${bespoke})`,
-            }}
+            bg={bespoke}
             href="/services/bespoke"
             target="_blank"
           >
@@ -107,7 +123,7 @@ function OurServicesHome({}) {
               experiential solutions are crafted to capture attention, spark
               curiosity, and create a buzz.
             </p>
-          </a>
+          </BackgroundLink>
         </div>
       </div>
     </div>

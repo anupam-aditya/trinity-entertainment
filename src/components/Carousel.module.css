@@ -74,9 +74,9 @@
   box-sizing: border-box;
 }
 
-.carouselItem.selected {
+/* .carouselItem.selected {
   border: 2px solid red;
-}
+} */
 
 .carouselImg {
   height: 6.25rem;

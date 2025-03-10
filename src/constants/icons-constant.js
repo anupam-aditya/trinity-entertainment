@@ -1,8 +1,8 @@
 import { ReactComponent as Mail } from "../assets/mail.svg";
 import { ReactComponent as Location } from "../assets/location.svg";
-import { ReactComponent as Facebook } from "../assets/facebook-icon.svg";
-import { ReactComponent as Linkedin } from "../assets/linkedin-icon.svg";
-import { ReactComponent as Instagram } from "../assets/instagram-icon.svg";
+import { ReactComponent as Facebook } from "../assets/facebook.svg";
+import { ReactComponent as Linkedin } from "../assets/linkedin.svg";
+import { ReactComponent as Instagram } from "../assets/instagram.svg";
 import { ReactComponent as Arrow } from "../assets/arrow.svg";
 import { ReactComponent as ArrowPink } from "../assets/arrow-pink.svg";
 export const SVG_COMPONENTS_MAPPINGS = {

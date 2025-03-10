@@ -30,7 +30,7 @@ import OurClients from "../../components/our-clients";
 import OurServicesHome from "../../components/our-services-home";
 
 function Home() {
-  const partnershipArray = [eema, bni, marriot];
+  const partnershipArray = [eema, bni];
   const sectionRef = useRef();
   const servicesRef = useRef();
   const testimonialRef = useRef();
@@ -70,72 +70,56 @@ function Home() {
       },
     },
   ];
-  const sliderItems = [
-    {
-      id: 1,
-      image: eema,
-    },
-    {
-      id: 2,
-      image: bni,
-    },
-    {
-      id: 3,
-      image: marriot,
-    },
-    {
-      id: 4,
-      image: eema,
-    },
-    {
-      id: 5,
-      image: eema,
-    },
-    {
-      id: 6,
-      image: bni,
-    },
-    {
-      id: 7,
-      image: marriot,
-    },
-    {
-      id: 8,
-      image: eema,
-    },
-    {
-      id: 9,
-      image: eema,
-    },
-    {
-      id: 10,
-      image: bni,
-    },
-    {
-      id: 11,
-      image: marriot,
-    },
-    {
-      id: 12,
-      image: eema,
-    },
-    {
-      id: 13,
-      image: eema,
-    },
-    {
-      id: 14,
-      image: bni,
-    },
-    {
-      id: 15,
-      image: marriot,
-    },
-    {
-      id: 16,
-      image: eema,
-    },
-  ];
+  // const sliderItems = [
+  //   {
+  //     id: 1,
+  //     image: eema,
+  //   },
+  //   {
+  //     id: 2,
+  //     image: bni,
+  //   },
+  //   {
+  //     id: 3,
+  //     image: eema,
+  //   },
+  //   {
+  //     id: 4,
+  //     image: eema,
+  //   },
+  //   {
+  //     id: 5,
+  //     image: bni,
+  //   },
+  //   {
+  //     id: 6,
+  //     image: eema,
+  //   },
+  //   {
+  //     id: 7,
+  //     image: eema,
+  //   },
+  //   {
+  //     id: 8,
+  //     image: bni,
+  //   },
+  //   {
+  //     id: 9,
+  //     image: eema,
+  //   },
+  //   {
+  //     id: 10,
+  //     image: eema,
+  //   },
+  //   {
+  //     id: 11,
+  //     image: bni,
+  //   },
+  //   {
+  //     id: 12,
+  //     image: eema,
+  //   },
+  // ];
   const testimonialsArrays = [
     {
       id: 1,
@@ -163,6 +147,25 @@ function Home() {
       title: "Deviena Shivasta",
       text: "Their deep understanding of brand values and ability to translate them into engaging experiences is remarkable. Kudos to the team!",
       img: puma,
+      backgroundImg: backgroundImage,
+    },
+    {
+      id: 5,
+      text: "A big thank you to Trinity. Everything was on time and everyone was punctual. We reached the venue on time and also made back to the hotel on time.",
+      title: "Dale Steyn, Legendary Cricketer",
+      backgroundImg: backgroundImage,
+    },
+    {
+      id: 6,
+      text: "All the on-ground transportation has been organised really well & it was a seamless experience. Trinity was an absolute delight to work with.",
+      title: "Sanjana Ganesan, Indian Sports Journalist, Anchor & Broadcaster",
+      backgroundImg: backgroundImage,
+    },
+    {
+      id: 7,
+      text: "I was transported & taken around by Trinity. They were absolutely fantastic & professional.",
+      title:
+        "Shaun Pollock, South African Cricket Commentator & Former All-Format Captain",
       backgroundImg: backgroundImage,
     },
   ];

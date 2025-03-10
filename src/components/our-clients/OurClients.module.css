@@ -40,7 +40,8 @@
 
 .carouselTrack {
   display: flex;
-  animation: scroll 5s linear infinite;
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 .logo {
