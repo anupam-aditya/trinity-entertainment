@@ -1,11 +1,13 @@
-@keyframes fadeInUp {
-  from {
+@keyframes unfoldSection {
+  0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: perspective(800px) rotateX(-90deg);
+    transform-origin: top;
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: perspective(800px) rotateX(0deg);
+    transform-origin: top;
   }
 }
 
@@ -48,38 +50,28 @@
 .highlightSection,
 .partnershipSection {
   background: radial-gradient(circle, #ef4158 0%, #c1111e 60%, #000 100%);
-  /* opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease-out forwards;
-  will-change: opacity, transform; */
 }
 
-/* .highlightSection {
-  animation-delay: 0.2s;
+/* Section container animation class */
+.sectionContainer {
+  opacity: 0;
+  animation: unfoldSection 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: transform, opacity;
 }
 
-.servicesSection {
-  animation-delay: 0.4s;
-}
-
-.testimonialSection {
-  animation-delay: 0.6s;
-}
-
-.partnershipSection {
-  animation-delay: 0.8s;
-}
-
-.headlineSection {
-  animation-delay: 1s;
-}
-
-.joinUsSection {
-  animation-delay: 1.2s;
-} */
-
-.animate {
+/* No animation for initially loaded sections */
+.initialSection {
   opacity: 1;
-  animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 0.3s;
+  transform: perspective(800px) rotateX(0deg);
+}
+
+/* Industry standard invisible sentinel element */
+.sentinel {
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  visibility: visible;
+  opacity: 0;
+  pointer-events: none;
 }

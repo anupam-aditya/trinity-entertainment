@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import styles from "./Home.module.css";
 import LandingSection from "../../components/landing";
 import OurServices from "../../components/our-services";
@@ -30,101 +30,42 @@ import OurClients from "../../components/our-clients";
 import OurServicesHome from "../../components/our-services-home";
 
 function Home() {
-  const partnershipArray = [eema, bni];
-  const sectionRef = useRef();
-  const servicesRef = useRef();
-  const testimonialRef = useRef();
-  const partnershipRef = useRef();
-  const headlineRef = useRef();
-  const joinUsRef = useRef();
+  console.log("Home component rendering");
 
+  const partnershipArray = [eema, bni, eema, bni];
+
+  // Define section order
+  const sectionOrder = [
+    "highlight",
+    "services",
+    "testimonial",
+    "partnership",
+    "headline",
+    "joinUs",
+  ];
+
+  // Track which sections are loaded (first two initially visible)
+  const [loadedSections, setLoadedSections] = useState([
+    "highlight",
+    "services",
+  ]);
+
+  // Ref for the sentinel element
+  const sentinelRef = useRef(null);
+
+  // Section content data
   const imagesArray = [
     { id: 0, image: hsi },
     { id: 1, image: hsi2 },
     { id: 2, image: hsi3 },
     { id: 3, image: hsi4 },
   ];
-  const newsArray = [
-    {
-      id: 1,
-      image: news,
-      title:
-        "Trinity Entertainment & Strategic Consultants to produce Piyush Mishra debut US tour Ballimaaraan",
-      cta: {
-        label: "Read More",
-        href: "",
-      },
-    },
-    { id: 2, image: news2 },
-    { id: 3, image: news3 },
-    { id: 2, image: news2 },
-    { id: 3, image: news3 },
-    {
-      id: 1,
-      image: news,
-      title:
-        "Trinity Entertainment & Strategic Consultants to produce Piyush Mishra debut US tour Ballimaaraan",
-      cta: {
-        label: "Read More",
-        href: "",
-      },
-    },
-  ];
-  // const sliderItems = [
-  //   {
-  //     id: 1,
-  //     image: eema,
-  //   },
-  //   {
-  //     id: 2,
-  //     image: bni,
-  //   },
-  //   {
-  //     id: 3,
-  //     image: eema,
-  //   },
-  //   {
-  //     id: 4,
-  //     image: eema,
-  //   },
-  //   {
-  //     id: 5,
-  //     image: bni,
-  //   },
-  //   {
-  //     id: 6,
-  //     image: eema,
-  //   },
-  //   {
-  //     id: 7,
-  //     image: eema,
-  //   },
-  //   {
-  //     id: 8,
-  //     image: bni,
-  //   },
-  //   {
-  //     id: 9,
-  //     image: eema,
-  //   },
-  //   {
-  //     id: 10,
-  //     image: eema,
-  //   },
-  //   {
-  //     id: 11,
-  //     image: bni,
-  //   },
-  //   {
-  //     id: 12,
-  //     image: eema,
-  //   },
-  // ];
+
   const testimonialsArrays = [
     {
       id: 1,
       title: "Raashi Sanghvi",
-      text: "Collaborating with Trinity’s production team has been an absolute pleasure. From YouTube Fan Fest to Nykaaland, their professionalism and creativity make them our go-to partners. Here’s to many more!",
+      text: "Collaborating with Trinity's production team has been an absolute pleasure. From YouTube Fan Fest to Nykaaland, their professionalism and creativity make them our go-to partners. Here's to many more!",
       img: bookmyshow,
       backgroundImg: backgroundImage,
     },
@@ -169,101 +110,187 @@ function Home() {
       backgroundImg: backgroundImage,
     },
   ];
+
+  // Function to check if all sections are loaded
+  const allSectionsLoaded = useCallback(() => {
+    return sectionOrder.every((section) => loadedSections.includes(section));
+  }, [loadedSections, sectionOrder]);
+
+  // Function to load the next section
+  const loadNextSection = useCallback(() => {
+    setLoadedSections((prevSections) => {
+      // Find the next section to load
+      const nextSectionIndex = sectionOrder.findIndex(
+        (section) => !prevSections.includes(section)
+      );
+
+      // If all sections are loaded, return the current state
+      if (nextSectionIndex === -1) {
+        console.log("All sections loaded");
+        return prevSections;
+      }
+
+      // Add the next section
+      const nextSection = sectionOrder[nextSectionIndex];
+      console.log(`Loading next section: ${nextSection}`);
+      return [...prevSections, nextSection];
+    });
+  }, [sectionOrder]);
+
+  // Set up the intersection observer
   useEffect(() => {
+    if (!sentinelRef.current) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      (entries, observer) => {
+        const entry = entries[0];
         if (entry.isIntersecting) {
-          entry.target.classList.add(styles.animate);
-          observer.unobserve(entry.target);
+          console.log("Sentinel is visible, loading next section");
+          loadNextSection();
+
+          // Check if all sections are loaded
+          if (allSectionsLoaded()) {
+            console.log("All sections loaded, removing sentinel");
+            observer.unobserve(entry.target);
+
+            // Remove sentinel from DOM
+            if (entry.target && entry.target.parentNode) {
+              entry.target.parentNode.removeChild(entry.target);
+            }
+          }
         }
       },
-      { threshold: 0.1 }
+      {
+        rootMargin: "0px 0px", // Load when sentinel is 200px from viewport
+        threshold: 0.1,
+      }
     );
 
-    // Array of all refs to observe
-    const refs = [
-      sectionRef,
-      servicesRef,
-      testimonialRef,
-      partnershipRef,
-      headlineRef,
-      joinUsRef,
-    ];
+    observer.observe(sentinelRef.current);
 
-    // Observe each ref if it exists
-    refs.forEach((ref) => {
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-    });
-
-    // Cleanup function
     return () => {
-      refs.forEach((ref) => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
-      });
+      if (sentinelRef.current) {
+        observer.unobserve(sentinelRef.current);
+      }
     };
+  }, [loadNextSection, allSectionsLoaded]);
+
+  // Check if a section should be rendered
+  const isSectionLoaded = useCallback(
+    (sectionId) => {
+      return loadedSections.includes(sectionId);
+    },
+    [loadedSections]
+  );
+
+  // Determine if a section is an initial section (to avoid animation)
+  const isInitialSection = useCallback((sectionId) => {
+    return sectionId === "highlight" || sectionId === "services";
   }, []);
+
+  // Get class for a section based on whether it's initial or not
+  const getSectionClass = useCallback(
+    (sectionId, baseClass) => {
+      const classes = [baseClass];
+
+      if (!isInitialSection(sectionId)) {
+        classes.push(styles.sectionContainer);
+      } else {
+        classes.push(styles.initialSection);
+      }
+
+      return classes.join(" ");
+    },
+    [isInitialSection]
+  );
+
   return (
     <div className={styles.container}>
       <LandingSection />
-      <div className={styles.highlightSection} ref={sectionRef}>
-        <HighlightSlider
-          title="Create an Experience Like Never Before"
-          subHeading="Your Brand, Our Mission"
-          imagesArray={imagesArray}
-          text={[
-            "We are a team of experiential marketing visionaries passionate about crafting unforgettable brand experiences that drive visibility, awareness, and engagement",
-            "At Trinity Entertainment, we don’t just execute events—we bring brands to life. Our expertise lies in creating immersive, impactful experiences that forge lasting connections between brands and their audiences",
-            "We collaborate closely with you to elevate your brand presence, ensuring every experience leaves a powerful and lasting impression. Our innovative approach and strategic execution transform ideas into meaningful brand interactions that captivate and inspire",
-          ]}
-          link={{ href: "/about", text: "Explore More" }}
-        />
-      </div>
-      <div className={styles.servicesSection} ref={servicesRef}>
-        <OurServicesHome />
-      </div>
-      <div className={styles.testimonialSection} ref={testimonialRef}>
-        <Carousel items={testimonialsArrays} />
-      </div>
-      <div className={styles.partnershipSection} ref={partnershipRef}>
-        <OurClients
-          title="Our"
-          subHeading=""
-          data={partnershipArray}
-          titleHighlight="Partnership"
-        />
-      </div>
-      {/* <div className={styles.recentAccomplishmentSection}>
-        <RecentAccomplishment />
-      </div> */}
-      <div className={styles.headlineSection} ref={headlineRef}>
-        <Headlines />
-      </div>
-      <div className={styles.joinUsSection} ref={joinUsRef}>
-        <Highlight
-          data={{
-            heading: "Join Our Team – #LifeAtTrinity",
-            subHeading: "",
-            text: [
-              "We’re a group of creative thinkers and marketing innovators who thrive on brainstorming, problem-solving, and pushing boundaries. Think of us as the Justice League of creativity, with a team that includes visionaries, strategists, and execution experts.",
-              "At Trinity Entertainment, we foster a collaborative, hierarchy-free work environment where everyone’s voice is valued. Whether you’re an experienced pro or a rising talent, there’s a place for you here.",
-            ],
-            imageUrl: lifeattrinity,
-            link: {
-              href: "/career",
-              text: "Try your shot!",
-            },
-          }}
-          imagePosition="left"
-        />
-      </div>
-      {/* <div className={styles.newsSection}>
-        <NewSlider title="In The News" items={newsArray} />
-      </div>
-      <About /> */}
+
+      {/* Highlight Section */}
+      {isSectionLoaded("highlight") && (
+        <div className={getSectionClass("highlight", styles.highlightSection)}>
+          <HighlightSlider
+            title="Create an Experience Like Never Before"
+            subHeading="Your Brand, Our Mission"
+            imagesArray={imagesArray}
+            text={[
+              "We are a team of experiential marketing visionaries passionate about crafting unforgettable brand experiences that drive visibility, awareness, and engagement",
+              "At Trinity Entertainment, we don't just execute events—we bring brands to life. Our expertise lies in creating immersive, impactful experiences that forge lasting connections between brands and their audiences",
+              "We collaborate closely with you to elevate your brand presence, ensuring every experience leaves a powerful and lasting impression. Our innovative approach and strategic execution transform ideas into meaningful brand interactions that captivate and inspire",
+            ]}
+            link={{ href: "/about", text: "Explore More" }}
+          />
+        </div>
+      )}
+
+      {/* Services Section */}
+      {isSectionLoaded("services") && (
+        <div className={getSectionClass("services", styles.servicesSection)}>
+          <OurServicesHome />
+        </div>
+      )}
+
+      {/* Testimonial Section */}
+      {isSectionLoaded("testimonial") && (
+        <div
+          className={getSectionClass("testimonial", styles.testimonialSection)}
+        >
+          <Carousel items={testimonialsArrays} />
+        </div>
+      )}
+
+      {/* Partnership Section */}
+      {isSectionLoaded("partnership") && (
+        <div
+          className={getSectionClass("partnership", styles.partnershipSection)}
+        >
+          <OurClients
+            title="Our"
+            subHeading=""
+            data={partnershipArray}
+            titleHighlight="Partnership"
+          />
+        </div>
+      )}
+
+      {/* Headline Section */}
+      {isSectionLoaded("headline") && (
+        <div className={getSectionClass("headline", styles.headlineSection)}>
+          <Headlines />
+        </div>
+      )}
+
+      {/* Join Us Section */}
+      {isSectionLoaded("joinUs") && (
+        <div className={getSectionClass("joinUs", styles.joinUsSection)}>
+          <Highlight
+            data={{
+              heading: "Join Our Team – #LifeAtTrinity",
+              subHeading: "",
+              text: [
+                "We're a group of creative thinkers and marketing innovators who thrive on brainstorming, problem-solving, and pushing boundaries. Think of us as the Justice League of creativity, with a team that includes visionaries, strategists, and execution experts.",
+                "At Trinity Entertainment, we foster a collaborative, hierarchy-free work environment where everyone's voice is valued. Whether you're an experienced pro or a rising talent, there's a place for you here.",
+              ],
+              imageUrl: lifeattrinity,
+              link: {
+                href: "/career",
+                text: "Try your shot!",
+              },
+            }}
+            imagePosition="left"
+          />
+        </div>
+      )}
+
+      {/* Invisible sentinel element for detecting scroll position */}
+      <div
+        ref={sentinelRef}
+        aria-hidden="true"
+        data-testid="load-more-sentinel"
+        className={styles.sentinel}
+      />
     </div>
   );
 }
