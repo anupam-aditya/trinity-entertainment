@@ -3,11 +3,20 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes shimmerText {
+  0% {
+    background-position: -12.5rem 0;
+  }
+  100% {
+    background-position: 12.5rem 0;
   }
 }
 
@@ -35,7 +44,7 @@
       width: 35%;
       border: 1px solid #000;
       display: inline-flex;
-      transform: translateY(-8px);
+      transform: translateY(-0.5rem);
       margin-left: 5rem;
     }
   }
@@ -82,30 +91,100 @@
       padding: 1.375rem 1.25rem 1rem;
       box-sizing: border-box;
       text-align: right;
-      color: #fff;
+      color: #FFFFFF;
       justify-content: end;
       text-decoration: none;
       background-size: cover !important;
+      background-position: center !important;
+      transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+      filter: brightness(85%);
+      overflow: hidden;
+      position: relative;
 
       .heading,
       .number {
         font-weight: 700;
         margin: 0;
+        position: relative;
       }
       .heading {
         font-size: var(--text-reg);
       }
       .number {
         font-size: var(--text-2xl);
+        background: linear-gradient(90deg, #ffffff 0%, var(--pink) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Keep text visible */
+        transition: all 0.4s ease-in-out;
+        &:hover{
+          animation: shimmerText 2s infinite linear;
+        }
       }
       .text {
         font-size: var(--text-very-sm);
+        opacity: 0;
+        transform: translateY(1.25rem);
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+      }
+    }
+
+    /* Hover effects */
+    .subSection:hover {
+      transform: scale(1.025);
+      filter: brightness(100%);
+      
+      .number {
+        background: linear-gradient(
+          90deg, 
+          #ffffff 0%, 
+          var(--pink) 50%,
+          #ffffff 100%
+        );
+        background-size: 25rem 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: shimmerText 0.5s infinite linear;
+      }
+      
+      .text {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   }
 }
+
 .cardContainerClass {
   padding: 0 !important;
+}
+
+/* Background styles for each card */
+.serviceCard {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%);
+  transition: background 0.4s ease-in-out;
+}
+
+.serviceCard:hover::before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.serviceCardContent {
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -181,9 +260,23 @@
         }
         .number {
           font-size: 1.75rem;
+          /* No animation on mobile */
+          animation: none;
         }
         .text {
           font-size: var(--text-very-sm);
+          /* On mobile, keep text visible by default since hover doesn't work well */
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* No hover effects on mobile */
+      .subSection:hover {
+        transform: none;
+        
+        .number {
+          animation: none;
         }
       }
     }

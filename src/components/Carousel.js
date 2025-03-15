@@ -4,6 +4,8 @@ import styles from "./Carousel.module.css";
 const Carousel = ({ items = [] }) => {
   const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [visibleItems, setVisibleItems] = useState({});
+  const itemRefs = useRef(items.map(() => React.createRef()));
 
   // Handle scroll events to update the active index based on the container's center.
   const handleScroll = () => {
@@ -43,6 +45,45 @@ const Carousel = ({ items = [] }) => {
     setActiveIndex(clampedIndex);
   };
 
+  // Set up Intersection Observer to detect when items enter or exit the viewport
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2, // When at least 20% of the item is visible
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.dataset.id;
+        setVisibleItems((prevState) => ({
+          ...prevState,
+          [id]: entry.isIntersecting ? "visible" : "exiting",
+        }));
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe all item refs
+    itemRefs.current.forEach((ref, index) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    // Cleanup observer on component unmount
+    return () => {
+      itemRefs.current.forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+      observer.disconnect();
+    };
+  }, []);
+
+  // Set up scroll event listener
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -64,12 +105,11 @@ const Carousel = ({ items = [] }) => {
           {items.map((item, index) => (
             <div
               key={item.id}
+              ref={itemRefs.current[index]}
+              data-id={item.id}
               className={`${styles.carouselItem} ${
                 activeIndex === index ? styles.selected : ""
-              }`}
-              style={{
-                backgroundImage: `linear-gradient(180deg, rgba(102, 102, 102, 1) 0%, rgba(0, 0, 0, 0.85) 100%), url(${item.backgroundImg})`,
-              }}
+              } ${visibleItems[item.id] ? styles[visibleItems[item.id]] : ""}`}
             >
               <img
                 src={item.img}
@@ -86,12 +126,14 @@ const Carousel = ({ items = [] }) => {
           <button
             className={styles.carouselButton}
             onClick={() => goTo(activeIndex - 1)}
+            aria-label="Previous testimonial"
           >
             ←
           </button>
           <button
             className={styles.carouselButton}
             onClick={() => goTo(activeIndex + 1)}
+            aria-label="Next testimonial"
           >
             →
           </button>

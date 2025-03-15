@@ -1,4 +1,5 @@
 @import "../components/common/variables.module.css";
+
 .carouselContainer {
   padding: 2rem 0 2rem 4rem;
   text-align: center;
@@ -12,22 +13,20 @@
   font-size: 2.5rem;
   margin: 0;
   text-align: left;
-  /* display: flex;
-  gap: 3rem; */
   align-items: center;
-  p {
-    /* display: flex;
-    gap: 0.5rem; */
-    margin: 0;
-  }
-  .line {
-    min-width: 7rem;
-    height: 0;
-    border: 1px solid;
-    display: inline-flex;
-    transform: translateY(-8px);
-    margin-left: 2rem;
-  }
+}
+
+.carouselHeading p {
+  margin: 0;
+}
+
+.carouselHeading .line {
+  min-width: 7rem;
+  height: 0;
+  border: 1px solid;
+  display: inline-flex;
+  transform: translateY(-0.5rem);
+  margin-left: 2rem;
 }
 
 .highlight {
@@ -48,49 +47,87 @@
   display: flex;
   gap: 2rem;
   overflow-x: auto;
+  overflow-y: hidden; /* <-- Added to fix vertical scroll issue */
   scroll-snap-type: x mandatory;
-  padding: 0 35px 0 0;
+  padding: 0.25rem 2.1875rem; /* <-- Slight vertical padding to prevent card clipping */
   width: 100%;
   box-sizing: border-box;
   scrollbar-width: none;
 }
 
+.carouselWrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .carouselItem {
   flex: 0 0 auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-  border-radius: 2.1875rem;
-  aspect-ratio: 1;
+  align-items: flex-start;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border-radius: 0.5rem;
   max-width: 25%;
   justify-content: start;
-  padding: 2rem 0;
+  padding: 2rem;
   box-sizing: border-box;
+  box-shadow: 0 0.1375rem 0.975rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: visible; /* <-- Ensures no clipping inside the card */
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-/* .carouselItem.selected {
-  border: 2px solid red;
-} */
+.carouselItem.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.carouselItem.exiting {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
 .carouselImg {
-  height: 6.25rem;
+  height: auto;
+  max-height: 3.5rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
 }
 
 .carouselTitle {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.carouselTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 0.25rem;
+  background-color: #ef3e58;
+  transition: width 0.3s ease-in-out;
+}
+
+.carouselItem:hover .carouselTitle::after {
+  width: 100%;
+}
+
+.carouselItem.selected .carouselTitle::after {
+  width: 100%;
 }
 
 .carouselText {
   font-size: 1rem;
-  color: white;
-  max-width: 80%;
+  color: black;
+  width: 100%;
   line-height: 1.5;
   text-align: left;
 }
@@ -101,16 +138,17 @@
 }
 
 .carouselButton {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-size: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .carouselButton:hover {
@@ -127,6 +165,7 @@
   background: white;
   color: black;
 }
+
 .headingContainer {
   display: flex;
   flex-wrap: wrap;
@@ -151,17 +190,17 @@
   .carouselItem {
     max-width: 100%;
     min-width: unset;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     box-sizing: border-box;
   }
   .carouselWrapper {
-    padding: 0;
+    padding: 0.25rem 0; /* Maintain padding fix on mobile */
   }
   .carousel {
     margin: 1rem 0 0;
   }
   .carouselText {
-    max-width: 100%;
+    width: 100%;
     font-size: 1rem;
   }
 }
